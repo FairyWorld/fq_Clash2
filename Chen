@@ -5,157 +5,146 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {name: '🏳_NON_Chen_1', server: global-transit-hk-v2.pucdn.me, port: 31102, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-kr-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_2', server: guangzhou-lw-03.pucdn.me, port: 11114, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-07.pucdn.me}}
-  - {name: '🏳_NON_Chen_3', server: guangzhou-lw-03.pucdn.me, port: 11114, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-07.pucdn.me}}
-  - {name: '🏳_NON_Chen_4', server: guangzhou-lw-03.pucdn.me, port: 11114, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-07.pucdn.me}}
-  - {name: '🏳_NON_Chen_5', server: guangzhou-lw-03.pucdn.me, port: 11115, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-08.pucdn.me}}
-  - {name: '🏳_NON_Chen_6', server: guangzhou-lw-03.pucdn.me, port: 11116, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-09.pucdn.me}}
-  - {name: '🏳_NON_Chen_7', server: guangzhou-lw-03.pucdn.me, port: 11117, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-10.pucdn.me}}
-  - {name: '🏳_NON_Chen_8', server: guangzhou-lw-03.pucdn.me, port: 11117, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-10.pucdn.me}}
-  - {name: '🏳_NON_Chen_9', server: guangzhou-lw-03.pucdn.me, port: 11117, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-hkt-a-10.pucdn.me}}
-  - {name: '🏳_NON_Chen_10', server: global-transit-hk-v2.pucdn.me, port: 31122, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-a-sg-01.pucdn.me}}
-  - {name: '🏳_NON_Chen_11', server: global-transit-hk-v2.pucdn.me, port: 31123, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-a-sg-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_12', server: global-transit-hk-v2.pucdn.me, port: 31123, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-a-sg-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_13', server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_14', server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_15', server: 198.57.27.184, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_16', server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_17', server: 198.57.27.184, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_18', server: 198.57.27.184, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_19', server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_20', server: 198.57.27.184, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_21', server: 198.57.27.184, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🏳_NON_Chen_22', server: 198.57.27.184, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_23', server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_24', server: guangzhou-lw-03.pucdn.me, port: 21105, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-05.pucdn.me}}
-  - {name: '🏳_NON_Chen_25', server: guangzhou-lw-03.pucdn.me, port: 21105, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-05.pucdn.me}}
-  - {name: '🏳_NON_Chen_26', server: guangzhou-lw-03.pucdn.me, port: 21106, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-06.pucdn.me}}
-  - {name: '🏳_NON_Chen_27', server: guangzhou-lw-03.pucdn.me, port: 21106, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-06.pucdn.me}}
-  - {name: '🏳_NON_Chen_28', server: guangzhou-lw-03.pucdn.me, port: 21106, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-06.pucdn.me}}
-  - {name: '🏳_NON_Chen_29', server: guangzhou-lw-03.pucdn.me, port: 21107, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-07.pucdn.me}}
-  - {name: '🏳_NON_Chen_30', server: guangzhou-lw-03.pucdn.me, port: 21107, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-tw-07.pucdn.me}}
-  - {name: '🏳_NON_Chen_31', server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: '🏳_NON_Chen_32', server: 146.0.36.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_33', server: 146.0.36.23, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_34', server: 146.0.36.23, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_35', server: 146.0.36.23, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_36', server: 146.0.36.23, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_37', server: 146.0.36.23, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_38', server: 146.0.36.23, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🏳_NON_Chen_39', server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_40', server: 217.197.161.244, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_41', server: 217.197.161.244, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_42', server: 217.197.161.244, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_43', server: 217.197.161.244, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_44', server: 217.197.161.244, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_45', server: 217.197.161.244, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_46', server: 217.197.161.245, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_1', server: zj.haojiahuo.club, port: 60038, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /videos, ws-headers: {Host: xuexi.cn}}
+  - {name: '🏳_NON_Chen_2', server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
+  - {name: '🏳_NON_Chen_3', server: 139.227.161.129, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
+  - {name: '🏳_NON_Chen_4', server: twn01.ip4.ddns.acg.photos, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: twn01.ip4.ddns.acg.photos}}
+  - {name: '🏳_NON_Chen_5', server: zj.haojiahuo.club, port: 30041, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /videos, ws-headers: {Host: xuexi.cn}}
+  - {name: '🏳_NON_Chen_6', server: 37.19.218.197, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
+  - {name: '🏳_NON_Chen_7', server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
+  - {name: '🏳_NON_Chen_8', server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🏳_NON_Chen_9', server: 198.57.27.218, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_10', server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_11', server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🏳_NON_Chen_12', server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_13', server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_14', server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_15', server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_16', server: 198.57.27.233, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_17', server: 198.57.27.238, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_18', server: 198.57.27.243, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_19', server: 198.57.27.243, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_20', server: 13.127.168.127, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_21', server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: '🏳_NON_Chen_22', server: 146.0.36.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_23', server: 146.0.36.23, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_24', server: 146.0.36.23, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🏳_NON_Chen_25', server: 146.0.36.23, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_26', server: 146.0.36.23, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_27', server: 146.0.36.23, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: '🏳_NON_Chen_28', server: 146.0.36.23, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_29', server: 193.108.118.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_30', server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_31', server: 46.29.219.246, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_32', server: 81.90.188.137, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_33', server: 81.90.188.137, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_34', server: 81.90.188.137, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_35', server: 81.90.188.137, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_36', server: 81.90.188.137, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_37', server: 81.90.188.137, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_38', server: 81.90.188.137, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_39', server: 81.90.188.137, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_40', server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
+  - {name: '🏳_NON_Chen_41', server: 122.192.189.8, port: 19706, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_42', server: 217.197.161.244, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_43', server: 217.197.161.244, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_44', server: 217.197.161.244, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_45', server: 217.197.161.244, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_46', server: 217.197.161.244, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: '🏳_NON_Chen_47', server: 217.197.161.245, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: '🏳_NON_Chen_48', server: 217.197.161.245, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: '🏳_NON_Chen_49', server: 217.197.161.245, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_50', server: 217.197.161.245, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_51', server: 217.197.161.245, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_52', server: 217.197.161.245, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_53', server: 217.197.161.245, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_54', server: 217.197.161.245, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_55', server: 217.197.161.245, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_56', server: global-transit-02-sg.pucdn.me, port: 61003, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-04.pucdn.me}}
-  - {name: '🏳_NON_Chen_57', server: global-transit-02-sg.pucdn.me, port: 61003, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-04.pucdn.me}}
-  - {name: '🏳_NON_Chen_58', server: global-transit-02-sg.pucdn.me, port: 61003, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-aws-sg-04.pucdn.me}}
-  - {name: '🏳_NON_Chen_59', server: global-transit-hk-v2.pucdn.me, port: 10006, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_60', server: global-transit-hk-v2.pucdn.me, port: 10006, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_61', server: global-transit-hk-v2.pucdn.me, port: 10007, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-03.pucdn.me}}
-  - {name: '🏳_NON_Chen_62', server: global-transit-hk-v2.pucdn.me, port: 10009, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-05.pucdn.me}}
-  - {name: '🏳_NON_Chen_63', server: global-transit-hk-v2.pucdn.me, port: 10012, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-08.pucdn.me}}
-  - {name: '🏳_NON_Chen_64', server: global-transit-hk-v2.pucdn.me, port: 10012, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-08.pucdn.me}}
-  - {name: '🏳_NON_Chen_65', server: global-transit-hk-v2.pucdn.me, port: 10013, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-09.pucdn.me}}
-  - {name: '🏳_NON_Chen_66', server: global-transit-hk-v2.pucdn.me, port: 10014, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-10.pucdn.me}}
-  - {name: '🏳_NON_Chen_67', server: global-transit-hk-v2.pucdn.me, port: 10014, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-sakura-jp-10.pucdn.me}}
-  - {name: '🏳_NON_Chen_68', server: global-transit-hk-v2.pucdn.me, port: 32301, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-jp-01.pucdn.me}}
-  - {name: '🏳_NON_Chen_69', server: global-transit-hk-v2.pucdn.me, port: 32302, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-jp-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_70', server: global-transit-hk-v2.pucdn.me, port: 32302, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L2-aws-jp-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_71', server: kaizen-jp-6.cn0.me, port: 443, type: trojan, password: 01cfa1e4-cdce-35f6-9d66-88723210601dcmynw, sni: kaizen-jp-6.cn0.me}
-  - {name: '🏳_NON_Chen_72', server: 185.160.24.217, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🏳_NON_Chen_73', server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_74', server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_75', server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_76', server: agals01.cloudddns.icu, port: 1123, type: trojan, password: f45d308f-d9bc-3954-982f-40883392fb8e, sni: agals01.cloudddns.icu}
-  - {name: '🏳_NON_Chen_77', server: global-transit-02-sg.pucdn.me, port: 49993, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l1-do-in-03.pucdn.me}}
-  - {name: '🏳_NON_Chen_78', server: global-transit-hk-v2.pucdn.me, port: 31125, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-do-sg-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_79', server: global-transit-hk-v2.pucdn.me, port: 31125, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-do-sg-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_80', server: global-transit-hk-v2.pucdn.me, port: 31125, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-do-sg-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_81', server: global-transit-hk-v2.pucdn.me, port: 37001, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-ntt-ua-01.pucdn.me}}
-  - {name: '🏳_NON_Chen_82', server: global-transit-hk-v2.pucdn.me, port: 37002, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-ntt-ua-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_83', server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_84', server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_85', server: 38.68.134.23, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_86', server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_87', server: 38.68.134.37, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_88', server: 38.68.134.37, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_89', server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_90', server: 142.202.48.7, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_91', server: 142.202.48.7, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_92', server: 142.202.48.17, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_93', server: 142.202.48.17, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_94', server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_95', server: 142.202.48.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_96', server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_97', server: 142.202.48.52, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_98', server: 142.202.48.52, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_99', server: 142.202.48.58, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_100', server: 142.202.48.58, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_101', server: 142.202.48.58, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_102', server: 142.202.48.77, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_103', server: 142.202.48.78, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_104', server: 142.202.48.78, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_105', server: 142.202.48.78, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_106', server: 142.202.48.78, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_107', server: 142.202.48.83, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_108', server: 167.88.62.34, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_109', server: 167.88.62.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_110', server: 167.88.62.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_111', server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_112', server: 167.88.62.68, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_113', server: 167.88.62.68, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_114', server: 167.88.62.68, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_115', server: 167.88.62.68, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_116', server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_117', server: 167.88.63.71, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_118', server: 167.88.63.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_119', server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_120', server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🏳_NON_Chen_121', server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_122', server: 167.88.63.89, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_123', server: 167.88.63.89, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_124', server: 167.88.63.107, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_125', server: 172.99.190.90, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🏳_NON_Chen_126', server: 172.99.190.90, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_127', server: 172.99.190.90, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_128', server: 172.99.190.90, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🏳_NON_Chen_129', server: 172.99.190.90, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_130', server: 172.99.190.90, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🏳_NON_Chen_131', server: 172.99.190.90, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🏳_NON_Chen_132', server: 172.99.190.90, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_133', server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_134', server: 172.99.190.186, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🏳_NON_Chen_135', server: 172.99.190.186, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🏳_NON_Chen_136', server: 172.99.190.186, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🏳_NON_Chen_137', server: global-transit-02-sg.pucdn.me, port: 63002, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-02.pucdn.me}}
-  - {name: '🏳_NON_Chen_138', server: global-transit-02-sg.pucdn.me, port: 63003, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-03.pucdn.me}}
-  - {name: '🏳_NON_Chen_139', server: global-transit-02-sg.pucdn.me, port: 63003, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-03.pucdn.me}}
-  - {name: '🏳_NON_Chen_140', server: global-transit-02-sg.pucdn.me, port: 63006, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-06.pucdn.me}}
-  - {name: '🏳_NON_Chen_141', server: global-transit-02-sg.pucdn.me, port: 63006, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-06.pucdn.me}}
-  - {name: '🏳_NON_Chen_142', server: global-transit-02-sg.pucdn.me, port: 63006, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-06.pucdn.me}}
-  - {name: '🏳_NON_Chen_143', server: global-transit-02-sg.pucdn.me, port: 63007, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-07.pucdn.me}}
-  - {name: '🏳_NON_Chen_144', server: global-transit-02-sg.pucdn.me, port: 63007, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-07.pucdn.me}}
-  - {name: '🏳_NON_Chen_145', server: global-transit-02-sg.pucdn.me, port: 63007, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-07.pucdn.me}}
-  - {name: '🏳_NON_Chen_146', server: global-transit-02-sg.pucdn.me, port: 63008, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-08.pucdn.me}}
-  - {name: '🏳_NON_Chen_147', server: global-transit-02-sg.pucdn.me, port: 63008, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: L1-aws-kr-08.pucdn.me}}
-  - {name: '🏳_NON_Chen_148', server: global-transit-hk-v2.pucdn.me, port: 31101, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-kr-01.pucdn.me}}
-  - {name: '🏳_NON_Chen_149', server: global-transit-hk-v2.pucdn.me, port: 31101, type: vmess, uuid: 8f19fe80-2493-3c3a-ace9-a6d7c665b3cf, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-kr-01.pucdn.me}}
-  - {name: '🏳_NON_Chen_150', server: global-transit-hk-v2.pucdn.me, port: 31101, type: vmess, uuid: 19a605a2-6982-387e-bcd4-8b5bffbe039a, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-kr-01.pucdn.me}}
-  - {name: '🏳_NON_Chen_151', server: global-transit-hk-v2.pucdn.me, port: 31102, type: vmess, uuid: 6fb2ccd1-26dd-304c-ab8c-8259309cded1, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /vvv, ws-headers: {Host: l2-kr-02.pucdn.me}}
+  - {name: '🏳_NON_Chen_50', server: 217.197.161.245, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_51', server: 217.197.161.245, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_52', server: 217.197.161.245, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_53', server: 217.197.161.245, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_54', server: 217.197.161.245, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_55', server: azure-hk.qcppl.com, port: 10007, type: trojan, password: 391869cf-f21d-4b24-a6e6-862cac94bb15, sni: azure-hk.qcppl.com}
+  - {name: '🏳_NON_Chen_56', server: azure-hk.qcppl.com, port: 10008, type: trojan, password: 391869cf-f21d-4b24-a6e6-862cac94bb15, sni: azure-hk.qcppl.com}
+  - {name: '🏳_NON_Chen_57', server: gg.piyun.team, port: 45005, type: trojan, password: 391869cf-f21d-4b24-a6e6-862cac94bb15, sni: gg.piyun.team}
+  - {name: '🏳_NON_Chen_58', server: 81.90.189.18, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_59', server: 81.90.189.18, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_60', server: 81.90.189.18, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_61', server: 81.90.189.18, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_62', server: 81.90.189.18, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_63', server: 81.90.189.18, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_64', server: 81.90.189.18, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_65', server: 81.90.189.18, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_66', server: 139.162.51.223, port: 51939, type: vmess, uuid: 4db2a027-17fb-4d27-b8ca-93b548e487a2, alterId: 0, cipher: auto, tls: false, network: tcp}
+  - {name: '🏳_NON_Chen_67', server: 172.104.168.83, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🏳_NON_Chen_68', server: 172.104.168.83, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🏳_NON_Chen_69', server: 172.104.168.83, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_70', server: 172.104.168.83, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_71', server: 103.62.49.141, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_72', server: 5.183.176.184, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_73', server: azure-hk.qcppl.com, port: 10012, type: trojan, password: 391869cf-f21d-4b24-a6e6-862cac94bb15, sni: azure-hk.qcppl.com}
+  - {name: '🏳_NON_Chen_74', server: kaizen-jp-4.cn0.me, port: 443, type: trojan, password: 01cfa1e4-cdce-35f6-9d66-88723210601dcmynw, sni: kaizen-jp-4.cn0.me}
+  - {name: '🏳_NON_Chen_75', server: kaizen-jp-6.cn0.me, port: 443, type: trojan, password: 01cfa1e4-cdce-35f6-9d66-88723210601dcmynw, sni: kaizen-jp-6.cn0.me}
+  - {name: '🏳_NON_Chen_76', server: 5.181.5.136, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_77', server: 5.181.5.136, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_78', server: 5.181.5.136, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_79', server: 45.85.3.149, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_80', server: 146.56.112.202, port: 39618, type: ss, cipher: aes-256-gcm, password: ssinthebest}
+  - {name: '🏳_NON_Chen_81', server: 172.105.244.165, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_82', server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_83', server: 172.105.244.165, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_84', server: 172.105.244.165, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: '🏳_NON_Chen_85', server: 172.105.244.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_86', server: 172.105.251.193, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_87', server: 172.105.251.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_88', server: 196.196.156.106, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_89', server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b}
+  - {name: '🏳_NON_Chen_90', server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🏳_NON_Chen_91', server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_92', server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_93', server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🏳_NON_Chen_94', server: 145.239.1.137, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🏳_NON_Chen_95', server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_96', server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_97', server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_98', server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_99', server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: '🏳_NON_Chen_100', server: 145.239.1.137, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_101', server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_102', server: 54.38.72.170, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_103', server: 95.142.161.130, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: uDlqozPwCk4A}
+  - {name: '🏳_NON_Chen_104', server: 116.163.10.104, port: 19607, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_105', server: 116.163.10.104, port: 19609, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_106', server: 43.155.75.170, port: 80, type: vmess, uuid: 76329684-c5d2-4cf7-fcf5-06ad79a6aab3, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: www.microsoft.com}}
+  - {name: '🏳_NON_Chen_107', server: 86.105.25.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: gKDDFZyBmBH5Ru46xBAK}
+  - {name: '🏳_NON_Chen_108', server: zj.haojiahuo.club, port: 30057, type: vmess, uuid: 4a6ada0c-e453-3217-8210-8556f9c92494, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /videos, ws-headers: {Host: xuexi.cn}}
+  - {name: '🏳_NON_Chen_109', server: 122.192.189.8, port: 19602, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_110', server: 122.192.189.8, port: 19603, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_111', server: agals01.cloudddns.icu, port: 1123, type: trojan, password: f45d308f-d9bc-3954-982f-40883392fb8e, sni: agals01.cloudddns.icu}
+  - {name: '🏳_NON_Chen_112', server: t8.ssrsub.com, port: 21033, type: trojan, password: 1ed0dd9b-7c66-4738-be47-8e543b2126e4, sni: t8.ssrsub.com}
+  - {name: '🏳_NON_Chen_113', server: t8.ssrsub.com, port: 21033, type: trojan, password: 2b19f253-5da2-4ca2-a950-8b4e7b3ddadb, sni: t8.ssrsub.com}
+  - {name: '🏳_NON_Chen_114', server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🏳_NON_Chen_115', server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_116', server: 38.68.134.23, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_117', server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_118', server: 38.68.134.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_119', server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🏳_NON_Chen_120', server: 142.202.48.52, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_121', server: 142.202.48.52, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_122', server: 142.202.48.55, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_123', server: 142.202.48.58, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🏳_NON_Chen_124', server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🏳_NON_Chen_125', server: 167.88.63.79, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🏳_NON_Chen_126', server: 167.88.63.89, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_127', server: 172.99.190.186, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🏳_NON_Chen_128', server: 172.99.190.186, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_129', server: 172.99.190.186, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🏳_NON_Chen_130', server: 172.99.190.186, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🏳_NON_Chen_131', server: 86.106.136.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: h6WG7sxsLTBGn7uyvMG8}
+  - {name: '🏳_NON_Chen_132', server: 3.9.171.2, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_133', server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🏳_NON_Chen_134', server: 89.238.177.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: VPPqaR4qpLmNw37jaJg6}
+  - {name: '🏳_NON_Chen_135', server: 116.163.10.104, port: 19610, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_136', server: 116.163.10.104, port: 19700, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_137', server: 116.163.10.104, port: 19703, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_138', server: 122.192.189.8, port: 19700, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_139', server: 122.192.189.8, port: 19703, type: vmess, uuid: c0f4d26f-b870-3b0d-a77e-1786fcf52e50, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /download, ws-headers: {Host: t.me/vpnhat}}
+  - {name: '🏳_NON_Chen_140', server: hkt.poloddns.xyz, port: 59985, type: ss, cipher: aes-128-gcm, password: 64546545wafasf}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -302,17 +291,6 @@ proxy-groups:
       - 🏳_NON_Chen_138
       - 🏳_NON_Chen_139
       - 🏳_NON_Chen_140
-      - 🏳_NON_Chen_141
-      - 🏳_NON_Chen_142
-      - 🏳_NON_Chen_143
-      - 🏳_NON_Chen_144
-      - 🏳_NON_Chen_145
-      - 🏳_NON_Chen_146
-      - 🏳_NON_Chen_147
-      - 🏳_NON_Chen_148
-      - 🏳_NON_Chen_149
-      - 🏳_NON_Chen_150
-      - 🏳_NON_Chen_151
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -458,17 +436,6 @@ proxy-groups:
       - 🏳_NON_Chen_138
       - 🏳_NON_Chen_139
       - 🏳_NON_Chen_140
-      - 🏳_NON_Chen_141
-      - 🏳_NON_Chen_142
-      - 🏳_NON_Chen_143
-      - 🏳_NON_Chen_144
-      - 🏳_NON_Chen_145
-      - 🏳_NON_Chen_146
-      - 🏳_NON_Chen_147
-      - 🏳_NON_Chen_148
-      - 🏳_NON_Chen_149
-      - 🏳_NON_Chen_150
-      - 🏳_NON_Chen_151
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -615,17 +582,6 @@ proxy-groups:
       - 🏳_NON_Chen_138
       - 🏳_NON_Chen_139
       - 🏳_NON_Chen_140
-      - 🏳_NON_Chen_141
-      - 🏳_NON_Chen_142
-      - 🏳_NON_Chen_143
-      - 🏳_NON_Chen_144
-      - 🏳_NON_Chen_145
-      - 🏳_NON_Chen_146
-      - 🏳_NON_Chen_147
-      - 🏳_NON_Chen_148
-      - 🏳_NON_Chen_149
-      - 🏳_NON_Chen_150
-      - 🏳_NON_Chen_151
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -771,17 +727,6 @@ proxy-groups:
       - 🏳_NON_Chen_138
       - 🏳_NON_Chen_139
       - 🏳_NON_Chen_140
-      - 🏳_NON_Chen_141
-      - 🏳_NON_Chen_142
-      - 🏳_NON_Chen_143
-      - 🏳_NON_Chen_144
-      - 🏳_NON_Chen_145
-      - 🏳_NON_Chen_146
-      - 🏳_NON_Chen_147
-      - 🏳_NON_Chen_148
-      - 🏳_NON_Chen_149
-      - 🏳_NON_Chen_150
-      - 🏳_NON_Chen_151
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -927,17 +872,6 @@ proxy-groups:
       - 🏳_NON_Chen_138
       - 🏳_NON_Chen_139
       - 🏳_NON_Chen_140
-      - 🏳_NON_Chen_141
-      - 🏳_NON_Chen_142
-      - 🏳_NON_Chen_143
-      - 🏳_NON_Chen_144
-      - 🏳_NON_Chen_145
-      - 🏳_NON_Chen_146
-      - 🏳_NON_Chen_147
-      - 🏳_NON_Chen_148
-      - 🏳_NON_Chen_149
-      - 🏳_NON_Chen_150
-      - 🏳_NON_Chen_151
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1083,17 +1017,6 @@ proxy-groups:
       - 🏳_NON_Chen_138
       - 🏳_NON_Chen_139
       - 🏳_NON_Chen_140
-      - 🏳_NON_Chen_141
-      - 🏳_NON_Chen_142
-      - 🏳_NON_Chen_143
-      - 🏳_NON_Chen_144
-      - 🏳_NON_Chen_145
-      - 🏳_NON_Chen_146
-      - 🏳_NON_Chen_147
-      - 🏳_NON_Chen_148
-      - 🏳_NON_Chen_149
-      - 🏳_NON_Chen_150
-      - 🏳_NON_Chen_151
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1240,17 +1163,6 @@ proxy-groups:
       - 🏳_NON_Chen_138
       - 🏳_NON_Chen_139
       - 🏳_NON_Chen_140
-      - 🏳_NON_Chen_141
-      - 🏳_NON_Chen_142
-      - 🏳_NON_Chen_143
-      - 🏳_NON_Chen_144
-      - 🏳_NON_Chen_145
-      - 🏳_NON_Chen_146
-      - 🏳_NON_Chen_147
-      - 🏳_NON_Chen_148
-      - 🏳_NON_Chen_149
-      - 🏳_NON_Chen_150
-      - 🏳_NON_Chen_151
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1406,17 +1318,6 @@ proxy-groups:
       - 🏳_NON_Chen_138
       - 🏳_NON_Chen_139
       - 🏳_NON_Chen_140
-      - 🏳_NON_Chen_141
-      - 🏳_NON_Chen_142
-      - 🏳_NON_Chen_143
-      - 🏳_NON_Chen_144
-      - 🏳_NON_Chen_145
-      - 🏳_NON_Chen_146
-      - 🏳_NON_Chen_147
-      - 🏳_NON_Chen_148
-      - 🏳_NON_Chen_149
-      - 🏳_NON_Chen_150
-      - 🏳_NON_Chen_151
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
