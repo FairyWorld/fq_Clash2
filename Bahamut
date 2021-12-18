@@ -22,7 +22,7 @@ proxy-groups:
       - other
 proxy-providers:
   # https://sspool.herokuapp.com/clash/proxies?c=DE
-  # https://sspool.herokuapp.com/clash/proxies?nc=CN,JP,US,ZZ,KR,FR,TW,HK&type=ss,ssr,vmess
+  # https://sspool.herokuapp.com/clash/proxies?nc=CN,JP,US,ZZ,KR,FR,TW,HK,MY,NL,RU&type=ss,ssr,vmess
   cn:
     type: http
     url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/provider-cn.yaml"
