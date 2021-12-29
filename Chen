@@ -5,1220 +5,836 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_1', server: 00.cn1.rocketdns.xyz, port: 65000, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_2', server: 00.cn1.rocketdns.xyz, port: 65003, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_3', server: 00.cn2.rocketdns.xyz, port: 65001, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_4', server: 00.cn3.rocketdns.xyz, port: 65002, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_5', server: 00.cn4.rocketdns.xyz, port: 65003, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn4.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_6', server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_7', server: 116.163.10.145, port: 65001, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇩🇰_DK_丹麦_Chen-2021.12.27_8', server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw}
-  - {name: '🇺🇦_UA_乌克兰_Chen-2021.12.27_9', server: 37.19.218.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
-  - {name: '🇺🇦_UA_乌克兰_Chen-2021.12.27_10', server: 37.19.218.197, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER}
-  - {name: '🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11', server: 45.140.169.176, port: 10055, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: '🇧🇬_BG_保加利亚_Chen-2021.12.27_12', server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_13', server: 72.140.224.197, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: '🇸🇬_SG_新加坡_Chen-2021.12.27_14', server: 139.99.62.207, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇸🇬_SG_新加坡_Chen-2021.12.27_15', server: 139.99.62.207, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_16', server: 198.57.27.191, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_17', server: 198.57.27.218, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_18', server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_19', server: 198.57.27.218, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_20', server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_21', server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_22', server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_23', server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.27_24', server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25', server: 45.133.181.58, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF}
-  - {name: '🇮🇳_IN_印度_Chen-2021.12.27_26', server: 169.38.107.52, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_27', server: 00.cn1.rocketdns.xyz, port: 65018, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_28', server: 00.cn2.rocketdns.xyz, port: 65013, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_29', server: 00.cn2.rocketdns.xyz, port: 65018, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_30', server: 00.cn4.rocketdns.xyz, port: 65013, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn4.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_31', server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_32', server: 116.163.10.145, port: 65013, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.10.145}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_33', server: 116.163.14.146, port: 65018, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.14.146}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_34', server: 120.241.72.84, port: 18117, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 0, cipher: auto, tls: false, network: tcp}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_35', server: 120.241.72.84, port: 18118, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 0, cipher: auto, tls: false, network: tcp}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_36', server: 120.241.72.84, port: 18120, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 0, cipher: auto, tls: false, network: tcp}
-  - {name: '🇹🇼_TW_台湾_Chen-2021.12.27_37', server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
-  - {name: '🇲🇽_MX_墨西哥_Chen-2021.12.27_38', server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_39', server: 00.cn1.rocketdns.xyz, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_40', server: 00.cn2.rocketdns.xyz, port: 65015, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_41', server: 00.cn2.rocketdns.xyz, port: 65016, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_42', server: 00.cn3.rocketdns.xyz, port: 65015, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_43', server: 00.cn3.rocketdns.xyz, port: 65016, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_44', server: 00.cn4.rocketdns.xyz, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn4.rocketdns.xyz}}
-  - {name: '🇩🇪_DE_德国_Chen-2021.12.27_45', server: 45.141.152.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: FTvsfXCvXLPFEMKNSADr}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_46', server: 116.163.10.145, port: 65016, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_47', server: 116.163.14.146, port: 65017, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.14.146}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_48', server: gy.jjxcloud.xyz, port: 53232, type: vmess, uuid: 45834822-3b61-3390-9210-d0910e597293, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: gy.jjxcloud.xyz}}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_49', server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: '🇳🇴_NO_挪威_Chen-2021.12.27_50', server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇳🇴_NO_挪威_Chen-2021.12.27_51', server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇳🇴_NO_挪威_Chen-2021.12.27_52', server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇳🇴_NO_挪威_Chen-2021.12.27_53', server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: '🇳🇴_NO_挪威_Chen-2021.12.27_54', server: 46.29.218.6, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_55', server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_56', server: 00.cn2.rocketdns.xyz, port: 65005, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_57', server: 00.cn3.rocketdns.xyz, port: 65005, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_58', server: 00.cn3.rocketdns.xyz, port: 65006, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn3.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_59', server: 00.cn4.rocketdns.xyz, port: 65006, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn4.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_60', server: 120.232.82.190, port: 4001, type: ss, cipher: aes-256-gcm, password: 43e27d84de893cced5b4d6adfd087cff}
-  - {name: '🇯🇵_JP_日本_Chen-2021.12.27_61', server: 172.105.232.147, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇩🇪_DE_德国_Chen-2021.12.27_62', server: 172.105.244.165, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇧🇪_BE_比利时_Chen-2021.12.27_63', server: 77.243.191.178, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 47GH3wQRw7V4Zhd35bFs}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_64', server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_65', server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_66', server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_67', server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_68', server: 145.239.1.137, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_69', server: 145.239.1.137, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_70', server: 145.239.1.137, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_71', server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_72', server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_73', server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_74', server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_75', server: 145.239.1.137, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_76', server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_77', server: 54.38.72.170, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇦🇺_AU_澳大利亚_Chen-2021.12.27_78', server: 172.105.180.227, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_79', server: 00.cn1.rocketdns.xyz, port: 65004, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn1.rocketdns.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_80', server: 00.cn2.rocketdns.xyz, port: 65004, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 00.cn2.rocketdns.xyz}}
-  - {name: '🇭🇰_HK_香港_Chen-2021.12.27_81', server: 8.210.55.79, port: 80, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 8.210.55.79}}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_82', server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_83', server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_84', server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_85', server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_86', server: 96.47.224.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: YDNYJcNdH5xuLrhyr7Fj}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_87', server: 104.223.91.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QKyLzp5JUG6XEGy2wbEE}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_88', server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_89', server: 112.33.32.136, port: 10005, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_90', server: 116.163.10.145, port: 65004, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.10.145}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_91', server: 120.241.72.84, port: 18006, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v12.88host.buzz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_92', server: shcn2-06b.iplc188.com, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_93', server: v11.88host.buzz, port: 18008, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v11.88host.buzz}}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_94', server: 23.19.26.246, port: 10515, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_95', server: 38.68.134.23, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_96', server: 38.68.134.37, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_97', server: 38.75.136.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_98', server: 38.75.136.93, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_99', server: 38.75.136.93, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_100', server: 38.75.136.93, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_101', server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_102', server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_103', server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_104', server: 38.75.137.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_105', server: 45.32.74.74, port: 46269, type: vmess, uuid: 7ec73cc8-6539-11ec-b5cf-560003c186bd, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /mz2pKaiY/, ws-headers: {Host: 45.32.74.74}}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_106', server: 142.4.123.249, port: 500, type: vmess, uuid: 0dcea9f2-10ac-11ec-a0bc-00163cf00cd9, alterId: 0, cipher: auto, tls: false, network: tcp}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_107', server: 142.202.48.52, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_108', server: 142.202.48.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_109', server: 142.202.48.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_110', server: 167.88.63.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_111', server: 167.88.63.28, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_112', server: 167.88.63.89, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇺🇸_US_美国_Chen-2021.12.27_113', server: 167.88.63.108, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: '🇬🇧_GB_英国_Chen-2021.12.27_114', server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇬🇧_GB_英国_Chen-2021.12.27_115', server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇬🇧_GB_英国_Chen-2021.12.27_116', server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇬🇧_GB_英国_Chen-2021.12.27_117', server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: '🇬🇧_GB_英国_Chen-2021.12.27_118', server: 172.99.190.90, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇬🇧_GB_英国_Chen-2021.12.27_119', server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: '🇬🇧_GB_英国_Chen-2021.12.27_120', server: 172.99.190.246, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: '🇮🇳_IN_印度_Chen-2021.12.27_121', server: 192.46.208.123, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇮🇳_IN_印度_Chen-2021.12.27_122', server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: '🇮🇳_IN_印度_Chen-2021.12.27_123', server: 192.46.210.73, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇮🇳_IN_印度_Chen-2021.12.27_124', server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: '🇮🇳_IN_印度_Chen-2021.12.27_125', server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: '🇮🇳_IN_印度_Chen-2021.12.27_126', server: 192.46.210.73, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_127', server: 192.74.254.112, port: 52244, type: vmess, uuid: 015c0894-50e0-11ec-a3e8-00163c57bd9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /E0Y46mSw/, ws-headers: {Host: 192.74.254.112}}
-  - {name: '🇫🇷_FR_法国_Chen-2021.12.27_128', server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
-  - {name: '🇵🇹_PT_葡萄牙_Chen-2021.12.27_129', server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: '🇵🇹_PT_葡萄牙_Chen-2021.12.27_130', server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_131', server: 116.163.14.146, port: 65000, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.14.146}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_132', server: 116.163.14.146, port: 65003, type: vmess, uuid: 1ff21cb2-3b5a-380c-a087-2588077bf214, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /rocket, ws-headers: {Host: 116.163.14.146}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_133', server: 120.197.88.216, port: 20001, type: vmess, uuid: 649f95f3-ab9c-429c-9185-ff5e44b7805d, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_134', server: 120.232.82.190, port: 2010, type: ss, cipher: aes-256-gcm, password: fb3ff83bac9e4aed4a6a7d4a1f321f1a}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_135', server: 120.241.72.84, port: 18005, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: t.me/vpnhat}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_136', server: 120.241.72.84, port: 18008, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v11.88host.buzz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_137', server: 120.241.72.84, port: 18009, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v12.88host.buzz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_138', server: cn.zzv01.infonode.xyz, port: 17011, type: vmess, uuid: ecb2dfcc-d5ec-3bb5-bb03-c22faac98448, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv01.infonode.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_139', server: cn.zzv05.infonode.xyz, port: 17011, type: vmess, uuid: ecb2dfcc-d5ec-3bb5-bb03-c22faac98448, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv05.infonode.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_140', server: cn.zzv06.infonode.xyz, port: 17011, type: vmess, uuid: ecb2dfcc-d5ec-3bb5-bb03-c22faac98448, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv06.infonode.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_141', server: cn.zzv07.infonode.xyz, port: 17011, type: vmess, uuid: ecb2dfcc-d5ec-3bb5-bb03-c22faac98448, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv07.infonode.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_142', server: cn.zzv11.infonode.xyz, port: 17011, type: vmess, uuid: ecb2dfcc-d5ec-3bb5-bb03-c22faac98448, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv11.infonode.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_143', server: cn.zzv12.infonode.xyz, port: 17011, type: vmess, uuid: ecb2dfcc-d5ec-3bb5-bb03-c22faac98448, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv12.infonode.xyz}}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_144', server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
-  - {name: '🇨🇳_CN_中国_Chen-2021.12.27_145', server: v13.88host.buzz, port: 18007, type: vmess, uuid: e842b316-864c-38ed-b26e-31f07add8ddb, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /mojing, ws-headers: {Host: v13.88host.buzz}}
-  - {name: '🇭🇰_HK_香港_Chen-2021.12.27_146', server: 58.152.85.196, port: 2808, type: ss, cipher: aes-256-gcm, password: dbbdb5625d0268ef28240da6d67eb4c0}
-  - {name: '🇲🇾_MY_马来西亚_Chen-2021.12.27_147', server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
+  - {name: '🇨🇳_CN_中国_Chen-2021.12.29_1', server: 120.232.82.190, port: 4001, type: ss, cipher: aes-256-gcm, password: 43e27d84de893cced5b4d6adfd087cff}
+  - {name: '导航频道 TGTBBAD_2', server: jp-am46.eqnode.net, port: 8081, type: ssr, password: "3oaJ5K2Wn", cipher: aes-256-cfb, protocol: origin, obfs: tls1.2_ticket_auth, obfs-param: releases.ubuntu.com}
+  - {name: '白嫖频道 TGfreekankan_3', server: jp-am48-9.eqnode.net, port: 8081, type: ssr, password: "3H2aN5Gnm", cipher: aes-256-cfb, protocol: origin, obfs: tls1.2_ticket_auth}
+  - {name: '🇯🇵_JP_日本_Chen-2021.12.29_4', server: 139.162.116.154, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: '🇯🇵_JP_日本_Chen-2021.12.29_5', server: 172.105.232.147, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇯🇵_JP_日本_Chen-2021.12.29_6', server: 172.105.234.211, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: '🇩🇪_DE_德国_Chen-2021.12.29_7', server: 172.105.244.165, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇩🇰_DK_丹麦_Chen-2021.12.29_8', server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw}
+  - {name: '🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9', server: 45.89.229.126, port: 18000, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-justhost-ru-01.xncloud.xyz}}
+  - {name: '🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10', server: 193.233.85.3, port: 45174, type: vmess, uuid: 14823120-5dc2-11ec-b398-3a571dcc9720, alterId: 0, cipher: auto, tls: false, network: tcp}
+  - {name: '🇧🇬_BG_保加利亚_Chen-2021.12.29_11', server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw}
+  - {name: '🇸🇬_SG_新加坡_Chen-2021.12.29_12', server: 139.99.62.207, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇸🇬_SG_新加坡_Chen-2021.12.29_13', server: 139.99.62.207, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: '🇸🇬_SG_新加坡_Chen-2021.12.29_14', server: 139.99.62.207, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.29_15', server: 198.57.27.184, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.29_16', server: 198.57.27.184, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇨🇦_CA_加拿大_Chen-2021.12.29_17', server: 198.57.27.243, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18', server: 45.133.181.58, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qzj5NqakK4YvYYU87eFF}
+  - {name: '🇹🇼_TW_台湾_Chen-2021.12.29_19', server: 188.214.106.98, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: '🇹🇼_TW_台湾_Chen-2021.12.29_20', server: 188.214.106.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: cNbqVVyUfbJFZ6S8EgRH}
+  - {name: 'n_14台湾∞中转_21', server: gz1.52168.xyz, port: 1101, type: ssr, password: "epChJS35fV", cipher: aes-256-cfb, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 31028:PGgTsb, obfs-param: 87a8531028.baidu.com}
+  - {name: '🇭🇰_HK_香港_Chen-2021.12.29_22', server: hkaz1.biteb-ssx.xyz, port: 14454, type: vmess, uuid: 773b08b5-4c34-31c4-be74-d2cfaf335a25, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: hkaz1.biteb-ssx.xyz}}
+  - {name: '🇲🇽_MX_墨西哥_Chen-2021.12.29_23', server: 169.57.35.97, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 3Q5yYEGGMu8jU2p25aWL}
+  - {name: '🇱🇺_LU_卢森堡_Chen-2021.12.29_24', server: 5.253.204.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qLzS7DF9qRYxJTHfckhC}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_25', server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: '🇩🇪_DE_德国_Chen-2021.12.29_26', server: 193.108.118.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇳🇴_NO_挪威_Chen-2021.12.29_27', server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇳🇴_NO_挪威_Chen-2021.12.29_28', server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇳🇴_NO_挪威_Chen-2021.12.29_29', server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: '🇳🇴_NO_挪威_Chen-2021.12.29_30', server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇳🇴_NO_挪威_Chen-2021.12.29_31', server: 46.29.218.6, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇧🇻_BV_布维岛_Chen-2021.12.29_32', server: 46.29.219.246, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇸🇬_SG_新加坡_Chen-2021.12.29_33', server: 81.90.189.33, port: 889, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz}
+  - {name: '🇸🇬_SG_新加坡_Chen-2021.12.29_34', server: 81.90.189.184, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🇳🇿_NZ_新西兰_Chen-2021.12.29_35', server: 103.108.94.226, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: bFfLrvbG3GjjNSxKBWt5}
+  - {name: '🇩🇪_DE_德国_Chen-2021.12.29_36', server: 172.105.244.165, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇯🇵_JP_日本_Chen-2021.12.29_37', server: 185.160.24.224, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🇧🇪_BE_比利时_Chen-2021.12.29_38', server: 193.9.114.34, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_39', server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_40', server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_41', server: 145.239.1.137, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_42', server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_43', server: 145.239.1.137, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_44', server: 145.239.1.137, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_45', server: 145.239.1.137, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_46', server: 145.239.1.137, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_47', server: 145.239.1.137, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_48', server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: '🇦🇺_AU_澳大利亚_Chen-2021.12.29_49', server: 46.102.153.106, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: dsHq7JmRFhSkvxzCuMFy}
+  - {name: '🇦🇺_AU_澳大利亚_Chen-2021.12.29_50', server: 172.105.171.80, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇦🇺_AU_澳大利亚_Chen-2021.12.29_51', server: 172.105.180.227, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇨🇭_CH_瑞士_Chen-2021.12.29_52', server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS}
+  - {name: '🇫🇷_FR_法国_Chen-2021.12.29_53', server: 188.241.83.130, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_54', server: 18.218.198.254, port: 9999, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 18.218.198.254}}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_55', server: 23.226.131.146, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_56', server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_57', server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_58', server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_59', server: 96.47.224.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: YDNYJcNdH5xuLrhyr7Fj}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_60', server: 104.223.91.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: QKyLzp5JUG6XEGy2wbEE}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_61', server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
+  - {name: '🇨🇳_CN_中国_Chen-2021.12.29_62', server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: fa2c02cf-bbc1-4da0-b051-3731d87ec785, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}}
+  - {name: 'n_57美国∞中转_63', server: gz1.52168.xyz, port: 1111, type: ssr, password: "epChJS35fV", cipher: aes-256-cfb, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 31028:PGgTsb, obfs-param: 87a8531028.baidu.com}
+  - {name: 'n_58美国∞中转_64', server: gz2.52168.xyz, port: 2102, type: ssr, password: "epChJS35fV", cipher: aes-256-cfb, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 31028:PGgTsb, obfs-param: 87a8531028.baidu.com}
+  - {name: '🇯🇵_JP_日本_Chen-2021.12.29_65', server: jpaz3.biteb-ssx.xyz, port: 14464, type: vmess, uuid: 773b08b5-4c34-31c4-be74-d2cfaf335a25, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: index, ws-headers: {Host: jpaz3.biteb-ssx.xyz}}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_66', server: 23.19.26.246, port: 10515, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_67', server: 38.107.226.146, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_68', server: 38.107.226.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_69', server: 38.114.114.67, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_70', server: 38.114.114.68, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇦🇺_AU_澳大利亚_Chen-2021.12.29_71', server: 66.203.112.53, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_72', server: 142.4.123.249, port: 500, type: vmess, uuid: 0dcea9f2-10ac-11ec-a0bc-00163cf00cd9, alterId: 0, cipher: auto, tls: false, network: tcp}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_73', server: 142.202.48.17, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_74', server: 142.202.48.43, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_75', server: 142.202.48.52, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_76', server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_77', server: 167.88.63.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_78', server: 167.88.63.82, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_79', server: 167.88.63.82, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_80', server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_81', server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_82', server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_83', server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_84', server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_85', server: 172.99.190.90, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_86', server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_87', server: 172.99.190.153, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: '🇨🇳_CN_中国_Chen-2021.12.29_88', server: 192.74.254.112, port: 52244, type: vmess, uuid: 015c0894-50e0-11ec-a3e8-00163c57bd9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /E0Y46mSw/, ws-headers: {Host: 192.74.254.112}}
+  - {name: '🇬🇧_GB_英国_Chen-2021.12.29_89', server: 86.106.136.98, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: h6WG7sxsLTBGn7uyvMG8}
+  - {name: 'n_86英国∞中转_90', server: gz1.52168.xyz, port: 1117, type: ssr, password: "epChJS35fV", cipher: aes-256-cfb, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 31028:PGgTsb, obfs-param: 87a8531028.baidu.com}
+  - {name: '🇺🇸_US_美国_Chen-2021.12.29_91', server: 77.247.126.153, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🇦🇪_AE_阿联酋_Chen-2021.12.29_92', server: 109.169.72.239, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: '🇵🇹_PT_葡萄牙_Chen-2021.12.29_93', server: 185.90.57.152, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: '🇵🇹_PT_葡萄牙_Chen-2021.12.29_94', server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
+  - {name: 'n_91韩国∞直连_95', server: kr-am6.eqnode.net, port: 443, type: ssr, password: "abHpSuLdQ", cipher: aes-256-cfb, protocol: origin, obfs: tls1.2_ticket_auth}
+  - {name: '🇨🇳_CN_中国_Chen-2021.12.29_96', server: 112.33.32.136, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
+  - {name: '🇨🇳_CN_中国_Chen-2021.12.29_97', server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, network: tcp}
+  - {name: '🇭🇰_HK_香港_Chen-2021.12.29_98', server: 118.107.244.113, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: '🇲🇾_MY_马来西亚_Chen-2021.12.29_99', server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国_Chen-2021.12.27_1
-      - 🇨🇳_CN_中国_Chen-2021.12.27_2
-      - 🇨🇳_CN_中国_Chen-2021.12.27_3
-      - 🇨🇳_CN_中国_Chen-2021.12.27_4
-      - 🇨🇳_CN_中国_Chen-2021.12.27_5
-      - 🇨🇳_CN_中国_Chen-2021.12.27_6
-      - 🇨🇳_CN_中国_Chen-2021.12.27_7
-      - 🇩🇰_DK_丹麦_Chen-2021.12.27_8
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_9
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_10
-      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11
-      - 🇧🇬_BG_保加利亚_Chen-2021.12.27_12
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_13
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_14
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_15
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_16
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_17
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_18
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_19
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_20
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_21
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_22
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_23
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_24
-      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25
-      - 🇮🇳_IN_印度_Chen-2021.12.27_26
-      - 🇨🇳_CN_中国_Chen-2021.12.27_27
-      - 🇨🇳_CN_中国_Chen-2021.12.27_28
-      - 🇨🇳_CN_中国_Chen-2021.12.27_29
-      - 🇨🇳_CN_中国_Chen-2021.12.27_30
-      - 🇨🇳_CN_中国_Chen-2021.12.27_31
-      - 🇨🇳_CN_中国_Chen-2021.12.27_32
-      - 🇨🇳_CN_中国_Chen-2021.12.27_33
-      - 🇨🇳_CN_中国_Chen-2021.12.27_34
-      - 🇨🇳_CN_中国_Chen-2021.12.27_35
-      - 🇨🇳_CN_中国_Chen-2021.12.27_36
-      - 🇹🇼_TW_台湾_Chen-2021.12.27_37
-      - 🇲🇽_MX_墨西哥_Chen-2021.12.27_38
-      - 🇨🇳_CN_中国_Chen-2021.12.27_39
-      - 🇨🇳_CN_中国_Chen-2021.12.27_40
-      - 🇨🇳_CN_中国_Chen-2021.12.27_41
-      - 🇨🇳_CN_中国_Chen-2021.12.27_42
-      - 🇨🇳_CN_中国_Chen-2021.12.27_43
-      - 🇨🇳_CN_中国_Chen-2021.12.27_44
-      - 🇩🇪_DE_德国_Chen-2021.12.27_45
-      - 🇨🇳_CN_中国_Chen-2021.12.27_46
-      - 🇨🇳_CN_中国_Chen-2021.12.27_47
-      - 🇨🇳_CN_中国_Chen-2021.12.27_48
-      - 🇫🇷_FR_法国_Chen-2021.12.27_49
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_50
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_51
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_52
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_53
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_54
-      - 🇨🇳_CN_中国_Chen-2021.12.27_55
-      - 🇨🇳_CN_中国_Chen-2021.12.27_56
-      - 🇨🇳_CN_中国_Chen-2021.12.27_57
-      - 🇨🇳_CN_中国_Chen-2021.12.27_58
-      - 🇨🇳_CN_中国_Chen-2021.12.27_59
-      - 🇨🇳_CN_中国_Chen-2021.12.27_60
-      - 🇯🇵_JP_日本_Chen-2021.12.27_61
-      - 🇩🇪_DE_德国_Chen-2021.12.27_62
-      - 🇧🇪_BE_比利时_Chen-2021.12.27_63
-      - 🇫🇷_FR_法国_Chen-2021.12.27_64
-      - 🇫🇷_FR_法国_Chen-2021.12.27_65
-      - 🇫🇷_FR_法国_Chen-2021.12.27_66
-      - 🇫🇷_FR_法国_Chen-2021.12.27_67
-      - 🇫🇷_FR_法国_Chen-2021.12.27_68
-      - 🇫🇷_FR_法国_Chen-2021.12.27_69
-      - 🇫🇷_FR_法国_Chen-2021.12.27_70
-      - 🇫🇷_FR_法国_Chen-2021.12.27_71
-      - 🇫🇷_FR_法国_Chen-2021.12.27_72
-      - 🇫🇷_FR_法国_Chen-2021.12.27_73
-      - 🇫🇷_FR_法国_Chen-2021.12.27_74
-      - 🇫🇷_FR_法国_Chen-2021.12.27_75
-      - 🇫🇷_FR_法国_Chen-2021.12.27_76
-      - 🇫🇷_FR_法国_Chen-2021.12.27_77
-      - 🇦🇺_AU_澳大利亚_Chen-2021.12.27_78
-      - 🇨🇳_CN_中国_Chen-2021.12.27_79
-      - 🇨🇳_CN_中国_Chen-2021.12.27_80
-      - 🇭🇰_HK_香港_Chen-2021.12.27_81
-      - 🇺🇸_US_美国_Chen-2021.12.27_82
-      - 🇺🇸_US_美国_Chen-2021.12.27_83
-      - 🇺🇸_US_美国_Chen-2021.12.27_84
-      - 🇺🇸_US_美国_Chen-2021.12.27_85
-      - 🇺🇸_US_美国_Chen-2021.12.27_86
-      - 🇺🇸_US_美国_Chen-2021.12.27_87
-      - 🇺🇸_US_美国_Chen-2021.12.27_88
-      - 🇨🇳_CN_中国_Chen-2021.12.27_89
-      - 🇨🇳_CN_中国_Chen-2021.12.27_90
-      - 🇨🇳_CN_中国_Chen-2021.12.27_91
-      - 🇨🇳_CN_中国_Chen-2021.12.27_92
-      - 🇨🇳_CN_中国_Chen-2021.12.27_93
-      - 🇺🇸_US_美国_Chen-2021.12.27_94
-      - 🇺🇸_US_美国_Chen-2021.12.27_95
-      - 🇺🇸_US_美国_Chen-2021.12.27_96
-      - 🇺🇸_US_美国_Chen-2021.12.27_97
-      - 🇺🇸_US_美国_Chen-2021.12.27_98
-      - 🇺🇸_US_美国_Chen-2021.12.27_99
-      - 🇺🇸_US_美国_Chen-2021.12.27_100
-      - 🇺🇸_US_美国_Chen-2021.12.27_101
-      - 🇺🇸_US_美国_Chen-2021.12.27_102
-      - 🇺🇸_US_美国_Chen-2021.12.27_103
-      - 🇺🇸_US_美国_Chen-2021.12.27_104
-      - 🇺🇸_US_美国_Chen-2021.12.27_105
-      - 🇺🇸_US_美国_Chen-2021.12.27_106
-      - 🇺🇸_US_美国_Chen-2021.12.27_107
-      - 🇺🇸_US_美国_Chen-2021.12.27_108
-      - 🇺🇸_US_美国_Chen-2021.12.27_109
-      - 🇺🇸_US_美国_Chen-2021.12.27_110
-      - 🇺🇸_US_美国_Chen-2021.12.27_111
-      - 🇺🇸_US_美国_Chen-2021.12.27_112
-      - 🇺🇸_US_美国_Chen-2021.12.27_113
-      - 🇬🇧_GB_英国_Chen-2021.12.27_114
-      - 🇬🇧_GB_英国_Chen-2021.12.27_115
-      - 🇬🇧_GB_英国_Chen-2021.12.27_116
-      - 🇬🇧_GB_英国_Chen-2021.12.27_117
-      - 🇬🇧_GB_英国_Chen-2021.12.27_118
-      - 🇬🇧_GB_英国_Chen-2021.12.27_119
-      - 🇬🇧_GB_英国_Chen-2021.12.27_120
-      - 🇮🇳_IN_印度_Chen-2021.12.27_121
-      - 🇮🇳_IN_印度_Chen-2021.12.27_122
-      - 🇮🇳_IN_印度_Chen-2021.12.27_123
-      - 🇮🇳_IN_印度_Chen-2021.12.27_124
-      - 🇮🇳_IN_印度_Chen-2021.12.27_125
-      - 🇮🇳_IN_印度_Chen-2021.12.27_126
-      - 🇨🇳_CN_中国_Chen-2021.12.27_127
-      - 🇫🇷_FR_法国_Chen-2021.12.27_128
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_129
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_130
-      - 🇨🇳_CN_中国_Chen-2021.12.27_131
-      - 🇨🇳_CN_中国_Chen-2021.12.27_132
-      - 🇨🇳_CN_中国_Chen-2021.12.27_133
-      - 🇨🇳_CN_中国_Chen-2021.12.27_134
-      - 🇨🇳_CN_中国_Chen-2021.12.27_135
-      - 🇨🇳_CN_中国_Chen-2021.12.27_136
-      - 🇨🇳_CN_中国_Chen-2021.12.27_137
-      - 🇨🇳_CN_中国_Chen-2021.12.27_138
-      - 🇨🇳_CN_中国_Chen-2021.12.27_139
-      - 🇨🇳_CN_中国_Chen-2021.12.27_140
-      - 🇨🇳_CN_中国_Chen-2021.12.27_141
-      - 🇨🇳_CN_中国_Chen-2021.12.27_142
-      - 🇨🇳_CN_中国_Chen-2021.12.27_143
-      - 🇨🇳_CN_中国_Chen-2021.12.27_144
-      - 🇨🇳_CN_中国_Chen-2021.12.27_145
-      - 🇭🇰_HK_香港_Chen-2021.12.27_146
-      - 🇲🇾_MY_马来西亚_Chen-2021.12.27_147
+      - 🇨🇳_CN_中国_Chen-2021.12.29_1
+      - 导航频道 TGTBBAD_2
+      - 白嫖频道 TGfreekankan_3
+      - 🇯🇵_JP_日本_Chen-2021.12.29_4
+      - 🇯🇵_JP_日本_Chen-2021.12.29_5
+      - 🇯🇵_JP_日本_Chen-2021.12.29_6
+      - 🇩🇪_DE_德国_Chen-2021.12.29_7
+      - 🇩🇰_DK_丹麦_Chen-2021.12.29_8
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10
+      - 🇧🇬_BG_保加利亚_Chen-2021.12.29_11
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_12
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_13
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_14
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_15
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_16
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_17
+      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_19
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_20
+      - n_14台湾∞中转_21
+      - 🇭🇰_HK_香港_Chen-2021.12.29_22
+      - 🇲🇽_MX_墨西哥_Chen-2021.12.29_23
+      - 🇱🇺_LU_卢森堡_Chen-2021.12.29_24
+      - 🇫🇷_FR_法国_Chen-2021.12.29_25
+      - 🇩🇪_DE_德国_Chen-2021.12.29_26
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_27
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_28
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_29
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_30
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_31
+      - 🇧🇻_BV_布维岛_Chen-2021.12.29_32
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_33
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_34
+      - 🇳🇿_NZ_新西兰_Chen-2021.12.29_35
+      - 🇩🇪_DE_德国_Chen-2021.12.29_36
+      - 🇯🇵_JP_日本_Chen-2021.12.29_37
+      - 🇧🇪_BE_比利时_Chen-2021.12.29_38
+      - 🇫🇷_FR_法国_Chen-2021.12.29_39
+      - 🇫🇷_FR_法国_Chen-2021.12.29_40
+      - 🇫🇷_FR_法国_Chen-2021.12.29_41
+      - 🇫🇷_FR_法国_Chen-2021.12.29_42
+      - 🇫🇷_FR_法国_Chen-2021.12.29_43
+      - 🇫🇷_FR_法国_Chen-2021.12.29_44
+      - 🇫🇷_FR_法国_Chen-2021.12.29_45
+      - 🇫🇷_FR_法国_Chen-2021.12.29_46
+      - 🇫🇷_FR_法国_Chen-2021.12.29_47
+      - 🇫🇷_FR_法国_Chen-2021.12.29_48
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_49
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_50
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_51
+      - 🇨🇭_CH_瑞士_Chen-2021.12.29_52
+      - 🇫🇷_FR_法国_Chen-2021.12.29_53
+      - 🇺🇸_US_美国_Chen-2021.12.29_54
+      - 🇺🇸_US_美国_Chen-2021.12.29_55
+      - 🇺🇸_US_美国_Chen-2021.12.29_56
+      - 🇺🇸_US_美国_Chen-2021.12.29_57
+      - 🇺🇸_US_美国_Chen-2021.12.29_58
+      - 🇺🇸_US_美国_Chen-2021.12.29_59
+      - 🇺🇸_US_美国_Chen-2021.12.29_60
+      - 🇺🇸_US_美国_Chen-2021.12.29_61
+      - 🇨🇳_CN_中国_Chen-2021.12.29_62
+      - n_57美国∞中转_63
+      - n_58美国∞中转_64
+      - 🇯🇵_JP_日本_Chen-2021.12.29_65
+      - 🇺🇸_US_美国_Chen-2021.12.29_66
+      - 🇺🇸_US_美国_Chen-2021.12.29_67
+      - 🇺🇸_US_美国_Chen-2021.12.29_68
+      - 🇺🇸_US_美国_Chen-2021.12.29_69
+      - 🇺🇸_US_美国_Chen-2021.12.29_70
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_71
+      - 🇺🇸_US_美国_Chen-2021.12.29_72
+      - 🇺🇸_US_美国_Chen-2021.12.29_73
+      - 🇺🇸_US_美国_Chen-2021.12.29_74
+      - 🇺🇸_US_美国_Chen-2021.12.29_75
+      - 🇺🇸_US_美国_Chen-2021.12.29_76
+      - 🇺🇸_US_美国_Chen-2021.12.29_77
+      - 🇺🇸_US_美国_Chen-2021.12.29_78
+      - 🇺🇸_US_美国_Chen-2021.12.29_79
+      - 🇬🇧_GB_英国_Chen-2021.12.29_80
+      - 🇬🇧_GB_英国_Chen-2021.12.29_81
+      - 🇬🇧_GB_英国_Chen-2021.12.29_82
+      - 🇬🇧_GB_英国_Chen-2021.12.29_83
+      - 🇬🇧_GB_英国_Chen-2021.12.29_84
+      - 🇬🇧_GB_英国_Chen-2021.12.29_85
+      - 🇬🇧_GB_英国_Chen-2021.12.29_86
+      - 🇬🇧_GB_英国_Chen-2021.12.29_87
+      - 🇨🇳_CN_中国_Chen-2021.12.29_88
+      - 🇬🇧_GB_英国_Chen-2021.12.29_89
+      - n_86英国∞中转_90
+      - 🇺🇸_US_美国_Chen-2021.12.29_91
+      - 🇦🇪_AE_阿联酋_Chen-2021.12.29_92
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_93
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_94
+      - n_91韩国∞直连_95
+      - 🇨🇳_CN_中国_Chen-2021.12.29_96
+      - 🇨🇳_CN_中国_Chen-2021.12.29_97
+      - 🇭🇰_HK_香港_Chen-2021.12.29_98
+      - 🇲🇾_MY_马来西亚_Chen-2021.12.29_99
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳_CN_中国_Chen-2021.12.27_1
-      - 🇨🇳_CN_中国_Chen-2021.12.27_2
-      - 🇨🇳_CN_中国_Chen-2021.12.27_3
-      - 🇨🇳_CN_中国_Chen-2021.12.27_4
-      - 🇨🇳_CN_中国_Chen-2021.12.27_5
-      - 🇨🇳_CN_中国_Chen-2021.12.27_6
-      - 🇨🇳_CN_中国_Chen-2021.12.27_7
-      - 🇩🇰_DK_丹麦_Chen-2021.12.27_8
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_9
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_10
-      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11
-      - 🇧🇬_BG_保加利亚_Chen-2021.12.27_12
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_13
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_14
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_15
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_16
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_17
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_18
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_19
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_20
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_21
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_22
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_23
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_24
-      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25
-      - 🇮🇳_IN_印度_Chen-2021.12.27_26
-      - 🇨🇳_CN_中国_Chen-2021.12.27_27
-      - 🇨🇳_CN_中国_Chen-2021.12.27_28
-      - 🇨🇳_CN_中国_Chen-2021.12.27_29
-      - 🇨🇳_CN_中国_Chen-2021.12.27_30
-      - 🇨🇳_CN_中国_Chen-2021.12.27_31
-      - 🇨🇳_CN_中国_Chen-2021.12.27_32
-      - 🇨🇳_CN_中国_Chen-2021.12.27_33
-      - 🇨🇳_CN_中国_Chen-2021.12.27_34
-      - 🇨🇳_CN_中国_Chen-2021.12.27_35
-      - 🇨🇳_CN_中国_Chen-2021.12.27_36
-      - 🇹🇼_TW_台湾_Chen-2021.12.27_37
-      - 🇲🇽_MX_墨西哥_Chen-2021.12.27_38
-      - 🇨🇳_CN_中国_Chen-2021.12.27_39
-      - 🇨🇳_CN_中国_Chen-2021.12.27_40
-      - 🇨🇳_CN_中国_Chen-2021.12.27_41
-      - 🇨🇳_CN_中国_Chen-2021.12.27_42
-      - 🇨🇳_CN_中国_Chen-2021.12.27_43
-      - 🇨🇳_CN_中国_Chen-2021.12.27_44
-      - 🇩🇪_DE_德国_Chen-2021.12.27_45
-      - 🇨🇳_CN_中国_Chen-2021.12.27_46
-      - 🇨🇳_CN_中国_Chen-2021.12.27_47
-      - 🇨🇳_CN_中国_Chen-2021.12.27_48
-      - 🇫🇷_FR_法国_Chen-2021.12.27_49
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_50
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_51
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_52
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_53
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_54
-      - 🇨🇳_CN_中国_Chen-2021.12.27_55
-      - 🇨🇳_CN_中国_Chen-2021.12.27_56
-      - 🇨🇳_CN_中国_Chen-2021.12.27_57
-      - 🇨🇳_CN_中国_Chen-2021.12.27_58
-      - 🇨🇳_CN_中国_Chen-2021.12.27_59
-      - 🇨🇳_CN_中国_Chen-2021.12.27_60
-      - 🇯🇵_JP_日本_Chen-2021.12.27_61
-      - 🇩🇪_DE_德国_Chen-2021.12.27_62
-      - 🇧🇪_BE_比利时_Chen-2021.12.27_63
-      - 🇫🇷_FR_法国_Chen-2021.12.27_64
-      - 🇫🇷_FR_法国_Chen-2021.12.27_65
-      - 🇫🇷_FR_法国_Chen-2021.12.27_66
-      - 🇫🇷_FR_法国_Chen-2021.12.27_67
-      - 🇫🇷_FR_法国_Chen-2021.12.27_68
-      - 🇫🇷_FR_法国_Chen-2021.12.27_69
-      - 🇫🇷_FR_法国_Chen-2021.12.27_70
-      - 🇫🇷_FR_法国_Chen-2021.12.27_71
-      - 🇫🇷_FR_法国_Chen-2021.12.27_72
-      - 🇫🇷_FR_法国_Chen-2021.12.27_73
-      - 🇫🇷_FR_法国_Chen-2021.12.27_74
-      - 🇫🇷_FR_法国_Chen-2021.12.27_75
-      - 🇫🇷_FR_法国_Chen-2021.12.27_76
-      - 🇫🇷_FR_法国_Chen-2021.12.27_77
-      - 🇦🇺_AU_澳大利亚_Chen-2021.12.27_78
-      - 🇨🇳_CN_中国_Chen-2021.12.27_79
-      - 🇨🇳_CN_中国_Chen-2021.12.27_80
-      - 🇭🇰_HK_香港_Chen-2021.12.27_81
-      - 🇺🇸_US_美国_Chen-2021.12.27_82
-      - 🇺🇸_US_美国_Chen-2021.12.27_83
-      - 🇺🇸_US_美国_Chen-2021.12.27_84
-      - 🇺🇸_US_美国_Chen-2021.12.27_85
-      - 🇺🇸_US_美国_Chen-2021.12.27_86
-      - 🇺🇸_US_美国_Chen-2021.12.27_87
-      - 🇺🇸_US_美国_Chen-2021.12.27_88
-      - 🇨🇳_CN_中国_Chen-2021.12.27_89
-      - 🇨🇳_CN_中国_Chen-2021.12.27_90
-      - 🇨🇳_CN_中国_Chen-2021.12.27_91
-      - 🇨🇳_CN_中国_Chen-2021.12.27_92
-      - 🇨🇳_CN_中国_Chen-2021.12.27_93
-      - 🇺🇸_US_美国_Chen-2021.12.27_94
-      - 🇺🇸_US_美国_Chen-2021.12.27_95
-      - 🇺🇸_US_美国_Chen-2021.12.27_96
-      - 🇺🇸_US_美国_Chen-2021.12.27_97
-      - 🇺🇸_US_美国_Chen-2021.12.27_98
-      - 🇺🇸_US_美国_Chen-2021.12.27_99
-      - 🇺🇸_US_美国_Chen-2021.12.27_100
-      - 🇺🇸_US_美国_Chen-2021.12.27_101
-      - 🇺🇸_US_美国_Chen-2021.12.27_102
-      - 🇺🇸_US_美国_Chen-2021.12.27_103
-      - 🇺🇸_US_美国_Chen-2021.12.27_104
-      - 🇺🇸_US_美国_Chen-2021.12.27_105
-      - 🇺🇸_US_美国_Chen-2021.12.27_106
-      - 🇺🇸_US_美国_Chen-2021.12.27_107
-      - 🇺🇸_US_美国_Chen-2021.12.27_108
-      - 🇺🇸_US_美国_Chen-2021.12.27_109
-      - 🇺🇸_US_美国_Chen-2021.12.27_110
-      - 🇺🇸_US_美国_Chen-2021.12.27_111
-      - 🇺🇸_US_美国_Chen-2021.12.27_112
-      - 🇺🇸_US_美国_Chen-2021.12.27_113
-      - 🇬🇧_GB_英国_Chen-2021.12.27_114
-      - 🇬🇧_GB_英国_Chen-2021.12.27_115
-      - 🇬🇧_GB_英国_Chen-2021.12.27_116
-      - 🇬🇧_GB_英国_Chen-2021.12.27_117
-      - 🇬🇧_GB_英国_Chen-2021.12.27_118
-      - 🇬🇧_GB_英国_Chen-2021.12.27_119
-      - 🇬🇧_GB_英国_Chen-2021.12.27_120
-      - 🇮🇳_IN_印度_Chen-2021.12.27_121
-      - 🇮🇳_IN_印度_Chen-2021.12.27_122
-      - 🇮🇳_IN_印度_Chen-2021.12.27_123
-      - 🇮🇳_IN_印度_Chen-2021.12.27_124
-      - 🇮🇳_IN_印度_Chen-2021.12.27_125
-      - 🇮🇳_IN_印度_Chen-2021.12.27_126
-      - 🇨🇳_CN_中国_Chen-2021.12.27_127
-      - 🇫🇷_FR_法国_Chen-2021.12.27_128
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_129
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_130
-      - 🇨🇳_CN_中国_Chen-2021.12.27_131
-      - 🇨🇳_CN_中国_Chen-2021.12.27_132
-      - 🇨🇳_CN_中国_Chen-2021.12.27_133
-      - 🇨🇳_CN_中国_Chen-2021.12.27_134
-      - 🇨🇳_CN_中国_Chen-2021.12.27_135
-      - 🇨🇳_CN_中国_Chen-2021.12.27_136
-      - 🇨🇳_CN_中国_Chen-2021.12.27_137
-      - 🇨🇳_CN_中国_Chen-2021.12.27_138
-      - 🇨🇳_CN_中国_Chen-2021.12.27_139
-      - 🇨🇳_CN_中国_Chen-2021.12.27_140
-      - 🇨🇳_CN_中国_Chen-2021.12.27_141
-      - 🇨🇳_CN_中国_Chen-2021.12.27_142
-      - 🇨🇳_CN_中国_Chen-2021.12.27_143
-      - 🇨🇳_CN_中国_Chen-2021.12.27_144
-      - 🇨🇳_CN_中国_Chen-2021.12.27_145
-      - 🇭🇰_HK_香港_Chen-2021.12.27_146
-      - 🇲🇾_MY_马来西亚_Chen-2021.12.27_147
+      - 🇨🇳_CN_中国_Chen-2021.12.29_1
+      - 导航频道 TGTBBAD_2
+      - 白嫖频道 TGfreekankan_3
+      - 🇯🇵_JP_日本_Chen-2021.12.29_4
+      - 🇯🇵_JP_日本_Chen-2021.12.29_5
+      - 🇯🇵_JP_日本_Chen-2021.12.29_6
+      - 🇩🇪_DE_德国_Chen-2021.12.29_7
+      - 🇩🇰_DK_丹麦_Chen-2021.12.29_8
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10
+      - 🇧🇬_BG_保加利亚_Chen-2021.12.29_11
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_12
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_13
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_14
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_15
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_16
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_17
+      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_19
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_20
+      - n_14台湾∞中转_21
+      - 🇭🇰_HK_香港_Chen-2021.12.29_22
+      - 🇲🇽_MX_墨西哥_Chen-2021.12.29_23
+      - 🇱🇺_LU_卢森堡_Chen-2021.12.29_24
+      - 🇫🇷_FR_法国_Chen-2021.12.29_25
+      - 🇩🇪_DE_德国_Chen-2021.12.29_26
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_27
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_28
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_29
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_30
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_31
+      - 🇧🇻_BV_布维岛_Chen-2021.12.29_32
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_33
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_34
+      - 🇳🇿_NZ_新西兰_Chen-2021.12.29_35
+      - 🇩🇪_DE_德国_Chen-2021.12.29_36
+      - 🇯🇵_JP_日本_Chen-2021.12.29_37
+      - 🇧🇪_BE_比利时_Chen-2021.12.29_38
+      - 🇫🇷_FR_法国_Chen-2021.12.29_39
+      - 🇫🇷_FR_法国_Chen-2021.12.29_40
+      - 🇫🇷_FR_法国_Chen-2021.12.29_41
+      - 🇫🇷_FR_法国_Chen-2021.12.29_42
+      - 🇫🇷_FR_法国_Chen-2021.12.29_43
+      - 🇫🇷_FR_法国_Chen-2021.12.29_44
+      - 🇫🇷_FR_法国_Chen-2021.12.29_45
+      - 🇫🇷_FR_法国_Chen-2021.12.29_46
+      - 🇫🇷_FR_法国_Chen-2021.12.29_47
+      - 🇫🇷_FR_法国_Chen-2021.12.29_48
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_49
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_50
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_51
+      - 🇨🇭_CH_瑞士_Chen-2021.12.29_52
+      - 🇫🇷_FR_法国_Chen-2021.12.29_53
+      - 🇺🇸_US_美国_Chen-2021.12.29_54
+      - 🇺🇸_US_美国_Chen-2021.12.29_55
+      - 🇺🇸_US_美国_Chen-2021.12.29_56
+      - 🇺🇸_US_美国_Chen-2021.12.29_57
+      - 🇺🇸_US_美国_Chen-2021.12.29_58
+      - 🇺🇸_US_美国_Chen-2021.12.29_59
+      - 🇺🇸_US_美国_Chen-2021.12.29_60
+      - 🇺🇸_US_美国_Chen-2021.12.29_61
+      - 🇨🇳_CN_中国_Chen-2021.12.29_62
+      - n_57美国∞中转_63
+      - n_58美国∞中转_64
+      - 🇯🇵_JP_日本_Chen-2021.12.29_65
+      - 🇺🇸_US_美国_Chen-2021.12.29_66
+      - 🇺🇸_US_美国_Chen-2021.12.29_67
+      - 🇺🇸_US_美国_Chen-2021.12.29_68
+      - 🇺🇸_US_美国_Chen-2021.12.29_69
+      - 🇺🇸_US_美国_Chen-2021.12.29_70
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_71
+      - 🇺🇸_US_美国_Chen-2021.12.29_72
+      - 🇺🇸_US_美国_Chen-2021.12.29_73
+      - 🇺🇸_US_美国_Chen-2021.12.29_74
+      - 🇺🇸_US_美国_Chen-2021.12.29_75
+      - 🇺🇸_US_美国_Chen-2021.12.29_76
+      - 🇺🇸_US_美国_Chen-2021.12.29_77
+      - 🇺🇸_US_美国_Chen-2021.12.29_78
+      - 🇺🇸_US_美国_Chen-2021.12.29_79
+      - 🇬🇧_GB_英国_Chen-2021.12.29_80
+      - 🇬🇧_GB_英国_Chen-2021.12.29_81
+      - 🇬🇧_GB_英国_Chen-2021.12.29_82
+      - 🇬🇧_GB_英国_Chen-2021.12.29_83
+      - 🇬🇧_GB_英国_Chen-2021.12.29_84
+      - 🇬🇧_GB_英国_Chen-2021.12.29_85
+      - 🇬🇧_GB_英国_Chen-2021.12.29_86
+      - 🇬🇧_GB_英国_Chen-2021.12.29_87
+      - 🇨🇳_CN_中国_Chen-2021.12.29_88
+      - 🇬🇧_GB_英国_Chen-2021.12.29_89
+      - n_86英国∞中转_90
+      - 🇺🇸_US_美国_Chen-2021.12.29_91
+      - 🇦🇪_AE_阿联酋_Chen-2021.12.29_92
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_93
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_94
+      - n_91韩国∞直连_95
+      - 🇨🇳_CN_中国_Chen-2021.12.29_96
+      - 🇨🇳_CN_中国_Chen-2021.12.29_97
+      - 🇭🇰_HK_香港_Chen-2021.12.29_98
+      - 🇲🇾_MY_马来西亚_Chen-2021.12.29_99
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国_Chen-2021.12.27_1
-      - 🇨🇳_CN_中国_Chen-2021.12.27_2
-      - 🇨🇳_CN_中国_Chen-2021.12.27_3
-      - 🇨🇳_CN_中国_Chen-2021.12.27_4
-      - 🇨🇳_CN_中国_Chen-2021.12.27_5
-      - 🇨🇳_CN_中国_Chen-2021.12.27_6
-      - 🇨🇳_CN_中国_Chen-2021.12.27_7
-      - 🇩🇰_DK_丹麦_Chen-2021.12.27_8
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_9
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_10
-      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11
-      - 🇧🇬_BG_保加利亚_Chen-2021.12.27_12
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_13
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_14
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_15
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_16
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_17
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_18
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_19
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_20
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_21
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_22
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_23
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_24
-      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25
-      - 🇮🇳_IN_印度_Chen-2021.12.27_26
-      - 🇨🇳_CN_中国_Chen-2021.12.27_27
-      - 🇨🇳_CN_中国_Chen-2021.12.27_28
-      - 🇨🇳_CN_中国_Chen-2021.12.27_29
-      - 🇨🇳_CN_中国_Chen-2021.12.27_30
-      - 🇨🇳_CN_中国_Chen-2021.12.27_31
-      - 🇨🇳_CN_中国_Chen-2021.12.27_32
-      - 🇨🇳_CN_中国_Chen-2021.12.27_33
-      - 🇨🇳_CN_中国_Chen-2021.12.27_34
-      - 🇨🇳_CN_中国_Chen-2021.12.27_35
-      - 🇨🇳_CN_中国_Chen-2021.12.27_36
-      - 🇹🇼_TW_台湾_Chen-2021.12.27_37
-      - 🇲🇽_MX_墨西哥_Chen-2021.12.27_38
-      - 🇨🇳_CN_中国_Chen-2021.12.27_39
-      - 🇨🇳_CN_中国_Chen-2021.12.27_40
-      - 🇨🇳_CN_中国_Chen-2021.12.27_41
-      - 🇨🇳_CN_中国_Chen-2021.12.27_42
-      - 🇨🇳_CN_中国_Chen-2021.12.27_43
-      - 🇨🇳_CN_中国_Chen-2021.12.27_44
-      - 🇩🇪_DE_德国_Chen-2021.12.27_45
-      - 🇨🇳_CN_中国_Chen-2021.12.27_46
-      - 🇨🇳_CN_中国_Chen-2021.12.27_47
-      - 🇨🇳_CN_中国_Chen-2021.12.27_48
-      - 🇫🇷_FR_法国_Chen-2021.12.27_49
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_50
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_51
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_52
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_53
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_54
-      - 🇨🇳_CN_中国_Chen-2021.12.27_55
-      - 🇨🇳_CN_中国_Chen-2021.12.27_56
-      - 🇨🇳_CN_中国_Chen-2021.12.27_57
-      - 🇨🇳_CN_中国_Chen-2021.12.27_58
-      - 🇨🇳_CN_中国_Chen-2021.12.27_59
-      - 🇨🇳_CN_中国_Chen-2021.12.27_60
-      - 🇯🇵_JP_日本_Chen-2021.12.27_61
-      - 🇩🇪_DE_德国_Chen-2021.12.27_62
-      - 🇧🇪_BE_比利时_Chen-2021.12.27_63
-      - 🇫🇷_FR_法国_Chen-2021.12.27_64
-      - 🇫🇷_FR_法国_Chen-2021.12.27_65
-      - 🇫🇷_FR_法国_Chen-2021.12.27_66
-      - 🇫🇷_FR_法国_Chen-2021.12.27_67
-      - 🇫🇷_FR_法国_Chen-2021.12.27_68
-      - 🇫🇷_FR_法国_Chen-2021.12.27_69
-      - 🇫🇷_FR_法国_Chen-2021.12.27_70
-      - 🇫🇷_FR_法国_Chen-2021.12.27_71
-      - 🇫🇷_FR_法国_Chen-2021.12.27_72
-      - 🇫🇷_FR_法国_Chen-2021.12.27_73
-      - 🇫🇷_FR_法国_Chen-2021.12.27_74
-      - 🇫🇷_FR_法国_Chen-2021.12.27_75
-      - 🇫🇷_FR_法国_Chen-2021.12.27_76
-      - 🇫🇷_FR_法国_Chen-2021.12.27_77
-      - 🇦🇺_AU_澳大利亚_Chen-2021.12.27_78
-      - 🇨🇳_CN_中国_Chen-2021.12.27_79
-      - 🇨🇳_CN_中国_Chen-2021.12.27_80
-      - 🇭🇰_HK_香港_Chen-2021.12.27_81
-      - 🇺🇸_US_美国_Chen-2021.12.27_82
-      - 🇺🇸_US_美国_Chen-2021.12.27_83
-      - 🇺🇸_US_美国_Chen-2021.12.27_84
-      - 🇺🇸_US_美国_Chen-2021.12.27_85
-      - 🇺🇸_US_美国_Chen-2021.12.27_86
-      - 🇺🇸_US_美国_Chen-2021.12.27_87
-      - 🇺🇸_US_美国_Chen-2021.12.27_88
-      - 🇨🇳_CN_中国_Chen-2021.12.27_89
-      - 🇨🇳_CN_中国_Chen-2021.12.27_90
-      - 🇨🇳_CN_中国_Chen-2021.12.27_91
-      - 🇨🇳_CN_中国_Chen-2021.12.27_92
-      - 🇨🇳_CN_中国_Chen-2021.12.27_93
-      - 🇺🇸_US_美国_Chen-2021.12.27_94
-      - 🇺🇸_US_美国_Chen-2021.12.27_95
-      - 🇺🇸_US_美国_Chen-2021.12.27_96
-      - 🇺🇸_US_美国_Chen-2021.12.27_97
-      - 🇺🇸_US_美国_Chen-2021.12.27_98
-      - 🇺🇸_US_美国_Chen-2021.12.27_99
-      - 🇺🇸_US_美国_Chen-2021.12.27_100
-      - 🇺🇸_US_美国_Chen-2021.12.27_101
-      - 🇺🇸_US_美国_Chen-2021.12.27_102
-      - 🇺🇸_US_美国_Chen-2021.12.27_103
-      - 🇺🇸_US_美国_Chen-2021.12.27_104
-      - 🇺🇸_US_美国_Chen-2021.12.27_105
-      - 🇺🇸_US_美国_Chen-2021.12.27_106
-      - 🇺🇸_US_美国_Chen-2021.12.27_107
-      - 🇺🇸_US_美国_Chen-2021.12.27_108
-      - 🇺🇸_US_美国_Chen-2021.12.27_109
-      - 🇺🇸_US_美国_Chen-2021.12.27_110
-      - 🇺🇸_US_美国_Chen-2021.12.27_111
-      - 🇺🇸_US_美国_Chen-2021.12.27_112
-      - 🇺🇸_US_美国_Chen-2021.12.27_113
-      - 🇬🇧_GB_英国_Chen-2021.12.27_114
-      - 🇬🇧_GB_英国_Chen-2021.12.27_115
-      - 🇬🇧_GB_英国_Chen-2021.12.27_116
-      - 🇬🇧_GB_英国_Chen-2021.12.27_117
-      - 🇬🇧_GB_英国_Chen-2021.12.27_118
-      - 🇬🇧_GB_英国_Chen-2021.12.27_119
-      - 🇬🇧_GB_英国_Chen-2021.12.27_120
-      - 🇮🇳_IN_印度_Chen-2021.12.27_121
-      - 🇮🇳_IN_印度_Chen-2021.12.27_122
-      - 🇮🇳_IN_印度_Chen-2021.12.27_123
-      - 🇮🇳_IN_印度_Chen-2021.12.27_124
-      - 🇮🇳_IN_印度_Chen-2021.12.27_125
-      - 🇮🇳_IN_印度_Chen-2021.12.27_126
-      - 🇨🇳_CN_中国_Chen-2021.12.27_127
-      - 🇫🇷_FR_法国_Chen-2021.12.27_128
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_129
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_130
-      - 🇨🇳_CN_中国_Chen-2021.12.27_131
-      - 🇨🇳_CN_中国_Chen-2021.12.27_132
-      - 🇨🇳_CN_中国_Chen-2021.12.27_133
-      - 🇨🇳_CN_中国_Chen-2021.12.27_134
-      - 🇨🇳_CN_中国_Chen-2021.12.27_135
-      - 🇨🇳_CN_中国_Chen-2021.12.27_136
-      - 🇨🇳_CN_中国_Chen-2021.12.27_137
-      - 🇨🇳_CN_中国_Chen-2021.12.27_138
-      - 🇨🇳_CN_中国_Chen-2021.12.27_139
-      - 🇨🇳_CN_中国_Chen-2021.12.27_140
-      - 🇨🇳_CN_中国_Chen-2021.12.27_141
-      - 🇨🇳_CN_中国_Chen-2021.12.27_142
-      - 🇨🇳_CN_中国_Chen-2021.12.27_143
-      - 🇨🇳_CN_中国_Chen-2021.12.27_144
-      - 🇨🇳_CN_中国_Chen-2021.12.27_145
-      - 🇭🇰_HK_香港_Chen-2021.12.27_146
-      - 🇲🇾_MY_马来西亚_Chen-2021.12.27_147
+      - 🇨🇳_CN_中国_Chen-2021.12.29_1
+      - 导航频道 TGTBBAD_2
+      - 白嫖频道 TGfreekankan_3
+      - 🇯🇵_JP_日本_Chen-2021.12.29_4
+      - 🇯🇵_JP_日本_Chen-2021.12.29_5
+      - 🇯🇵_JP_日本_Chen-2021.12.29_6
+      - 🇩🇪_DE_德国_Chen-2021.12.29_7
+      - 🇩🇰_DK_丹麦_Chen-2021.12.29_8
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10
+      - 🇧🇬_BG_保加利亚_Chen-2021.12.29_11
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_12
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_13
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_14
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_15
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_16
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_17
+      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_19
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_20
+      - n_14台湾∞中转_21
+      - 🇭🇰_HK_香港_Chen-2021.12.29_22
+      - 🇲🇽_MX_墨西哥_Chen-2021.12.29_23
+      - 🇱🇺_LU_卢森堡_Chen-2021.12.29_24
+      - 🇫🇷_FR_法国_Chen-2021.12.29_25
+      - 🇩🇪_DE_德国_Chen-2021.12.29_26
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_27
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_28
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_29
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_30
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_31
+      - 🇧🇻_BV_布维岛_Chen-2021.12.29_32
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_33
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_34
+      - 🇳🇿_NZ_新西兰_Chen-2021.12.29_35
+      - 🇩🇪_DE_德国_Chen-2021.12.29_36
+      - 🇯🇵_JP_日本_Chen-2021.12.29_37
+      - 🇧🇪_BE_比利时_Chen-2021.12.29_38
+      - 🇫🇷_FR_法国_Chen-2021.12.29_39
+      - 🇫🇷_FR_法国_Chen-2021.12.29_40
+      - 🇫🇷_FR_法国_Chen-2021.12.29_41
+      - 🇫🇷_FR_法国_Chen-2021.12.29_42
+      - 🇫🇷_FR_法国_Chen-2021.12.29_43
+      - 🇫🇷_FR_法国_Chen-2021.12.29_44
+      - 🇫🇷_FR_法国_Chen-2021.12.29_45
+      - 🇫🇷_FR_法国_Chen-2021.12.29_46
+      - 🇫🇷_FR_法国_Chen-2021.12.29_47
+      - 🇫🇷_FR_法国_Chen-2021.12.29_48
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_49
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_50
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_51
+      - 🇨🇭_CH_瑞士_Chen-2021.12.29_52
+      - 🇫🇷_FR_法国_Chen-2021.12.29_53
+      - 🇺🇸_US_美国_Chen-2021.12.29_54
+      - 🇺🇸_US_美国_Chen-2021.12.29_55
+      - 🇺🇸_US_美国_Chen-2021.12.29_56
+      - 🇺🇸_US_美国_Chen-2021.12.29_57
+      - 🇺🇸_US_美国_Chen-2021.12.29_58
+      - 🇺🇸_US_美国_Chen-2021.12.29_59
+      - 🇺🇸_US_美国_Chen-2021.12.29_60
+      - 🇺🇸_US_美国_Chen-2021.12.29_61
+      - 🇨🇳_CN_中国_Chen-2021.12.29_62
+      - n_57美国∞中转_63
+      - n_58美国∞中转_64
+      - 🇯🇵_JP_日本_Chen-2021.12.29_65
+      - 🇺🇸_US_美国_Chen-2021.12.29_66
+      - 🇺🇸_US_美国_Chen-2021.12.29_67
+      - 🇺🇸_US_美国_Chen-2021.12.29_68
+      - 🇺🇸_US_美国_Chen-2021.12.29_69
+      - 🇺🇸_US_美国_Chen-2021.12.29_70
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_71
+      - 🇺🇸_US_美国_Chen-2021.12.29_72
+      - 🇺🇸_US_美国_Chen-2021.12.29_73
+      - 🇺🇸_US_美国_Chen-2021.12.29_74
+      - 🇺🇸_US_美国_Chen-2021.12.29_75
+      - 🇺🇸_US_美国_Chen-2021.12.29_76
+      - 🇺🇸_US_美国_Chen-2021.12.29_77
+      - 🇺🇸_US_美国_Chen-2021.12.29_78
+      - 🇺🇸_US_美国_Chen-2021.12.29_79
+      - 🇬🇧_GB_英国_Chen-2021.12.29_80
+      - 🇬🇧_GB_英国_Chen-2021.12.29_81
+      - 🇬🇧_GB_英国_Chen-2021.12.29_82
+      - 🇬🇧_GB_英国_Chen-2021.12.29_83
+      - 🇬🇧_GB_英国_Chen-2021.12.29_84
+      - 🇬🇧_GB_英国_Chen-2021.12.29_85
+      - 🇬🇧_GB_英国_Chen-2021.12.29_86
+      - 🇬🇧_GB_英国_Chen-2021.12.29_87
+      - 🇨🇳_CN_中国_Chen-2021.12.29_88
+      - 🇬🇧_GB_英国_Chen-2021.12.29_89
+      - n_86英国∞中转_90
+      - 🇺🇸_US_美国_Chen-2021.12.29_91
+      - 🇦🇪_AE_阿联酋_Chen-2021.12.29_92
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_93
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_94
+      - n_91韩国∞直连_95
+      - 🇨🇳_CN_中国_Chen-2021.12.29_96
+      - 🇨🇳_CN_中国_Chen-2021.12.29_97
+      - 🇭🇰_HK_香港_Chen-2021.12.29_98
+      - 🇲🇾_MY_马来西亚_Chen-2021.12.29_99
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳_CN_中国_Chen-2021.12.27_1
-      - 🇨🇳_CN_中国_Chen-2021.12.27_2
-      - 🇨🇳_CN_中国_Chen-2021.12.27_3
-      - 🇨🇳_CN_中国_Chen-2021.12.27_4
-      - 🇨🇳_CN_中国_Chen-2021.12.27_5
-      - 🇨🇳_CN_中国_Chen-2021.12.27_6
-      - 🇨🇳_CN_中国_Chen-2021.12.27_7
-      - 🇩🇰_DK_丹麦_Chen-2021.12.27_8
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_9
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_10
-      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11
-      - 🇧🇬_BG_保加利亚_Chen-2021.12.27_12
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_13
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_14
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_15
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_16
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_17
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_18
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_19
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_20
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_21
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_22
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_23
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_24
-      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25
-      - 🇮🇳_IN_印度_Chen-2021.12.27_26
-      - 🇨🇳_CN_中国_Chen-2021.12.27_27
-      - 🇨🇳_CN_中国_Chen-2021.12.27_28
-      - 🇨🇳_CN_中国_Chen-2021.12.27_29
-      - 🇨🇳_CN_中国_Chen-2021.12.27_30
-      - 🇨🇳_CN_中国_Chen-2021.12.27_31
-      - 🇨🇳_CN_中国_Chen-2021.12.27_32
-      - 🇨🇳_CN_中国_Chen-2021.12.27_33
-      - 🇨🇳_CN_中国_Chen-2021.12.27_34
-      - 🇨🇳_CN_中国_Chen-2021.12.27_35
-      - 🇨🇳_CN_中国_Chen-2021.12.27_36
-      - 🇹🇼_TW_台湾_Chen-2021.12.27_37
-      - 🇲🇽_MX_墨西哥_Chen-2021.12.27_38
-      - 🇨🇳_CN_中国_Chen-2021.12.27_39
-      - 🇨🇳_CN_中国_Chen-2021.12.27_40
-      - 🇨🇳_CN_中国_Chen-2021.12.27_41
-      - 🇨🇳_CN_中国_Chen-2021.12.27_42
-      - 🇨🇳_CN_中国_Chen-2021.12.27_43
-      - 🇨🇳_CN_中国_Chen-2021.12.27_44
-      - 🇩🇪_DE_德国_Chen-2021.12.27_45
-      - 🇨🇳_CN_中国_Chen-2021.12.27_46
-      - 🇨🇳_CN_中国_Chen-2021.12.27_47
-      - 🇨🇳_CN_中国_Chen-2021.12.27_48
-      - 🇫🇷_FR_法国_Chen-2021.12.27_49
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_50
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_51
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_52
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_53
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_54
-      - 🇨🇳_CN_中国_Chen-2021.12.27_55
-      - 🇨🇳_CN_中国_Chen-2021.12.27_56
-      - 🇨🇳_CN_中国_Chen-2021.12.27_57
-      - 🇨🇳_CN_中国_Chen-2021.12.27_58
-      - 🇨🇳_CN_中国_Chen-2021.12.27_59
-      - 🇨🇳_CN_中国_Chen-2021.12.27_60
-      - 🇯🇵_JP_日本_Chen-2021.12.27_61
-      - 🇩🇪_DE_德国_Chen-2021.12.27_62
-      - 🇧🇪_BE_比利时_Chen-2021.12.27_63
-      - 🇫🇷_FR_法国_Chen-2021.12.27_64
-      - 🇫🇷_FR_法国_Chen-2021.12.27_65
-      - 🇫🇷_FR_法国_Chen-2021.12.27_66
-      - 🇫🇷_FR_法国_Chen-2021.12.27_67
-      - 🇫🇷_FR_法国_Chen-2021.12.27_68
-      - 🇫🇷_FR_法国_Chen-2021.12.27_69
-      - 🇫🇷_FR_法国_Chen-2021.12.27_70
-      - 🇫🇷_FR_法国_Chen-2021.12.27_71
-      - 🇫🇷_FR_法国_Chen-2021.12.27_72
-      - 🇫🇷_FR_法国_Chen-2021.12.27_73
-      - 🇫🇷_FR_法国_Chen-2021.12.27_74
-      - 🇫🇷_FR_法国_Chen-2021.12.27_75
-      - 🇫🇷_FR_法国_Chen-2021.12.27_76
-      - 🇫🇷_FR_法国_Chen-2021.12.27_77
-      - 🇦🇺_AU_澳大利亚_Chen-2021.12.27_78
-      - 🇨🇳_CN_中国_Chen-2021.12.27_79
-      - 🇨🇳_CN_中国_Chen-2021.12.27_80
-      - 🇭🇰_HK_香港_Chen-2021.12.27_81
-      - 🇺🇸_US_美国_Chen-2021.12.27_82
-      - 🇺🇸_US_美国_Chen-2021.12.27_83
-      - 🇺🇸_US_美国_Chen-2021.12.27_84
-      - 🇺🇸_US_美国_Chen-2021.12.27_85
-      - 🇺🇸_US_美国_Chen-2021.12.27_86
-      - 🇺🇸_US_美国_Chen-2021.12.27_87
-      - 🇺🇸_US_美国_Chen-2021.12.27_88
-      - 🇨🇳_CN_中国_Chen-2021.12.27_89
-      - 🇨🇳_CN_中国_Chen-2021.12.27_90
-      - 🇨🇳_CN_中国_Chen-2021.12.27_91
-      - 🇨🇳_CN_中国_Chen-2021.12.27_92
-      - 🇨🇳_CN_中国_Chen-2021.12.27_93
-      - 🇺🇸_US_美国_Chen-2021.12.27_94
-      - 🇺🇸_US_美国_Chen-2021.12.27_95
-      - 🇺🇸_US_美国_Chen-2021.12.27_96
-      - 🇺🇸_US_美国_Chen-2021.12.27_97
-      - 🇺🇸_US_美国_Chen-2021.12.27_98
-      - 🇺🇸_US_美国_Chen-2021.12.27_99
-      - 🇺🇸_US_美国_Chen-2021.12.27_100
-      - 🇺🇸_US_美国_Chen-2021.12.27_101
-      - 🇺🇸_US_美国_Chen-2021.12.27_102
-      - 🇺🇸_US_美国_Chen-2021.12.27_103
-      - 🇺🇸_US_美国_Chen-2021.12.27_104
-      - 🇺🇸_US_美国_Chen-2021.12.27_105
-      - 🇺🇸_US_美国_Chen-2021.12.27_106
-      - 🇺🇸_US_美国_Chen-2021.12.27_107
-      - 🇺🇸_US_美国_Chen-2021.12.27_108
-      - 🇺🇸_US_美国_Chen-2021.12.27_109
-      - 🇺🇸_US_美国_Chen-2021.12.27_110
-      - 🇺🇸_US_美国_Chen-2021.12.27_111
-      - 🇺🇸_US_美国_Chen-2021.12.27_112
-      - 🇺🇸_US_美国_Chen-2021.12.27_113
-      - 🇬🇧_GB_英国_Chen-2021.12.27_114
-      - 🇬🇧_GB_英国_Chen-2021.12.27_115
-      - 🇬🇧_GB_英国_Chen-2021.12.27_116
-      - 🇬🇧_GB_英国_Chen-2021.12.27_117
-      - 🇬🇧_GB_英国_Chen-2021.12.27_118
-      - 🇬🇧_GB_英国_Chen-2021.12.27_119
-      - 🇬🇧_GB_英国_Chen-2021.12.27_120
-      - 🇮🇳_IN_印度_Chen-2021.12.27_121
-      - 🇮🇳_IN_印度_Chen-2021.12.27_122
-      - 🇮🇳_IN_印度_Chen-2021.12.27_123
-      - 🇮🇳_IN_印度_Chen-2021.12.27_124
-      - 🇮🇳_IN_印度_Chen-2021.12.27_125
-      - 🇮🇳_IN_印度_Chen-2021.12.27_126
-      - 🇨🇳_CN_中国_Chen-2021.12.27_127
-      - 🇫🇷_FR_法国_Chen-2021.12.27_128
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_129
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_130
-      - 🇨🇳_CN_中国_Chen-2021.12.27_131
-      - 🇨🇳_CN_中国_Chen-2021.12.27_132
-      - 🇨🇳_CN_中国_Chen-2021.12.27_133
-      - 🇨🇳_CN_中国_Chen-2021.12.27_134
-      - 🇨🇳_CN_中国_Chen-2021.12.27_135
-      - 🇨🇳_CN_中国_Chen-2021.12.27_136
-      - 🇨🇳_CN_中国_Chen-2021.12.27_137
-      - 🇨🇳_CN_中国_Chen-2021.12.27_138
-      - 🇨🇳_CN_中国_Chen-2021.12.27_139
-      - 🇨🇳_CN_中国_Chen-2021.12.27_140
-      - 🇨🇳_CN_中国_Chen-2021.12.27_141
-      - 🇨🇳_CN_中国_Chen-2021.12.27_142
-      - 🇨🇳_CN_中国_Chen-2021.12.27_143
-      - 🇨🇳_CN_中国_Chen-2021.12.27_144
-      - 🇨🇳_CN_中国_Chen-2021.12.27_145
-      - 🇭🇰_HK_香港_Chen-2021.12.27_146
-      - 🇲🇾_MY_马来西亚_Chen-2021.12.27_147
+      - 🇨🇳_CN_中国_Chen-2021.12.29_1
+      - 导航频道 TGTBBAD_2
+      - 白嫖频道 TGfreekankan_3
+      - 🇯🇵_JP_日本_Chen-2021.12.29_4
+      - 🇯🇵_JP_日本_Chen-2021.12.29_5
+      - 🇯🇵_JP_日本_Chen-2021.12.29_6
+      - 🇩🇪_DE_德国_Chen-2021.12.29_7
+      - 🇩🇰_DK_丹麦_Chen-2021.12.29_8
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10
+      - 🇧🇬_BG_保加利亚_Chen-2021.12.29_11
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_12
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_13
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_14
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_15
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_16
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_17
+      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_19
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_20
+      - n_14台湾∞中转_21
+      - 🇭🇰_HK_香港_Chen-2021.12.29_22
+      - 🇲🇽_MX_墨西哥_Chen-2021.12.29_23
+      - 🇱🇺_LU_卢森堡_Chen-2021.12.29_24
+      - 🇫🇷_FR_法国_Chen-2021.12.29_25
+      - 🇩🇪_DE_德国_Chen-2021.12.29_26
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_27
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_28
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_29
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_30
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_31
+      - 🇧🇻_BV_布维岛_Chen-2021.12.29_32
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_33
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_34
+      - 🇳🇿_NZ_新西兰_Chen-2021.12.29_35
+      - 🇩🇪_DE_德国_Chen-2021.12.29_36
+      - 🇯🇵_JP_日本_Chen-2021.12.29_37
+      - 🇧🇪_BE_比利时_Chen-2021.12.29_38
+      - 🇫🇷_FR_法国_Chen-2021.12.29_39
+      - 🇫🇷_FR_法国_Chen-2021.12.29_40
+      - 🇫🇷_FR_法国_Chen-2021.12.29_41
+      - 🇫🇷_FR_法国_Chen-2021.12.29_42
+      - 🇫🇷_FR_法国_Chen-2021.12.29_43
+      - 🇫🇷_FR_法国_Chen-2021.12.29_44
+      - 🇫🇷_FR_法国_Chen-2021.12.29_45
+      - 🇫🇷_FR_法国_Chen-2021.12.29_46
+      - 🇫🇷_FR_法国_Chen-2021.12.29_47
+      - 🇫🇷_FR_法国_Chen-2021.12.29_48
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_49
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_50
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_51
+      - 🇨🇭_CH_瑞士_Chen-2021.12.29_52
+      - 🇫🇷_FR_法国_Chen-2021.12.29_53
+      - 🇺🇸_US_美国_Chen-2021.12.29_54
+      - 🇺🇸_US_美国_Chen-2021.12.29_55
+      - 🇺🇸_US_美国_Chen-2021.12.29_56
+      - 🇺🇸_US_美国_Chen-2021.12.29_57
+      - 🇺🇸_US_美国_Chen-2021.12.29_58
+      - 🇺🇸_US_美国_Chen-2021.12.29_59
+      - 🇺🇸_US_美国_Chen-2021.12.29_60
+      - 🇺🇸_US_美国_Chen-2021.12.29_61
+      - 🇨🇳_CN_中国_Chen-2021.12.29_62
+      - n_57美国∞中转_63
+      - n_58美国∞中转_64
+      - 🇯🇵_JP_日本_Chen-2021.12.29_65
+      - 🇺🇸_US_美国_Chen-2021.12.29_66
+      - 🇺🇸_US_美国_Chen-2021.12.29_67
+      - 🇺🇸_US_美国_Chen-2021.12.29_68
+      - 🇺🇸_US_美国_Chen-2021.12.29_69
+      - 🇺🇸_US_美国_Chen-2021.12.29_70
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_71
+      - 🇺🇸_US_美国_Chen-2021.12.29_72
+      - 🇺🇸_US_美国_Chen-2021.12.29_73
+      - 🇺🇸_US_美国_Chen-2021.12.29_74
+      - 🇺🇸_US_美国_Chen-2021.12.29_75
+      - 🇺🇸_US_美国_Chen-2021.12.29_76
+      - 🇺🇸_US_美国_Chen-2021.12.29_77
+      - 🇺🇸_US_美国_Chen-2021.12.29_78
+      - 🇺🇸_US_美国_Chen-2021.12.29_79
+      - 🇬🇧_GB_英国_Chen-2021.12.29_80
+      - 🇬🇧_GB_英国_Chen-2021.12.29_81
+      - 🇬🇧_GB_英国_Chen-2021.12.29_82
+      - 🇬🇧_GB_英国_Chen-2021.12.29_83
+      - 🇬🇧_GB_英国_Chen-2021.12.29_84
+      - 🇬🇧_GB_英国_Chen-2021.12.29_85
+      - 🇬🇧_GB_英国_Chen-2021.12.29_86
+      - 🇬🇧_GB_英国_Chen-2021.12.29_87
+      - 🇨🇳_CN_中国_Chen-2021.12.29_88
+      - 🇬🇧_GB_英国_Chen-2021.12.29_89
+      - n_86英国∞中转_90
+      - 🇺🇸_US_美国_Chen-2021.12.29_91
+      - 🇦🇪_AE_阿联酋_Chen-2021.12.29_92
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_93
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_94
+      - n_91韩国∞直连_95
+      - 🇨🇳_CN_中国_Chen-2021.12.29_96
+      - 🇨🇳_CN_中国_Chen-2021.12.29_97
+      - 🇭🇰_HK_香港_Chen-2021.12.29_98
+      - 🇲🇾_MY_马来西亚_Chen-2021.12.29_99
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳_CN_中国_Chen-2021.12.27_1
-      - 🇨🇳_CN_中国_Chen-2021.12.27_2
-      - 🇨🇳_CN_中国_Chen-2021.12.27_3
-      - 🇨🇳_CN_中国_Chen-2021.12.27_4
-      - 🇨🇳_CN_中国_Chen-2021.12.27_5
-      - 🇨🇳_CN_中国_Chen-2021.12.27_6
-      - 🇨🇳_CN_中国_Chen-2021.12.27_7
-      - 🇩🇰_DK_丹麦_Chen-2021.12.27_8
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_9
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_10
-      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11
-      - 🇧🇬_BG_保加利亚_Chen-2021.12.27_12
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_13
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_14
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_15
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_16
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_17
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_18
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_19
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_20
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_21
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_22
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_23
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_24
-      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25
-      - 🇮🇳_IN_印度_Chen-2021.12.27_26
-      - 🇨🇳_CN_中国_Chen-2021.12.27_27
-      - 🇨🇳_CN_中国_Chen-2021.12.27_28
-      - 🇨🇳_CN_中国_Chen-2021.12.27_29
-      - 🇨🇳_CN_中国_Chen-2021.12.27_30
-      - 🇨🇳_CN_中国_Chen-2021.12.27_31
-      - 🇨🇳_CN_中国_Chen-2021.12.27_32
-      - 🇨🇳_CN_中国_Chen-2021.12.27_33
-      - 🇨🇳_CN_中国_Chen-2021.12.27_34
-      - 🇨🇳_CN_中国_Chen-2021.12.27_35
-      - 🇨🇳_CN_中国_Chen-2021.12.27_36
-      - 🇹🇼_TW_台湾_Chen-2021.12.27_37
-      - 🇲🇽_MX_墨西哥_Chen-2021.12.27_38
-      - 🇨🇳_CN_中国_Chen-2021.12.27_39
-      - 🇨🇳_CN_中国_Chen-2021.12.27_40
-      - 🇨🇳_CN_中国_Chen-2021.12.27_41
-      - 🇨🇳_CN_中国_Chen-2021.12.27_42
-      - 🇨🇳_CN_中国_Chen-2021.12.27_43
-      - 🇨🇳_CN_中国_Chen-2021.12.27_44
-      - 🇩🇪_DE_德国_Chen-2021.12.27_45
-      - 🇨🇳_CN_中国_Chen-2021.12.27_46
-      - 🇨🇳_CN_中国_Chen-2021.12.27_47
-      - 🇨🇳_CN_中国_Chen-2021.12.27_48
-      - 🇫🇷_FR_法国_Chen-2021.12.27_49
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_50
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_51
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_52
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_53
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_54
-      - 🇨🇳_CN_中国_Chen-2021.12.27_55
-      - 🇨🇳_CN_中国_Chen-2021.12.27_56
-      - 🇨🇳_CN_中国_Chen-2021.12.27_57
-      - 🇨🇳_CN_中国_Chen-2021.12.27_58
-      - 🇨🇳_CN_中国_Chen-2021.12.27_59
-      - 🇨🇳_CN_中国_Chen-2021.12.27_60
-      - 🇯🇵_JP_日本_Chen-2021.12.27_61
-      - 🇩🇪_DE_德国_Chen-2021.12.27_62
-      - 🇧🇪_BE_比利时_Chen-2021.12.27_63
-      - 🇫🇷_FR_法国_Chen-2021.12.27_64
-      - 🇫🇷_FR_法国_Chen-2021.12.27_65
-      - 🇫🇷_FR_法国_Chen-2021.12.27_66
-      - 🇫🇷_FR_法国_Chen-2021.12.27_67
-      - 🇫🇷_FR_法国_Chen-2021.12.27_68
-      - 🇫🇷_FR_法国_Chen-2021.12.27_69
-      - 🇫🇷_FR_法国_Chen-2021.12.27_70
-      - 🇫🇷_FR_法国_Chen-2021.12.27_71
-      - 🇫🇷_FR_法国_Chen-2021.12.27_72
-      - 🇫🇷_FR_法国_Chen-2021.12.27_73
-      - 🇫🇷_FR_法国_Chen-2021.12.27_74
-      - 🇫🇷_FR_法国_Chen-2021.12.27_75
-      - 🇫🇷_FR_法国_Chen-2021.12.27_76
-      - 🇫🇷_FR_法国_Chen-2021.12.27_77
-      - 🇦🇺_AU_澳大利亚_Chen-2021.12.27_78
-      - 🇨🇳_CN_中国_Chen-2021.12.27_79
-      - 🇨🇳_CN_中国_Chen-2021.12.27_80
-      - 🇭🇰_HK_香港_Chen-2021.12.27_81
-      - 🇺🇸_US_美国_Chen-2021.12.27_82
-      - 🇺🇸_US_美国_Chen-2021.12.27_83
-      - 🇺🇸_US_美国_Chen-2021.12.27_84
-      - 🇺🇸_US_美国_Chen-2021.12.27_85
-      - 🇺🇸_US_美国_Chen-2021.12.27_86
-      - 🇺🇸_US_美国_Chen-2021.12.27_87
-      - 🇺🇸_US_美国_Chen-2021.12.27_88
-      - 🇨🇳_CN_中国_Chen-2021.12.27_89
-      - 🇨🇳_CN_中国_Chen-2021.12.27_90
-      - 🇨🇳_CN_中国_Chen-2021.12.27_91
-      - 🇨🇳_CN_中国_Chen-2021.12.27_92
-      - 🇨🇳_CN_中国_Chen-2021.12.27_93
-      - 🇺🇸_US_美国_Chen-2021.12.27_94
-      - 🇺🇸_US_美国_Chen-2021.12.27_95
-      - 🇺🇸_US_美国_Chen-2021.12.27_96
-      - 🇺🇸_US_美国_Chen-2021.12.27_97
-      - 🇺🇸_US_美国_Chen-2021.12.27_98
-      - 🇺🇸_US_美国_Chen-2021.12.27_99
-      - 🇺🇸_US_美国_Chen-2021.12.27_100
-      - 🇺🇸_US_美国_Chen-2021.12.27_101
-      - 🇺🇸_US_美国_Chen-2021.12.27_102
-      - 🇺🇸_US_美国_Chen-2021.12.27_103
-      - 🇺🇸_US_美国_Chen-2021.12.27_104
-      - 🇺🇸_US_美国_Chen-2021.12.27_105
-      - 🇺🇸_US_美国_Chen-2021.12.27_106
-      - 🇺🇸_US_美国_Chen-2021.12.27_107
-      - 🇺🇸_US_美国_Chen-2021.12.27_108
-      - 🇺🇸_US_美国_Chen-2021.12.27_109
-      - 🇺🇸_US_美国_Chen-2021.12.27_110
-      - 🇺🇸_US_美国_Chen-2021.12.27_111
-      - 🇺🇸_US_美国_Chen-2021.12.27_112
-      - 🇺🇸_US_美国_Chen-2021.12.27_113
-      - 🇬🇧_GB_英国_Chen-2021.12.27_114
-      - 🇬🇧_GB_英国_Chen-2021.12.27_115
-      - 🇬🇧_GB_英国_Chen-2021.12.27_116
-      - 🇬🇧_GB_英国_Chen-2021.12.27_117
-      - 🇬🇧_GB_英国_Chen-2021.12.27_118
-      - 🇬🇧_GB_英国_Chen-2021.12.27_119
-      - 🇬🇧_GB_英国_Chen-2021.12.27_120
-      - 🇮🇳_IN_印度_Chen-2021.12.27_121
-      - 🇮🇳_IN_印度_Chen-2021.12.27_122
-      - 🇮🇳_IN_印度_Chen-2021.12.27_123
-      - 🇮🇳_IN_印度_Chen-2021.12.27_124
-      - 🇮🇳_IN_印度_Chen-2021.12.27_125
-      - 🇮🇳_IN_印度_Chen-2021.12.27_126
-      - 🇨🇳_CN_中国_Chen-2021.12.27_127
-      - 🇫🇷_FR_法国_Chen-2021.12.27_128
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_129
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_130
-      - 🇨🇳_CN_中国_Chen-2021.12.27_131
-      - 🇨🇳_CN_中国_Chen-2021.12.27_132
-      - 🇨🇳_CN_中国_Chen-2021.12.27_133
-      - 🇨🇳_CN_中国_Chen-2021.12.27_134
-      - 🇨🇳_CN_中国_Chen-2021.12.27_135
-      - 🇨🇳_CN_中国_Chen-2021.12.27_136
-      - 🇨🇳_CN_中国_Chen-2021.12.27_137
-      - 🇨🇳_CN_中国_Chen-2021.12.27_138
-      - 🇨🇳_CN_中国_Chen-2021.12.27_139
-      - 🇨🇳_CN_中国_Chen-2021.12.27_140
-      - 🇨🇳_CN_中国_Chen-2021.12.27_141
-      - 🇨🇳_CN_中国_Chen-2021.12.27_142
-      - 🇨🇳_CN_中国_Chen-2021.12.27_143
-      - 🇨🇳_CN_中国_Chen-2021.12.27_144
-      - 🇨🇳_CN_中国_Chen-2021.12.27_145
-      - 🇭🇰_HK_香港_Chen-2021.12.27_146
-      - 🇲🇾_MY_马来西亚_Chen-2021.12.27_147
+      - 🇨🇳_CN_中国_Chen-2021.12.29_1
+      - 导航频道 TGTBBAD_2
+      - 白嫖频道 TGfreekankan_3
+      - 🇯🇵_JP_日本_Chen-2021.12.29_4
+      - 🇯🇵_JP_日本_Chen-2021.12.29_5
+      - 🇯🇵_JP_日本_Chen-2021.12.29_6
+      - 🇩🇪_DE_德国_Chen-2021.12.29_7
+      - 🇩🇰_DK_丹麦_Chen-2021.12.29_8
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10
+      - 🇧🇬_BG_保加利亚_Chen-2021.12.29_11
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_12
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_13
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_14
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_15
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_16
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_17
+      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_19
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_20
+      - n_14台湾∞中转_21
+      - 🇭🇰_HK_香港_Chen-2021.12.29_22
+      - 🇲🇽_MX_墨西哥_Chen-2021.12.29_23
+      - 🇱🇺_LU_卢森堡_Chen-2021.12.29_24
+      - 🇫🇷_FR_法国_Chen-2021.12.29_25
+      - 🇩🇪_DE_德国_Chen-2021.12.29_26
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_27
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_28
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_29
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_30
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_31
+      - 🇧🇻_BV_布维岛_Chen-2021.12.29_32
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_33
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_34
+      - 🇳🇿_NZ_新西兰_Chen-2021.12.29_35
+      - 🇩🇪_DE_德国_Chen-2021.12.29_36
+      - 🇯🇵_JP_日本_Chen-2021.12.29_37
+      - 🇧🇪_BE_比利时_Chen-2021.12.29_38
+      - 🇫🇷_FR_法国_Chen-2021.12.29_39
+      - 🇫🇷_FR_法国_Chen-2021.12.29_40
+      - 🇫🇷_FR_法国_Chen-2021.12.29_41
+      - 🇫🇷_FR_法国_Chen-2021.12.29_42
+      - 🇫🇷_FR_法国_Chen-2021.12.29_43
+      - 🇫🇷_FR_法国_Chen-2021.12.29_44
+      - 🇫🇷_FR_法国_Chen-2021.12.29_45
+      - 🇫🇷_FR_法国_Chen-2021.12.29_46
+      - 🇫🇷_FR_法国_Chen-2021.12.29_47
+      - 🇫🇷_FR_法国_Chen-2021.12.29_48
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_49
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_50
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_51
+      - 🇨🇭_CH_瑞士_Chen-2021.12.29_52
+      - 🇫🇷_FR_法国_Chen-2021.12.29_53
+      - 🇺🇸_US_美国_Chen-2021.12.29_54
+      - 🇺🇸_US_美国_Chen-2021.12.29_55
+      - 🇺🇸_US_美国_Chen-2021.12.29_56
+      - 🇺🇸_US_美国_Chen-2021.12.29_57
+      - 🇺🇸_US_美国_Chen-2021.12.29_58
+      - 🇺🇸_US_美国_Chen-2021.12.29_59
+      - 🇺🇸_US_美国_Chen-2021.12.29_60
+      - 🇺🇸_US_美国_Chen-2021.12.29_61
+      - 🇨🇳_CN_中国_Chen-2021.12.29_62
+      - n_57美国∞中转_63
+      - n_58美国∞中转_64
+      - 🇯🇵_JP_日本_Chen-2021.12.29_65
+      - 🇺🇸_US_美国_Chen-2021.12.29_66
+      - 🇺🇸_US_美国_Chen-2021.12.29_67
+      - 🇺🇸_US_美国_Chen-2021.12.29_68
+      - 🇺🇸_US_美国_Chen-2021.12.29_69
+      - 🇺🇸_US_美国_Chen-2021.12.29_70
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_71
+      - 🇺🇸_US_美国_Chen-2021.12.29_72
+      - 🇺🇸_US_美国_Chen-2021.12.29_73
+      - 🇺🇸_US_美国_Chen-2021.12.29_74
+      - 🇺🇸_US_美国_Chen-2021.12.29_75
+      - 🇺🇸_US_美国_Chen-2021.12.29_76
+      - 🇺🇸_US_美国_Chen-2021.12.29_77
+      - 🇺🇸_US_美国_Chen-2021.12.29_78
+      - 🇺🇸_US_美国_Chen-2021.12.29_79
+      - 🇬🇧_GB_英国_Chen-2021.12.29_80
+      - 🇬🇧_GB_英国_Chen-2021.12.29_81
+      - 🇬🇧_GB_英国_Chen-2021.12.29_82
+      - 🇬🇧_GB_英国_Chen-2021.12.29_83
+      - 🇬🇧_GB_英国_Chen-2021.12.29_84
+      - 🇬🇧_GB_英国_Chen-2021.12.29_85
+      - 🇬🇧_GB_英国_Chen-2021.12.29_86
+      - 🇬🇧_GB_英国_Chen-2021.12.29_87
+      - 🇨🇳_CN_中国_Chen-2021.12.29_88
+      - 🇬🇧_GB_英国_Chen-2021.12.29_89
+      - n_86英国∞中转_90
+      - 🇺🇸_US_美国_Chen-2021.12.29_91
+      - 🇦🇪_AE_阿联酋_Chen-2021.12.29_92
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_93
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_94
+      - n_91韩国∞直连_95
+      - 🇨🇳_CN_中国_Chen-2021.12.29_96
+      - 🇨🇳_CN_中国_Chen-2021.12.29_97
+      - 🇭🇰_HK_香港_Chen-2021.12.29_98
+      - 🇲🇾_MY_马来西亚_Chen-2021.12.29_99
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国_Chen-2021.12.27_1
-      - 🇨🇳_CN_中国_Chen-2021.12.27_2
-      - 🇨🇳_CN_中国_Chen-2021.12.27_3
-      - 🇨🇳_CN_中国_Chen-2021.12.27_4
-      - 🇨🇳_CN_中国_Chen-2021.12.27_5
-      - 🇨🇳_CN_中国_Chen-2021.12.27_6
-      - 🇨🇳_CN_中国_Chen-2021.12.27_7
-      - 🇩🇰_DK_丹麦_Chen-2021.12.27_8
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_9
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_10
-      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11
-      - 🇧🇬_BG_保加利亚_Chen-2021.12.27_12
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_13
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_14
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_15
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_16
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_17
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_18
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_19
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_20
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_21
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_22
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_23
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_24
-      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25
-      - 🇮🇳_IN_印度_Chen-2021.12.27_26
-      - 🇨🇳_CN_中国_Chen-2021.12.27_27
-      - 🇨🇳_CN_中国_Chen-2021.12.27_28
-      - 🇨🇳_CN_中国_Chen-2021.12.27_29
-      - 🇨🇳_CN_中国_Chen-2021.12.27_30
-      - 🇨🇳_CN_中国_Chen-2021.12.27_31
-      - 🇨🇳_CN_中国_Chen-2021.12.27_32
-      - 🇨🇳_CN_中国_Chen-2021.12.27_33
-      - 🇨🇳_CN_中国_Chen-2021.12.27_34
-      - 🇨🇳_CN_中国_Chen-2021.12.27_35
-      - 🇨🇳_CN_中国_Chen-2021.12.27_36
-      - 🇹🇼_TW_台湾_Chen-2021.12.27_37
-      - 🇲🇽_MX_墨西哥_Chen-2021.12.27_38
-      - 🇨🇳_CN_中国_Chen-2021.12.27_39
-      - 🇨🇳_CN_中国_Chen-2021.12.27_40
-      - 🇨🇳_CN_中国_Chen-2021.12.27_41
-      - 🇨🇳_CN_中国_Chen-2021.12.27_42
-      - 🇨🇳_CN_中国_Chen-2021.12.27_43
-      - 🇨🇳_CN_中国_Chen-2021.12.27_44
-      - 🇩🇪_DE_德国_Chen-2021.12.27_45
-      - 🇨🇳_CN_中国_Chen-2021.12.27_46
-      - 🇨🇳_CN_中国_Chen-2021.12.27_47
-      - 🇨🇳_CN_中国_Chen-2021.12.27_48
-      - 🇫🇷_FR_法国_Chen-2021.12.27_49
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_50
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_51
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_52
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_53
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_54
-      - 🇨🇳_CN_中国_Chen-2021.12.27_55
-      - 🇨🇳_CN_中国_Chen-2021.12.27_56
-      - 🇨🇳_CN_中国_Chen-2021.12.27_57
-      - 🇨🇳_CN_中国_Chen-2021.12.27_58
-      - 🇨🇳_CN_中国_Chen-2021.12.27_59
-      - 🇨🇳_CN_中国_Chen-2021.12.27_60
-      - 🇯🇵_JP_日本_Chen-2021.12.27_61
-      - 🇩🇪_DE_德国_Chen-2021.12.27_62
-      - 🇧🇪_BE_比利时_Chen-2021.12.27_63
-      - 🇫🇷_FR_法国_Chen-2021.12.27_64
-      - 🇫🇷_FR_法国_Chen-2021.12.27_65
-      - 🇫🇷_FR_法国_Chen-2021.12.27_66
-      - 🇫🇷_FR_法国_Chen-2021.12.27_67
-      - 🇫🇷_FR_法国_Chen-2021.12.27_68
-      - 🇫🇷_FR_法国_Chen-2021.12.27_69
-      - 🇫🇷_FR_法国_Chen-2021.12.27_70
-      - 🇫🇷_FR_法国_Chen-2021.12.27_71
-      - 🇫🇷_FR_法国_Chen-2021.12.27_72
-      - 🇫🇷_FR_法国_Chen-2021.12.27_73
-      - 🇫🇷_FR_法国_Chen-2021.12.27_74
-      - 🇫🇷_FR_法国_Chen-2021.12.27_75
-      - 🇫🇷_FR_法国_Chen-2021.12.27_76
-      - 🇫🇷_FR_法国_Chen-2021.12.27_77
-      - 🇦🇺_AU_澳大利亚_Chen-2021.12.27_78
-      - 🇨🇳_CN_中国_Chen-2021.12.27_79
-      - 🇨🇳_CN_中国_Chen-2021.12.27_80
-      - 🇭🇰_HK_香港_Chen-2021.12.27_81
-      - 🇺🇸_US_美国_Chen-2021.12.27_82
-      - 🇺🇸_US_美国_Chen-2021.12.27_83
-      - 🇺🇸_US_美国_Chen-2021.12.27_84
-      - 🇺🇸_US_美国_Chen-2021.12.27_85
-      - 🇺🇸_US_美国_Chen-2021.12.27_86
-      - 🇺🇸_US_美国_Chen-2021.12.27_87
-      - 🇺🇸_US_美国_Chen-2021.12.27_88
-      - 🇨🇳_CN_中国_Chen-2021.12.27_89
-      - 🇨🇳_CN_中国_Chen-2021.12.27_90
-      - 🇨🇳_CN_中国_Chen-2021.12.27_91
-      - 🇨🇳_CN_中国_Chen-2021.12.27_92
-      - 🇨🇳_CN_中国_Chen-2021.12.27_93
-      - 🇺🇸_US_美国_Chen-2021.12.27_94
-      - 🇺🇸_US_美国_Chen-2021.12.27_95
-      - 🇺🇸_US_美国_Chen-2021.12.27_96
-      - 🇺🇸_US_美国_Chen-2021.12.27_97
-      - 🇺🇸_US_美国_Chen-2021.12.27_98
-      - 🇺🇸_US_美国_Chen-2021.12.27_99
-      - 🇺🇸_US_美国_Chen-2021.12.27_100
-      - 🇺🇸_US_美国_Chen-2021.12.27_101
-      - 🇺🇸_US_美国_Chen-2021.12.27_102
-      - 🇺🇸_US_美国_Chen-2021.12.27_103
-      - 🇺🇸_US_美国_Chen-2021.12.27_104
-      - 🇺🇸_US_美国_Chen-2021.12.27_105
-      - 🇺🇸_US_美国_Chen-2021.12.27_106
-      - 🇺🇸_US_美国_Chen-2021.12.27_107
-      - 🇺🇸_US_美国_Chen-2021.12.27_108
-      - 🇺🇸_US_美国_Chen-2021.12.27_109
-      - 🇺🇸_US_美国_Chen-2021.12.27_110
-      - 🇺🇸_US_美国_Chen-2021.12.27_111
-      - 🇺🇸_US_美国_Chen-2021.12.27_112
-      - 🇺🇸_US_美国_Chen-2021.12.27_113
-      - 🇬🇧_GB_英国_Chen-2021.12.27_114
-      - 🇬🇧_GB_英国_Chen-2021.12.27_115
-      - 🇬🇧_GB_英国_Chen-2021.12.27_116
-      - 🇬🇧_GB_英国_Chen-2021.12.27_117
-      - 🇬🇧_GB_英国_Chen-2021.12.27_118
-      - 🇬🇧_GB_英国_Chen-2021.12.27_119
-      - 🇬🇧_GB_英国_Chen-2021.12.27_120
-      - 🇮🇳_IN_印度_Chen-2021.12.27_121
-      - 🇮🇳_IN_印度_Chen-2021.12.27_122
-      - 🇮🇳_IN_印度_Chen-2021.12.27_123
-      - 🇮🇳_IN_印度_Chen-2021.12.27_124
-      - 🇮🇳_IN_印度_Chen-2021.12.27_125
-      - 🇮🇳_IN_印度_Chen-2021.12.27_126
-      - 🇨🇳_CN_中国_Chen-2021.12.27_127
-      - 🇫🇷_FR_法国_Chen-2021.12.27_128
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_129
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_130
-      - 🇨🇳_CN_中国_Chen-2021.12.27_131
-      - 🇨🇳_CN_中国_Chen-2021.12.27_132
-      - 🇨🇳_CN_中国_Chen-2021.12.27_133
-      - 🇨🇳_CN_中国_Chen-2021.12.27_134
-      - 🇨🇳_CN_中国_Chen-2021.12.27_135
-      - 🇨🇳_CN_中国_Chen-2021.12.27_136
-      - 🇨🇳_CN_中国_Chen-2021.12.27_137
-      - 🇨🇳_CN_中国_Chen-2021.12.27_138
-      - 🇨🇳_CN_中国_Chen-2021.12.27_139
-      - 🇨🇳_CN_中国_Chen-2021.12.27_140
-      - 🇨🇳_CN_中国_Chen-2021.12.27_141
-      - 🇨🇳_CN_中国_Chen-2021.12.27_142
-      - 🇨🇳_CN_中国_Chen-2021.12.27_143
-      - 🇨🇳_CN_中国_Chen-2021.12.27_144
-      - 🇨🇳_CN_中国_Chen-2021.12.27_145
-      - 🇭🇰_HK_香港_Chen-2021.12.27_146
-      - 🇲🇾_MY_马来西亚_Chen-2021.12.27_147
+      - 🇨🇳_CN_中国_Chen-2021.12.29_1
+      - 导航频道 TGTBBAD_2
+      - 白嫖频道 TGfreekankan_3
+      - 🇯🇵_JP_日本_Chen-2021.12.29_4
+      - 🇯🇵_JP_日本_Chen-2021.12.29_5
+      - 🇯🇵_JP_日本_Chen-2021.12.29_6
+      - 🇩🇪_DE_德国_Chen-2021.12.29_7
+      - 🇩🇰_DK_丹麦_Chen-2021.12.29_8
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10
+      - 🇧🇬_BG_保加利亚_Chen-2021.12.29_11
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_12
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_13
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_14
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_15
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_16
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_17
+      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_19
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_20
+      - n_14台湾∞中转_21
+      - 🇭🇰_HK_香港_Chen-2021.12.29_22
+      - 🇲🇽_MX_墨西哥_Chen-2021.12.29_23
+      - 🇱🇺_LU_卢森堡_Chen-2021.12.29_24
+      - 🇫🇷_FR_法国_Chen-2021.12.29_25
+      - 🇩🇪_DE_德国_Chen-2021.12.29_26
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_27
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_28
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_29
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_30
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_31
+      - 🇧🇻_BV_布维岛_Chen-2021.12.29_32
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_33
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_34
+      - 🇳🇿_NZ_新西兰_Chen-2021.12.29_35
+      - 🇩🇪_DE_德国_Chen-2021.12.29_36
+      - 🇯🇵_JP_日本_Chen-2021.12.29_37
+      - 🇧🇪_BE_比利时_Chen-2021.12.29_38
+      - 🇫🇷_FR_法国_Chen-2021.12.29_39
+      - 🇫🇷_FR_法国_Chen-2021.12.29_40
+      - 🇫🇷_FR_法国_Chen-2021.12.29_41
+      - 🇫🇷_FR_法国_Chen-2021.12.29_42
+      - 🇫🇷_FR_法国_Chen-2021.12.29_43
+      - 🇫🇷_FR_法国_Chen-2021.12.29_44
+      - 🇫🇷_FR_法国_Chen-2021.12.29_45
+      - 🇫🇷_FR_法国_Chen-2021.12.29_46
+      - 🇫🇷_FR_法国_Chen-2021.12.29_47
+      - 🇫🇷_FR_法国_Chen-2021.12.29_48
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_49
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_50
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_51
+      - 🇨🇭_CH_瑞士_Chen-2021.12.29_52
+      - 🇫🇷_FR_法国_Chen-2021.12.29_53
+      - 🇺🇸_US_美国_Chen-2021.12.29_54
+      - 🇺🇸_US_美国_Chen-2021.12.29_55
+      - 🇺🇸_US_美国_Chen-2021.12.29_56
+      - 🇺🇸_US_美国_Chen-2021.12.29_57
+      - 🇺🇸_US_美国_Chen-2021.12.29_58
+      - 🇺🇸_US_美国_Chen-2021.12.29_59
+      - 🇺🇸_US_美国_Chen-2021.12.29_60
+      - 🇺🇸_US_美国_Chen-2021.12.29_61
+      - 🇨🇳_CN_中国_Chen-2021.12.29_62
+      - n_57美国∞中转_63
+      - n_58美国∞中转_64
+      - 🇯🇵_JP_日本_Chen-2021.12.29_65
+      - 🇺🇸_US_美国_Chen-2021.12.29_66
+      - 🇺🇸_US_美国_Chen-2021.12.29_67
+      - 🇺🇸_US_美国_Chen-2021.12.29_68
+      - 🇺🇸_US_美国_Chen-2021.12.29_69
+      - 🇺🇸_US_美国_Chen-2021.12.29_70
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_71
+      - 🇺🇸_US_美国_Chen-2021.12.29_72
+      - 🇺🇸_US_美国_Chen-2021.12.29_73
+      - 🇺🇸_US_美国_Chen-2021.12.29_74
+      - 🇺🇸_US_美国_Chen-2021.12.29_75
+      - 🇺🇸_US_美国_Chen-2021.12.29_76
+      - 🇺🇸_US_美国_Chen-2021.12.29_77
+      - 🇺🇸_US_美国_Chen-2021.12.29_78
+      - 🇺🇸_US_美国_Chen-2021.12.29_79
+      - 🇬🇧_GB_英国_Chen-2021.12.29_80
+      - 🇬🇧_GB_英国_Chen-2021.12.29_81
+      - 🇬🇧_GB_英国_Chen-2021.12.29_82
+      - 🇬🇧_GB_英国_Chen-2021.12.29_83
+      - 🇬🇧_GB_英国_Chen-2021.12.29_84
+      - 🇬🇧_GB_英国_Chen-2021.12.29_85
+      - 🇬🇧_GB_英国_Chen-2021.12.29_86
+      - 🇬🇧_GB_英国_Chen-2021.12.29_87
+      - 🇨🇳_CN_中国_Chen-2021.12.29_88
+      - 🇬🇧_GB_英国_Chen-2021.12.29_89
+      - n_86英国∞中转_90
+      - 🇺🇸_US_美国_Chen-2021.12.29_91
+      - 🇦🇪_AE_阿联酋_Chen-2021.12.29_92
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_93
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_94
+      - n_91韩国∞直连_95
+      - 🇨🇳_CN_中国_Chen-2021.12.29_96
+      - 🇨🇳_CN_中国_Chen-2021.12.29_97
+      - 🇭🇰_HK_香港_Chen-2021.12.29_98
+      - 🇲🇾_MY_马来西亚_Chen-2021.12.29_99
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国_Chen-2021.12.27_1
-      - 🇨🇳_CN_中国_Chen-2021.12.27_2
-      - 🇨🇳_CN_中国_Chen-2021.12.27_3
-      - 🇨🇳_CN_中国_Chen-2021.12.27_4
-      - 🇨🇳_CN_中国_Chen-2021.12.27_5
-      - 🇨🇳_CN_中国_Chen-2021.12.27_6
-      - 🇨🇳_CN_中国_Chen-2021.12.27_7
-      - 🇩🇰_DK_丹麦_Chen-2021.12.27_8
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_9
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_10
-      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11
-      - 🇧🇬_BG_保加利亚_Chen-2021.12.27_12
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_13
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_14
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_15
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_16
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_17
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_18
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_19
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_20
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_21
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_22
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_23
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_24
-      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25
-      - 🇮🇳_IN_印度_Chen-2021.12.27_26
-      - 🇨🇳_CN_中国_Chen-2021.12.27_27
-      - 🇨🇳_CN_中国_Chen-2021.12.27_28
-      - 🇨🇳_CN_中国_Chen-2021.12.27_29
-      - 🇨🇳_CN_中国_Chen-2021.12.27_30
-      - 🇨🇳_CN_中国_Chen-2021.12.27_31
-      - 🇨🇳_CN_中国_Chen-2021.12.27_32
-      - 🇨🇳_CN_中国_Chen-2021.12.27_33
-      - 🇨🇳_CN_中国_Chen-2021.12.27_34
-      - 🇨🇳_CN_中国_Chen-2021.12.27_35
-      - 🇨🇳_CN_中国_Chen-2021.12.27_36
-      - 🇹🇼_TW_台湾_Chen-2021.12.27_37
-      - 🇲🇽_MX_墨西哥_Chen-2021.12.27_38
-      - 🇨🇳_CN_中国_Chen-2021.12.27_39
-      - 🇨🇳_CN_中国_Chen-2021.12.27_40
-      - 🇨🇳_CN_中国_Chen-2021.12.27_41
-      - 🇨🇳_CN_中国_Chen-2021.12.27_42
-      - 🇨🇳_CN_中国_Chen-2021.12.27_43
-      - 🇨🇳_CN_中国_Chen-2021.12.27_44
-      - 🇩🇪_DE_德国_Chen-2021.12.27_45
-      - 🇨🇳_CN_中国_Chen-2021.12.27_46
-      - 🇨🇳_CN_中国_Chen-2021.12.27_47
-      - 🇨🇳_CN_中国_Chen-2021.12.27_48
-      - 🇫🇷_FR_法国_Chen-2021.12.27_49
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_50
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_51
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_52
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_53
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_54
-      - 🇨🇳_CN_中国_Chen-2021.12.27_55
-      - 🇨🇳_CN_中国_Chen-2021.12.27_56
-      - 🇨🇳_CN_中国_Chen-2021.12.27_57
-      - 🇨🇳_CN_中国_Chen-2021.12.27_58
-      - 🇨🇳_CN_中国_Chen-2021.12.27_59
-      - 🇨🇳_CN_中国_Chen-2021.12.27_60
-      - 🇯🇵_JP_日本_Chen-2021.12.27_61
-      - 🇩🇪_DE_德国_Chen-2021.12.27_62
-      - 🇧🇪_BE_比利时_Chen-2021.12.27_63
-      - 🇫🇷_FR_法国_Chen-2021.12.27_64
-      - 🇫🇷_FR_法国_Chen-2021.12.27_65
-      - 🇫🇷_FR_法国_Chen-2021.12.27_66
-      - 🇫🇷_FR_法国_Chen-2021.12.27_67
-      - 🇫🇷_FR_法国_Chen-2021.12.27_68
-      - 🇫🇷_FR_法国_Chen-2021.12.27_69
-      - 🇫🇷_FR_法国_Chen-2021.12.27_70
-      - 🇫🇷_FR_法国_Chen-2021.12.27_71
-      - 🇫🇷_FR_法国_Chen-2021.12.27_72
-      - 🇫🇷_FR_法国_Chen-2021.12.27_73
-      - 🇫🇷_FR_法国_Chen-2021.12.27_74
-      - 🇫🇷_FR_法国_Chen-2021.12.27_75
-      - 🇫🇷_FR_法国_Chen-2021.12.27_76
-      - 🇫🇷_FR_法国_Chen-2021.12.27_77
-      - 🇦🇺_AU_澳大利亚_Chen-2021.12.27_78
-      - 🇨🇳_CN_中国_Chen-2021.12.27_79
-      - 🇨🇳_CN_中国_Chen-2021.12.27_80
-      - 🇭🇰_HK_香港_Chen-2021.12.27_81
-      - 🇺🇸_US_美国_Chen-2021.12.27_82
-      - 🇺🇸_US_美国_Chen-2021.12.27_83
-      - 🇺🇸_US_美国_Chen-2021.12.27_84
-      - 🇺🇸_US_美国_Chen-2021.12.27_85
-      - 🇺🇸_US_美国_Chen-2021.12.27_86
-      - 🇺🇸_US_美国_Chen-2021.12.27_87
-      - 🇺🇸_US_美国_Chen-2021.12.27_88
-      - 🇨🇳_CN_中国_Chen-2021.12.27_89
-      - 🇨🇳_CN_中国_Chen-2021.12.27_90
-      - 🇨🇳_CN_中国_Chen-2021.12.27_91
-      - 🇨🇳_CN_中国_Chen-2021.12.27_92
-      - 🇨🇳_CN_中国_Chen-2021.12.27_93
-      - 🇺🇸_US_美国_Chen-2021.12.27_94
-      - 🇺🇸_US_美国_Chen-2021.12.27_95
-      - 🇺🇸_US_美国_Chen-2021.12.27_96
-      - 🇺🇸_US_美国_Chen-2021.12.27_97
-      - 🇺🇸_US_美国_Chen-2021.12.27_98
-      - 🇺🇸_US_美国_Chen-2021.12.27_99
-      - 🇺🇸_US_美国_Chen-2021.12.27_100
-      - 🇺🇸_US_美国_Chen-2021.12.27_101
-      - 🇺🇸_US_美国_Chen-2021.12.27_102
-      - 🇺🇸_US_美国_Chen-2021.12.27_103
-      - 🇺🇸_US_美国_Chen-2021.12.27_104
-      - 🇺🇸_US_美国_Chen-2021.12.27_105
-      - 🇺🇸_US_美国_Chen-2021.12.27_106
-      - 🇺🇸_US_美国_Chen-2021.12.27_107
-      - 🇺🇸_US_美国_Chen-2021.12.27_108
-      - 🇺🇸_US_美国_Chen-2021.12.27_109
-      - 🇺🇸_US_美国_Chen-2021.12.27_110
-      - 🇺🇸_US_美国_Chen-2021.12.27_111
-      - 🇺🇸_US_美国_Chen-2021.12.27_112
-      - 🇺🇸_US_美国_Chen-2021.12.27_113
-      - 🇬🇧_GB_英国_Chen-2021.12.27_114
-      - 🇬🇧_GB_英国_Chen-2021.12.27_115
-      - 🇬🇧_GB_英国_Chen-2021.12.27_116
-      - 🇬🇧_GB_英国_Chen-2021.12.27_117
-      - 🇬🇧_GB_英国_Chen-2021.12.27_118
-      - 🇬🇧_GB_英国_Chen-2021.12.27_119
-      - 🇬🇧_GB_英国_Chen-2021.12.27_120
-      - 🇮🇳_IN_印度_Chen-2021.12.27_121
-      - 🇮🇳_IN_印度_Chen-2021.12.27_122
-      - 🇮🇳_IN_印度_Chen-2021.12.27_123
-      - 🇮🇳_IN_印度_Chen-2021.12.27_124
-      - 🇮🇳_IN_印度_Chen-2021.12.27_125
-      - 🇮🇳_IN_印度_Chen-2021.12.27_126
-      - 🇨🇳_CN_中国_Chen-2021.12.27_127
-      - 🇫🇷_FR_法国_Chen-2021.12.27_128
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_129
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_130
-      - 🇨🇳_CN_中国_Chen-2021.12.27_131
-      - 🇨🇳_CN_中国_Chen-2021.12.27_132
-      - 🇨🇳_CN_中国_Chen-2021.12.27_133
-      - 🇨🇳_CN_中国_Chen-2021.12.27_134
-      - 🇨🇳_CN_中国_Chen-2021.12.27_135
-      - 🇨🇳_CN_中国_Chen-2021.12.27_136
-      - 🇨🇳_CN_中国_Chen-2021.12.27_137
-      - 🇨🇳_CN_中国_Chen-2021.12.27_138
-      - 🇨🇳_CN_中国_Chen-2021.12.27_139
-      - 🇨🇳_CN_中国_Chen-2021.12.27_140
-      - 🇨🇳_CN_中国_Chen-2021.12.27_141
-      - 🇨🇳_CN_中国_Chen-2021.12.27_142
-      - 🇨🇳_CN_中国_Chen-2021.12.27_143
-      - 🇨🇳_CN_中国_Chen-2021.12.27_144
-      - 🇨🇳_CN_中国_Chen-2021.12.27_145
-      - 🇭🇰_HK_香港_Chen-2021.12.27_146
-      - 🇲🇾_MY_马来西亚_Chen-2021.12.27_147
+      - 🇨🇳_CN_中国_Chen-2021.12.29_1
+      - 导航频道 TGTBBAD_2
+      - 白嫖频道 TGfreekankan_3
+      - 🇯🇵_JP_日本_Chen-2021.12.29_4
+      - 🇯🇵_JP_日本_Chen-2021.12.29_5
+      - 🇯🇵_JP_日本_Chen-2021.12.29_6
+      - 🇩🇪_DE_德国_Chen-2021.12.29_7
+      - 🇩🇰_DK_丹麦_Chen-2021.12.29_8
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10
+      - 🇧🇬_BG_保加利亚_Chen-2021.12.29_11
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_12
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_13
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_14
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_15
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_16
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_17
+      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_19
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_20
+      - n_14台湾∞中转_21
+      - 🇭🇰_HK_香港_Chen-2021.12.29_22
+      - 🇲🇽_MX_墨西哥_Chen-2021.12.29_23
+      - 🇱🇺_LU_卢森堡_Chen-2021.12.29_24
+      - 🇫🇷_FR_法国_Chen-2021.12.29_25
+      - 🇩🇪_DE_德国_Chen-2021.12.29_26
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_27
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_28
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_29
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_30
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_31
+      - 🇧🇻_BV_布维岛_Chen-2021.12.29_32
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_33
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_34
+      - 🇳🇿_NZ_新西兰_Chen-2021.12.29_35
+      - 🇩🇪_DE_德国_Chen-2021.12.29_36
+      - 🇯🇵_JP_日本_Chen-2021.12.29_37
+      - 🇧🇪_BE_比利时_Chen-2021.12.29_38
+      - 🇫🇷_FR_法国_Chen-2021.12.29_39
+      - 🇫🇷_FR_法国_Chen-2021.12.29_40
+      - 🇫🇷_FR_法国_Chen-2021.12.29_41
+      - 🇫🇷_FR_法国_Chen-2021.12.29_42
+      - 🇫🇷_FR_法国_Chen-2021.12.29_43
+      - 🇫🇷_FR_法国_Chen-2021.12.29_44
+      - 🇫🇷_FR_法国_Chen-2021.12.29_45
+      - 🇫🇷_FR_法国_Chen-2021.12.29_46
+      - 🇫🇷_FR_法国_Chen-2021.12.29_47
+      - 🇫🇷_FR_法国_Chen-2021.12.29_48
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_49
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_50
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_51
+      - 🇨🇭_CH_瑞士_Chen-2021.12.29_52
+      - 🇫🇷_FR_法国_Chen-2021.12.29_53
+      - 🇺🇸_US_美国_Chen-2021.12.29_54
+      - 🇺🇸_US_美国_Chen-2021.12.29_55
+      - 🇺🇸_US_美国_Chen-2021.12.29_56
+      - 🇺🇸_US_美国_Chen-2021.12.29_57
+      - 🇺🇸_US_美国_Chen-2021.12.29_58
+      - 🇺🇸_US_美国_Chen-2021.12.29_59
+      - 🇺🇸_US_美国_Chen-2021.12.29_60
+      - 🇺🇸_US_美国_Chen-2021.12.29_61
+      - 🇨🇳_CN_中国_Chen-2021.12.29_62
+      - n_57美国∞中转_63
+      - n_58美国∞中转_64
+      - 🇯🇵_JP_日本_Chen-2021.12.29_65
+      - 🇺🇸_US_美国_Chen-2021.12.29_66
+      - 🇺🇸_US_美国_Chen-2021.12.29_67
+      - 🇺🇸_US_美国_Chen-2021.12.29_68
+      - 🇺🇸_US_美国_Chen-2021.12.29_69
+      - 🇺🇸_US_美国_Chen-2021.12.29_70
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_71
+      - 🇺🇸_US_美国_Chen-2021.12.29_72
+      - 🇺🇸_US_美国_Chen-2021.12.29_73
+      - 🇺🇸_US_美国_Chen-2021.12.29_74
+      - 🇺🇸_US_美国_Chen-2021.12.29_75
+      - 🇺🇸_US_美国_Chen-2021.12.29_76
+      - 🇺🇸_US_美国_Chen-2021.12.29_77
+      - 🇺🇸_US_美国_Chen-2021.12.29_78
+      - 🇺🇸_US_美国_Chen-2021.12.29_79
+      - 🇬🇧_GB_英国_Chen-2021.12.29_80
+      - 🇬🇧_GB_英国_Chen-2021.12.29_81
+      - 🇬🇧_GB_英国_Chen-2021.12.29_82
+      - 🇬🇧_GB_英国_Chen-2021.12.29_83
+      - 🇬🇧_GB_英国_Chen-2021.12.29_84
+      - 🇬🇧_GB_英国_Chen-2021.12.29_85
+      - 🇬🇧_GB_英国_Chen-2021.12.29_86
+      - 🇬🇧_GB_英国_Chen-2021.12.29_87
+      - 🇨🇳_CN_中国_Chen-2021.12.29_88
+      - 🇬🇧_GB_英国_Chen-2021.12.29_89
+      - n_86英国∞中转_90
+      - 🇺🇸_US_美国_Chen-2021.12.29_91
+      - 🇦🇪_AE_阿联酋_Chen-2021.12.29_92
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_93
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_94
+      - n_91韩国∞直连_95
+      - 🇨🇳_CN_中国_Chen-2021.12.29_96
+      - 🇨🇳_CN_中国_Chen-2021.12.29_97
+      - 🇭🇰_HK_香港_Chen-2021.12.29_98
+      - 🇲🇾_MY_马来西亚_Chen-2021.12.29_99
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1234,153 +850,105 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国_Chen-2021.12.27_1
-      - 🇨🇳_CN_中国_Chen-2021.12.27_2
-      - 🇨🇳_CN_中国_Chen-2021.12.27_3
-      - 🇨🇳_CN_中国_Chen-2021.12.27_4
-      - 🇨🇳_CN_中国_Chen-2021.12.27_5
-      - 🇨🇳_CN_中国_Chen-2021.12.27_6
-      - 🇨🇳_CN_中国_Chen-2021.12.27_7
-      - 🇩🇰_DK_丹麦_Chen-2021.12.27_8
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_9
-      - 🇺🇦_UA_乌克兰_Chen-2021.12.27_10
-      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.27_11
-      - 🇧🇬_BG_保加利亚_Chen-2021.12.27_12
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_13
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_14
-      - 🇸🇬_SG_新加坡_Chen-2021.12.27_15
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_16
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_17
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_18
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_19
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_20
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_21
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_22
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_23
-      - 🇨🇦_CA_加拿大_Chen-2021.12.27_24
-      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.27_25
-      - 🇮🇳_IN_印度_Chen-2021.12.27_26
-      - 🇨🇳_CN_中国_Chen-2021.12.27_27
-      - 🇨🇳_CN_中国_Chen-2021.12.27_28
-      - 🇨🇳_CN_中国_Chen-2021.12.27_29
-      - 🇨🇳_CN_中国_Chen-2021.12.27_30
-      - 🇨🇳_CN_中国_Chen-2021.12.27_31
-      - 🇨🇳_CN_中国_Chen-2021.12.27_32
-      - 🇨🇳_CN_中国_Chen-2021.12.27_33
-      - 🇨🇳_CN_中国_Chen-2021.12.27_34
-      - 🇨🇳_CN_中国_Chen-2021.12.27_35
-      - 🇨🇳_CN_中国_Chen-2021.12.27_36
-      - 🇹🇼_TW_台湾_Chen-2021.12.27_37
-      - 🇲🇽_MX_墨西哥_Chen-2021.12.27_38
-      - 🇨🇳_CN_中国_Chen-2021.12.27_39
-      - 🇨🇳_CN_中国_Chen-2021.12.27_40
-      - 🇨🇳_CN_中国_Chen-2021.12.27_41
-      - 🇨🇳_CN_中国_Chen-2021.12.27_42
-      - 🇨🇳_CN_中国_Chen-2021.12.27_43
-      - 🇨🇳_CN_中国_Chen-2021.12.27_44
-      - 🇩🇪_DE_德国_Chen-2021.12.27_45
-      - 🇨🇳_CN_中国_Chen-2021.12.27_46
-      - 🇨🇳_CN_中国_Chen-2021.12.27_47
-      - 🇨🇳_CN_中国_Chen-2021.12.27_48
-      - 🇫🇷_FR_法国_Chen-2021.12.27_49
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_50
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_51
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_52
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_53
-      - 🇳🇴_NO_挪威_Chen-2021.12.27_54
-      - 🇨🇳_CN_中国_Chen-2021.12.27_55
-      - 🇨🇳_CN_中国_Chen-2021.12.27_56
-      - 🇨🇳_CN_中国_Chen-2021.12.27_57
-      - 🇨🇳_CN_中国_Chen-2021.12.27_58
-      - 🇨🇳_CN_中国_Chen-2021.12.27_59
-      - 🇨🇳_CN_中国_Chen-2021.12.27_60
-      - 🇯🇵_JP_日本_Chen-2021.12.27_61
-      - 🇩🇪_DE_德国_Chen-2021.12.27_62
-      - 🇧🇪_BE_比利时_Chen-2021.12.27_63
-      - 🇫🇷_FR_法国_Chen-2021.12.27_64
-      - 🇫🇷_FR_法国_Chen-2021.12.27_65
-      - 🇫🇷_FR_法国_Chen-2021.12.27_66
-      - 🇫🇷_FR_法国_Chen-2021.12.27_67
-      - 🇫🇷_FR_法国_Chen-2021.12.27_68
-      - 🇫🇷_FR_法国_Chen-2021.12.27_69
-      - 🇫🇷_FR_法国_Chen-2021.12.27_70
-      - 🇫🇷_FR_法国_Chen-2021.12.27_71
-      - 🇫🇷_FR_法国_Chen-2021.12.27_72
-      - 🇫🇷_FR_法国_Chen-2021.12.27_73
-      - 🇫🇷_FR_法国_Chen-2021.12.27_74
-      - 🇫🇷_FR_法国_Chen-2021.12.27_75
-      - 🇫🇷_FR_法国_Chen-2021.12.27_76
-      - 🇫🇷_FR_法国_Chen-2021.12.27_77
-      - 🇦🇺_AU_澳大利亚_Chen-2021.12.27_78
-      - 🇨🇳_CN_中国_Chen-2021.12.27_79
-      - 🇨🇳_CN_中国_Chen-2021.12.27_80
-      - 🇭🇰_HK_香港_Chen-2021.12.27_81
-      - 🇺🇸_US_美国_Chen-2021.12.27_82
-      - 🇺🇸_US_美国_Chen-2021.12.27_83
-      - 🇺🇸_US_美国_Chen-2021.12.27_84
-      - 🇺🇸_US_美国_Chen-2021.12.27_85
-      - 🇺🇸_US_美国_Chen-2021.12.27_86
-      - 🇺🇸_US_美国_Chen-2021.12.27_87
-      - 🇺🇸_US_美国_Chen-2021.12.27_88
-      - 🇨🇳_CN_中国_Chen-2021.12.27_89
-      - 🇨🇳_CN_中国_Chen-2021.12.27_90
-      - 🇨🇳_CN_中国_Chen-2021.12.27_91
-      - 🇨🇳_CN_中国_Chen-2021.12.27_92
-      - 🇨🇳_CN_中国_Chen-2021.12.27_93
-      - 🇺🇸_US_美国_Chen-2021.12.27_94
-      - 🇺🇸_US_美国_Chen-2021.12.27_95
-      - 🇺🇸_US_美国_Chen-2021.12.27_96
-      - 🇺🇸_US_美国_Chen-2021.12.27_97
-      - 🇺🇸_US_美国_Chen-2021.12.27_98
-      - 🇺🇸_US_美国_Chen-2021.12.27_99
-      - 🇺🇸_US_美国_Chen-2021.12.27_100
-      - 🇺🇸_US_美国_Chen-2021.12.27_101
-      - 🇺🇸_US_美国_Chen-2021.12.27_102
-      - 🇺🇸_US_美国_Chen-2021.12.27_103
-      - 🇺🇸_US_美国_Chen-2021.12.27_104
-      - 🇺🇸_US_美国_Chen-2021.12.27_105
-      - 🇺🇸_US_美国_Chen-2021.12.27_106
-      - 🇺🇸_US_美国_Chen-2021.12.27_107
-      - 🇺🇸_US_美国_Chen-2021.12.27_108
-      - 🇺🇸_US_美国_Chen-2021.12.27_109
-      - 🇺🇸_US_美国_Chen-2021.12.27_110
-      - 🇺🇸_US_美国_Chen-2021.12.27_111
-      - 🇺🇸_US_美国_Chen-2021.12.27_112
-      - 🇺🇸_US_美国_Chen-2021.12.27_113
-      - 🇬🇧_GB_英国_Chen-2021.12.27_114
-      - 🇬🇧_GB_英国_Chen-2021.12.27_115
-      - 🇬🇧_GB_英国_Chen-2021.12.27_116
-      - 🇬🇧_GB_英国_Chen-2021.12.27_117
-      - 🇬🇧_GB_英国_Chen-2021.12.27_118
-      - 🇬🇧_GB_英国_Chen-2021.12.27_119
-      - 🇬🇧_GB_英国_Chen-2021.12.27_120
-      - 🇮🇳_IN_印度_Chen-2021.12.27_121
-      - 🇮🇳_IN_印度_Chen-2021.12.27_122
-      - 🇮🇳_IN_印度_Chen-2021.12.27_123
-      - 🇮🇳_IN_印度_Chen-2021.12.27_124
-      - 🇮🇳_IN_印度_Chen-2021.12.27_125
-      - 🇮🇳_IN_印度_Chen-2021.12.27_126
-      - 🇨🇳_CN_中国_Chen-2021.12.27_127
-      - 🇫🇷_FR_法国_Chen-2021.12.27_128
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_129
-      - 🇵🇹_PT_葡萄牙_Chen-2021.12.27_130
-      - 🇨🇳_CN_中国_Chen-2021.12.27_131
-      - 🇨🇳_CN_中国_Chen-2021.12.27_132
-      - 🇨🇳_CN_中国_Chen-2021.12.27_133
-      - 🇨🇳_CN_中国_Chen-2021.12.27_134
-      - 🇨🇳_CN_中国_Chen-2021.12.27_135
-      - 🇨🇳_CN_中国_Chen-2021.12.27_136
-      - 🇨🇳_CN_中国_Chen-2021.12.27_137
-      - 🇨🇳_CN_中国_Chen-2021.12.27_138
-      - 🇨🇳_CN_中国_Chen-2021.12.27_139
-      - 🇨🇳_CN_中国_Chen-2021.12.27_140
-      - 🇨🇳_CN_中国_Chen-2021.12.27_141
-      - 🇨🇳_CN_中国_Chen-2021.12.27_142
-      - 🇨🇳_CN_中国_Chen-2021.12.27_143
-      - 🇨🇳_CN_中国_Chen-2021.12.27_144
-      - 🇨🇳_CN_中国_Chen-2021.12.27_145
-      - 🇭🇰_HK_香港_Chen-2021.12.27_146
-      - 🇲🇾_MY_马来西亚_Chen-2021.12.27_147
+      - 🇨🇳_CN_中国_Chen-2021.12.29_1
+      - 导航频道 TGTBBAD_2
+      - 白嫖频道 TGfreekankan_3
+      - 🇯🇵_JP_日本_Chen-2021.12.29_4
+      - 🇯🇵_JP_日本_Chen-2021.12.29_5
+      - 🇯🇵_JP_日本_Chen-2021.12.29_6
+      - 🇩🇪_DE_德国_Chen-2021.12.29_7
+      - 🇩🇰_DK_丹麦_Chen-2021.12.29_8
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_9
+      - 🇷🇺_RU_俄罗斯联邦_Chen-2021.12.29_10
+      - 🇧🇬_BG_保加利亚_Chen-2021.12.29_11
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_12
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_13
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_14
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_15
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_16
+      - 🇨🇦_CA_加拿大_Chen-2021.12.29_17
+      - 🇮🇩_ID_印度尼西亚_Chen-2021.12.29_18
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_19
+      - 🇹🇼_TW_台湾_Chen-2021.12.29_20
+      - n_14台湾∞中转_21
+      - 🇭🇰_HK_香港_Chen-2021.12.29_22
+      - 🇲🇽_MX_墨西哥_Chen-2021.12.29_23
+      - 🇱🇺_LU_卢森堡_Chen-2021.12.29_24
+      - 🇫🇷_FR_法国_Chen-2021.12.29_25
+      - 🇩🇪_DE_德国_Chen-2021.12.29_26
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_27
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_28
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_29
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_30
+      - 🇳🇴_NO_挪威_Chen-2021.12.29_31
+      - 🇧🇻_BV_布维岛_Chen-2021.12.29_32
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_33
+      - 🇸🇬_SG_新加坡_Chen-2021.12.29_34
+      - 🇳🇿_NZ_新西兰_Chen-2021.12.29_35
+      - 🇩🇪_DE_德国_Chen-2021.12.29_36
+      - 🇯🇵_JP_日本_Chen-2021.12.29_37
+      - 🇧🇪_BE_比利时_Chen-2021.12.29_38
+      - 🇫🇷_FR_法国_Chen-2021.12.29_39
+      - 🇫🇷_FR_法国_Chen-2021.12.29_40
+      - 🇫🇷_FR_法国_Chen-2021.12.29_41
+      - 🇫🇷_FR_法国_Chen-2021.12.29_42
+      - 🇫🇷_FR_法国_Chen-2021.12.29_43
+      - 🇫🇷_FR_法国_Chen-2021.12.29_44
+      - 🇫🇷_FR_法国_Chen-2021.12.29_45
+      - 🇫🇷_FR_法国_Chen-2021.12.29_46
+      - 🇫🇷_FR_法国_Chen-2021.12.29_47
+      - 🇫🇷_FR_法国_Chen-2021.12.29_48
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_49
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_50
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_51
+      - 🇨🇭_CH_瑞士_Chen-2021.12.29_52
+      - 🇫🇷_FR_法国_Chen-2021.12.29_53
+      - 🇺🇸_US_美国_Chen-2021.12.29_54
+      - 🇺🇸_US_美国_Chen-2021.12.29_55
+      - 🇺🇸_US_美国_Chen-2021.12.29_56
+      - 🇺🇸_US_美国_Chen-2021.12.29_57
+      - 🇺🇸_US_美国_Chen-2021.12.29_58
+      - 🇺🇸_US_美国_Chen-2021.12.29_59
+      - 🇺🇸_US_美国_Chen-2021.12.29_60
+      - 🇺🇸_US_美国_Chen-2021.12.29_61
+      - 🇨🇳_CN_中国_Chen-2021.12.29_62
+      - n_57美国∞中转_63
+      - n_58美国∞中转_64
+      - 🇯🇵_JP_日本_Chen-2021.12.29_65
+      - 🇺🇸_US_美国_Chen-2021.12.29_66
+      - 🇺🇸_US_美国_Chen-2021.12.29_67
+      - 🇺🇸_US_美国_Chen-2021.12.29_68
+      - 🇺🇸_US_美国_Chen-2021.12.29_69
+      - 🇺🇸_US_美国_Chen-2021.12.29_70
+      - 🇦🇺_AU_澳大利亚_Chen-2021.12.29_71
+      - 🇺🇸_US_美国_Chen-2021.12.29_72
+      - 🇺🇸_US_美国_Chen-2021.12.29_73
+      - 🇺🇸_US_美国_Chen-2021.12.29_74
+      - 🇺🇸_US_美国_Chen-2021.12.29_75
+      - 🇺🇸_US_美国_Chen-2021.12.29_76
+      - 🇺🇸_US_美国_Chen-2021.12.29_77
+      - 🇺🇸_US_美国_Chen-2021.12.29_78
+      - 🇺🇸_US_美国_Chen-2021.12.29_79
+      - 🇬🇧_GB_英国_Chen-2021.12.29_80
+      - 🇬🇧_GB_英国_Chen-2021.12.29_81
+      - 🇬🇧_GB_英国_Chen-2021.12.29_82
+      - 🇬🇧_GB_英国_Chen-2021.12.29_83
+      - 🇬🇧_GB_英国_Chen-2021.12.29_84
+      - 🇬🇧_GB_英国_Chen-2021.12.29_85
+      - 🇬🇧_GB_英国_Chen-2021.12.29_86
+      - 🇬🇧_GB_英国_Chen-2021.12.29_87
+      - 🇨🇳_CN_中国_Chen-2021.12.29_88
+      - 🇬🇧_GB_英国_Chen-2021.12.29_89
+      - n_86英国∞中转_90
+      - 🇺🇸_US_美国_Chen-2021.12.29_91
+      - 🇦🇪_AE_阿联酋_Chen-2021.12.29_92
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_93
+      - 🇵🇹_PT_葡萄牙_Chen-2021.12.29_94
+      - n_91韩国∞直连_95
+      - 🇨🇳_CN_中国_Chen-2021.12.29_96
+      - 🇨🇳_CN_中国_Chen-2021.12.29_97
+      - 🇭🇰_HK_香港_Chen-2021.12.29_98
+      - 🇲🇾_MY_马来西亚_Chen-2021.12.29_99
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
