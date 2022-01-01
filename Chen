@@ -9,9 +9,6 @@ proxies:
   - {name: '🇵🇹_PT_葡萄牙_Chen_2', server: 185.90.57.152, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qSnstpCypymLvPeyLRqf}
   - {name: '🇭🇰_HK_香港_Chen_3', server: 84.17.37.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
   - {name: '🇭🇰_HK_香港_Chen_4', server: 84.17.37.55, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: tjwRqQvteAjt3xFmbZTA}
-  - {name: '国产频道 TGTBBAC_5', server: 183.232.56.110, port: 575, type: ssr, password: "mtbv8n", cipher: chacha20-ietf, protocol: auth_aes128_md5, obfs: plain, protocol-param: 114882:LwdYLj, obfs-param: t.me/vpnhat}
-  - {name: '白嫖群组 TGfreeyule_6', server: gz1.52168.xyz, port: 1112, type: ssr, password: "epChJS35fV", cipher: aes-256-cfb, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 31028:PGgTsb, obfs-param: 87a8531028.baidu.com}
-  - {name: '日韩频道 TGshoucangAV_7', server: gz1.52168.xyz, port: 1114, type: ssr, password: "epChJS35fV", cipher: aes-256-cfb, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 31028:PGgTsb, obfs-param: 87a8531028.baidu.com}
   - {name: '🇷🇺_RU_俄罗斯联邦_Chen_8', server: 45.140.169.176, port: 10055, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
   - {name: '🇨🇦_CA_加拿大_Chen_9', server: t1.ssrsub.com, port: 8443, type: trojan, password: 7644049b-79e1-4c3b-b621-0a464ab47db4, sni: t1.ssrsub.com}
   - {name: '🇨🇦_CA_加拿大_Chen_10', server: t1.ssrsub.com, port: 8443, type: trojan, password: da8ad13d-19e6-4a28-82a6-da15bbc0a968, sni: t1.ssrsub.com}
@@ -106,9 +103,6 @@ proxy-groups:
       - 🇵🇹_PT_葡萄牙_Chen_2
       - 🇭🇰_HK_香港_Chen_3
       - 🇭🇰_HK_香港_Chen_4
-      - 国产频道 TGTBBAC_5
-      - 白嫖群组 TGfreeyule_6
-      - 日韩频道 TGshoucangAV_7
       - 🇷🇺_RU_俄罗斯联邦_Chen_8
       - 🇨🇦_CA_加拿大_Chen_9
       - 🇨🇦_CA_加拿大_Chen_10
@@ -202,9 +196,6 @@ proxy-groups:
       - 🇵🇹_PT_葡萄牙_Chen_2
       - 🇭🇰_HK_香港_Chen_3
       - 🇭🇰_HK_香港_Chen_4
-      - 国产频道 TGTBBAC_5
-      - 白嫖群组 TGfreeyule_6
-      - 日韩频道 TGshoucangAV_7
       - 🇷🇺_RU_俄罗斯联邦_Chen_8
       - 🇨🇦_CA_加拿大_Chen_9
       - 🇨🇦_CA_加拿大_Chen_10
@@ -299,9 +290,6 @@ proxy-groups:
       - 🇵🇹_PT_葡萄牙_Chen_2
       - 🇭🇰_HK_香港_Chen_3
       - 🇭🇰_HK_香港_Chen_4
-      - 国产频道 TGTBBAC_5
-      - 白嫖群组 TGfreeyule_6
-      - 日韩频道 TGshoucangAV_7
       - 🇷🇺_RU_俄罗斯联邦_Chen_8
       - 🇨🇦_CA_加拿大_Chen_9
       - 🇨🇦_CA_加拿大_Chen_10
@@ -395,9 +383,6 @@ proxy-groups:
       - 🇵🇹_PT_葡萄牙_Chen_2
       - 🇭🇰_HK_香港_Chen_3
       - 🇭🇰_HK_香港_Chen_4
-      - 国产频道 TGTBBAC_5
-      - 白嫖群组 TGfreeyule_6
-      - 日韩频道 TGshoucangAV_7
       - 🇷🇺_RU_俄罗斯联邦_Chen_8
       - 🇨🇦_CA_加拿大_Chen_9
       - 🇨🇦_CA_加拿大_Chen_10
@@ -491,9 +476,6 @@ proxy-groups:
       - 🇵🇹_PT_葡萄牙_Chen_2
       - 🇭🇰_HK_香港_Chen_3
       - 🇭🇰_HK_香港_Chen_4
-      - 国产频道 TGTBBAC_5
-      - 白嫖群组 TGfreeyule_6
-      - 日韩频道 TGshoucangAV_7
       - 🇷🇺_RU_俄罗斯联邦_Chen_8
       - 🇨🇦_CA_加拿大_Chen_9
       - 🇨🇦_CA_加拿大_Chen_10
@@ -587,9 +569,6 @@ proxy-groups:
       - 🇵🇹_PT_葡萄牙_Chen_2
       - 🇭🇰_HK_香港_Chen_3
       - 🇭🇰_HK_香港_Chen_4
-      - 国产频道 TGTBBAC_5
-      - 白嫖群组 TGfreeyule_6
-      - 日韩频道 TGshoucangAV_7
       - 🇷🇺_RU_俄罗斯联邦_Chen_8
       - 🇨🇦_CA_加拿大_Chen_9
       - 🇨🇦_CA_加拿大_Chen_10
@@ -684,9 +663,6 @@ proxy-groups:
       - 🇵🇹_PT_葡萄牙_Chen_2
       - 🇭🇰_HK_香港_Chen_3
       - 🇭🇰_HK_香港_Chen_4
-      - 国产频道 TGTBBAC_5
-      - 白嫖群组 TGfreeyule_6
-      - 日韩频道 TGshoucangAV_7
       - 🇷🇺_RU_俄罗斯联邦_Chen_8
       - 🇨🇦_CA_加拿大_Chen_9
       - 🇨🇦_CA_加拿大_Chen_10
@@ -790,9 +766,6 @@ proxy-groups:
       - 🇵🇹_PT_葡萄牙_Chen_2
       - 🇭🇰_HK_香港_Chen_3
       - 🇭🇰_HK_香港_Chen_4
-      - 国产频道 TGTBBAC_5
-      - 白嫖群组 TGfreeyule_6
-      - 日韩频道 TGshoucangAV_7
       - 🇷🇺_RU_俄罗斯联邦_Chen_8
       - 🇨🇦_CA_加拿大_Chen_9
       - 🇨🇦_CA_加拿大_Chen_10
