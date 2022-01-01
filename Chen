@@ -91,8 +91,6 @@ proxies:
   - {name: '🇮🇳_IN_印度_Chen_87', server: 192.46.210.73, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: '🇨🇳_CN_中国_Chen_88', server: 192.74.254.112, port: 52244, type: vmess, uuid: 015c0894-50e0-11ec-a3e8-00163c57bd9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /E0Y46mSw/, ws-headers: {Host: 192.74.254.112}}
   - {name: '🇲🇾_MY_马来西亚_Chen_89', server: 223.25.246.4, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: w4GUD28Bw9uCMdbc2pqA}
-  - {name: 'n_83马来西亚∞直连_90', server: gz1.52168.xyz, port: 1105, type: ssr, password: "epChJS35fV", cipher: aes-256-cfb, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 31028:PGgTsb, obfs-param: 87a8531028.baidu.com}
-  - {name: 'n_84马来西亚∞直连_91', server: gz1.52168.xyz, port: 1106, type: ssr, password: "epChJS35fV", cipher: aes-256-cfb, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 31028:PGgTsb, obfs-param: 87a8531028.baidu.com}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -185,8 +183,6 @@ proxy-groups:
       - 🇮🇳_IN_印度_Chen_87
       - 🇨🇳_CN_中国_Chen_88
       - 🇲🇾_MY_马来西亚_Chen_89
-      - n_83马来西亚∞直连_90
-      - n_84马来西亚∞直连_91
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -278,8 +274,6 @@ proxy-groups:
       - 🇮🇳_IN_印度_Chen_87
       - 🇨🇳_CN_中国_Chen_88
       - 🇲🇾_MY_马来西亚_Chen_89
-      - n_83马来西亚∞直连_90
-      - n_84马来西亚∞直连_91
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -372,8 +366,6 @@ proxy-groups:
       - 🇮🇳_IN_印度_Chen_87
       - 🇨🇳_CN_中国_Chen_88
       - 🇲🇾_MY_马来西亚_Chen_89
-      - n_83马来西亚∞直连_90
-      - n_84马来西亚∞直连_91
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -465,8 +457,6 @@ proxy-groups:
       - 🇮🇳_IN_印度_Chen_87
       - 🇨🇳_CN_中国_Chen_88
       - 🇲🇾_MY_马来西亚_Chen_89
-      - n_83马来西亚∞直连_90
-      - n_84马来西亚∞直连_91
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -558,8 +548,6 @@ proxy-groups:
       - 🇮🇳_IN_印度_Chen_87
       - 🇨🇳_CN_中国_Chen_88
       - 🇲🇾_MY_马来西亚_Chen_89
-      - n_83马来西亚∞直连_90
-      - n_84马来西亚∞直连_91
   - name: 📲 电报信息
     type: select
     proxies:
@@ -651,8 +639,6 @@ proxy-groups:
       - 🇮🇳_IN_印度_Chen_87
       - 🇨🇳_CN_中国_Chen_88
       - 🇲🇾_MY_马来西亚_Chen_89
-      - n_83马来西亚∞直连_90
-      - n_84马来西亚∞直连_91
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -745,8 +731,6 @@ proxy-groups:
       - 🇮🇳_IN_印度_Chen_87
       - 🇨🇳_CN_中国_Chen_88
       - 🇲🇾_MY_马来西亚_Chen_89
-      - n_83马来西亚∞直连_90
-      - n_84马来西亚∞直连_91
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -848,8 +832,6 @@ proxy-groups:
       - 🇮🇳_IN_印度_Chen_87
       - 🇨🇳_CN_中国_Chen_88
       - 🇲🇾_MY_马来西亚_Chen_89
-      - n_83马来西亚∞直连_90
-      - n_84马来西亚∞直连_91
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
