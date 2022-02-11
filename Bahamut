@@ -5,50 +5,104 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxy-groups:
-  - name: 📺 巴哈姆特
+  - name: bihai
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     use:
-      - cn
-
+      - bihai
+  - name: other_1
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - other_1
+  - name: other_2
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - other_2
+  - name: other_3
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - other_3
+  - name: other_4
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - other_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    use:
-      - other
+    proxies:
+      - other_1
+      - other_2
+      - other_3
+      - other_4
+      - bihai
 proxy-providers:
   # https://sspool.herokuapp.com/clash/proxies?c=DE
   # https://sspool.herokuapp.com/clash/proxies?nc=CN,JP,US,ZZ,KR,FR,TW,HK,MY,NL,RU,GB,SG,CH,LU,DE,SE&type=ss,ssr,vmess
-  cn:
+  # https://proxy.ednovas.xyz
+  # https://origamiboy.herokuapp.com/clash/proxies
+  bihai:
     type: http
-    url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/provider-cn.yaml"
-    path: sspool.herokuapp.com/provider-cn.yaml
+    url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/bihai.yaml"
+    path: sspool.herokuapp.com/bihai.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  rs:
+  # https://free.zdl.im/clash/proxies?nc=CA,US,ZZ,JP,CN,CN,TW,HK
+  other_1:
     type: http
-    url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/provider-rs.yaml"
-    path: sspool.herokuapp.com/provider-rs.yaml
+    url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/other_1.yaml"
+    path: sspool.herokuapp.com/other_1.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  other:
+  # https://1rmb.tk/clash/proxies?c=AE,AU,BE,DE    
+  other_2:
     type: http
-    url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/provider-other.yaml"
-    path: sspool.herokuapp.com/provider-other.yaml
+    url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/other_2.yaml"
+    path: sspool.herokuapp.com/other_2.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  # https://fq.lonxin.net/clash/proxies?c=AE,AU,BE,DE    
+  other_3:
+    type: http
+    url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/other_3.yaml"
+    path: sspool.herokuapp.com/other_3.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  # https://free.dswang.ga/clash/proxies?nc=CN,HK,TW,US,JP,ZZ&filter=nr
+  other_4:
+    type: http
+    url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/other_4.yaml"
+    path: sspool.herokuapp.com/other_4.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
 rule-providers:
   # github host文件：https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts
+  #https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml
   reject:
     type: http
     behavior: classical
@@ -59,7 +113,7 @@ rule-providers:
   proxy:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Proxy/Proxy_Classical.yaml"
+    url: "https://gitee.com/lcx12901/clash-profile/raw/master/ruleset/proxy.yaml"
     path: ./ruleset/proxy.yaml
     interval: 86400
 
@@ -105,13 +159,13 @@ rule-providers:
   Hijacking:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Hijacking/Hijacking_Resolve.yaml"
+    url: "https://gitee.com/lcx12901/clash-profile/raw/master/ruleset/Hijacking.yaml"
     path: ./ruleset/Hijacking.yaml
     interval: 86400
   Privacy:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Privacy/Privacy_Classical_Resolve.yaml"
+    url: "https://gitee.com/lcx12901/clash-profile/raw/master/ruleset/Privacy.yaml"
     path: ./ruleset/Privacy.yaml
     interval: 86400
 rules:
@@ -162,11 +216,11 @@ rules:
   - PROCESS-NAME,Clash for Windows,♻️ 自动选择
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN,microsoft.com,DIRECT
   - RULE-SET,mydirect,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,Hijacking,REJECT
   - RULE-SET,Privacy,REJECT
-  - RULE-SET,baha,📺 巴哈姆特
   - RULE-SET,proxyme,♻️ 自动选择
   - RULE-SET,proxy,♻️ 自动选择
   - GEOIP,CN,DIRECT
