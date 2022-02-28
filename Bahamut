@@ -50,12 +50,12 @@ proxy-groups:
       - other_2
       - other_3
       - other_4
-      - bihai
+      #- bihai
 proxy-providers:
   # https://sspool.herokuapp.com/clash/proxies?c=DE
   # https://sspool.herokuapp.com/clash/proxies?nc=CN,JP,US,ZZ,KR,FR,TW,HK,MY,NL,RU,GB,SG,CH,LU,DE,SE&type=ss,ssr,vmess
   # https://proxy.ednovas.xyz
-  # https://origamiboy.herokuapp.com/clash/proxies
+  # https://proxies.bihai.cf/clash/proxies?nc=CN,TW,JP,US,CA
   bihai:
     type: http
     url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/bihai.yaml"
@@ -73,7 +73,7 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  # https://1rmb.tk/clash/proxies?c=AE,AU,BE,DE    
+  # https://proxy.leefake.xyz/clash/proxies   
   other_2:
     type: http
     url: "https://gitee.com/lcx12901/clash-profile/raw/master/sspool.herokuapp.com/other_2.yaml"
