@@ -50,7 +50,7 @@ proxy-groups:
       - other_2
       - other_3
       - other_4
-      #- bihai
+      - bihai
 proxy-providers:
   # https://sspool.herokuapp.com/clash/proxies?c=DE
   # https://sspool.herokuapp.com/clash/proxies?nc=CN,JP,US,ZZ,KR,FR,TW,HK,MY,NL,RU,GB,SG,CH,LU,DE,SE&type=ss,ssr,vmess
