@@ -5,438 +5,683 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"name":"🇨🇳_中国_ChenX-220311_1","server":"120.233.7.78","port":50111,"type":"ssr","password":"abK09D1FnV","cipher":"rc4-md5","protocol":"auth_aes128_md5","obfs":"http_post","protocol-param":"294794:d39XoFl1My"}
-  - {"name":"🇨🇳_中国_ChenX-220311_2","server":"cn2relay01.yiyorelay.xyz","port":2701,"type":"ssr","password":"jFa4F1","cipher":"chacha20-ietf","protocol":"auth_aes128_sha1","obfs":"plain","protocol-param":"62611:fx2iOd","obfs-param":"microsoft.com"}
-  - {"name":"🇨🇳_中国_ChenX-220311_3","server":"cn2relay01.yiyorelay.xyz","port":2709,"type":"ssr","password":"jFa4F1","cipher":"chacha20-ietf","protocol":"auth_aes128_sha1","obfs":"plain","protocol-param":"62611:fx2iOd","obfs-param":"microsoft.com"}
-  - {"name":"🇨🇳_中国_ChenX-220311_4","server":"117.28.243.220","port":8221,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_5","server":"117.28.243.220","port":8147,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇮🇳_印度_ChenX-220311_6","server":"172.105.59.32","port":8080,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"name":"🇮🇳_印度_ChenX-220311_7","server":"172.105.59.32","port":8881,"type":"ss","cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"name":"🇨🇳_中国_ChenX-220311_8","server":"117.28.243.154","port":6145,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_9","server":"117.28.243.154","port":6150,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_10","server":"117.28.243.154","port":6188,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_11","server":"117.28.243.164","port":8007,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_12","server":"117.28.243.164","port":8366,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_13","server":"117.28.243.220","port":8186,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_14","server":"117.28.243.220","port":8223,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_15","server":"117.28.243.141","port":6112,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_16","server":"117.28.243.141","port":6149,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_17","server":"117.28.243.220","port":8076,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇸🇬_新加坡_ChenX-220311_18","server":"sg-am11.eqnode.net","port":8181,"type":"ssr","password":"kKdNNt2HZ","cipher":"aes-256-cfb","protocol":"origin","obfs":"tls1.2_ticket_auth","obfs-param":"releases.ubuntu.com"}
-  - {"name":"🇺🇸_美国_ChenX-220311_19","server":"tj-10.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇺🇸_美国_ChenX-220311_20","server":"tj-11.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇺🇸_美国_ChenX-220311_21","server":"tj-12.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇫🇷_法国_ChenX-220311_22","server":"51.255.66.185","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"🇫🇷_法国_ChenX-220311_23","server":"51.255.66.185","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"name":"🇫🇷_法国_ChenX-220311_24","server":"51.255.87.96","port":8009,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"name":"🇫🇷_法国_ChenX-220311_25","server":"51.255.87.96","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"name":"🇦🇺_澳大利亚_ChenX-220311_26","server":"129.154.50.0","port":29363,"type":"vmess","uuid":"c71ba6b4-98c0-4e7c-b8a1-4b074a44933c","alterId":0,"cipher":"auto","tls":false,"network":"tcp","ws-opts":{"path":"/","headers":{"host":"tj-12.t8737.shop"}}}
-  - {"name":"🇨🇳_中国_ChenX-220311_27","server":"CMT.SSRSS.CLUB","port":35523,"type":"vmess","uuid":"7ed37d86-0018-194e-5e78-9c7a0846831e","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/yy","headers":{"host":"761384820-server.s0.aicdn.com"}}}
-  - {"name":"🇨🇳_中国_ChenX-220311_28","server":"117.28.243.165","port":8050,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_29","server":"117.28.243.165","port":8051,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_30","server":"117.28.243.173","port":4173,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇨🇳_中国_ChenX-220311_31","server":"117.28.243.220","port":8254,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
-  - {"name":"🇺🇸_美国_ChenX-220311_32","server":"tj-13.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇺🇸_美国_ChenX-220311_33","server":"tj-14.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇺🇸_美国_ChenX-220311_34","server":"tj-15.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇺🇸_美国_ChenX-220311_35","server":"38.114.114.67","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"name":"🇺🇸_美国_ChenX-220311_36","server":"45.32.94.166","port":31676,"type":"vmess","uuid":"6f3ec45c-5283-40e8-aea9-7749f4c75753","alterId":0,"cipher":"auto","tls":false,"network":"http","ws-opts":{"path":"/","headers":{"host":"45.32.94.166"}}}
-  - {"name":"🇬🇧_英国_ChenX-220311_37","server":"172.99.190.92","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"name":"🇬🇧_英国_ChenX-220311_38","server":"172.99.190.92","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"name":"🇬🇧_英国_ChenX-220311_39","server":"172.99.190.92","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"name":"🇬🇧_英国_ChenX-220311_40","server":"172.99.190.92","port":9102,"type":"ss","cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"name":"🇬🇧_英国_ChenX-220311_41","server":"172.99.190.188","port":5600,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"name":"🇬🇧_英国_ChenX-220311_42","server":"172.99.190.188","port":5601,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"name":"🇨🇳_中国_ChenX-220311_43","server":"CMT.SSRSS.CLUB","port":35518,"type":"vmess","uuid":"7ed37d86-0018-194e-5e78-9c7a0846831e","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/yy","headers":{"host":"761384820-server.s0.aicdn.com"}}}
-  - {"name":"🇬🇧_英国_ChenX-220311_44","server":"145.239.7.164","port":2376,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"name":"🇰🇷_韩国_ChenX-220311_45","server":"tj-05.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇰🇷_韩国_ChenX-220311_46","server":"tj-06.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇰🇷_韩国_ChenX-220311_47","server":"tj-07.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇰🇷_韩国_ChenX-220311_48","server":"tj-08.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇨🇳_中国_ChenX-220311_49","server":"183.232.56.81","port":16627,"type":"vmess","uuid":"5fba0013-29be-3008-911b-f127aac4f676","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/v2ray","headers":{"host":"183.232.56.81"}}}
-  - {"name":"🇭🇰_香港_ChenX-220311_50","server":"az.tomcloud.buzz","port":80,"type":"vmess","uuid":"54d4220d-7203-45a2-8a43-78fc5c518e66","alterId":0,"cipher":"auto","tls":false,"network":"http","ws-opts":{"path":"/","headers":{"host":"az.tomcloud.buzz"}}}
-  - {"name":"🇨🇳_中国_ChenX-220311_51","server":"iepl-gz.yyuuii.cyou","port":10804,"type":"ssr","password":"hGkQ6915tD","cipher":"aes-256-cfb","protocol":"auth_aes128_md5","obfs":"tls1.2_ticket_auth","protocol-param":"32381:C2pHyiQfgm","obfs-param":"ajax.microsoft.com"}
-  - {"name":"🇭🇰_香港_ChenX-220311_52","server":"tj-01.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇭🇰_香港_ChenX-220311_53","server":"tj-02.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇭🇰_香港_ChenX-220311_54","server":"tj-03.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇭🇰_香港_ChenX-220311_55","server":"tj-04.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇭🇰_香港_ChenX-220311_56","server":"tj-16.t8737.shop","port":11223,"type":"trojan","password":"7b521a74-6bee-477e-9ae3-bd6a217dcfcc"}
-  - {"name":"🇭🇰_香港_ChenX-220311_57","server":"104.208.109.91","port":10119,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dRUCE7YmtoVp"}
+  - {"name":"🇦🇺_澳大利亚_ChenX-220304_1","server":"185.148.14.58","port":53514,"type":"trojan","password":"3r90JDGBYA"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_2","server":"134.195.196.81","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_3","server":"134.195.196.81","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_4","server":"134.195.196.81","port":6379,"type":"ss","cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_5","server":"134.195.196.81","port":8090,"type":"ss","cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_6","server":"134.195.196.81","port":3306,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_7","server":"134.195.196.81","port":3389,"type":"ss","cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_8","server":"134.195.196.187","port":8080,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_9","server":"134.195.196.187","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_10","server":"134.195.196.68","port":6697,"type":"ss","cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"name":"🇨🇳_中国_ChenX-220304_11","server":"101.91.121.247","port":50004,"type":"ss","cipher":"aes-256-cfb","password":"4415934295"}
+  - {"name":"🇨🇳_中国_ChenX-220304_12","server":"101.132.192.212","port":30003,"type":"ss","cipher":"aes-128-gcm","password":"desperadoj.com_free_proxy_d39m"}
+  - {"name":"🇨🇳_中国_ChenX-220304_13","server":"117.28.243.220","port":8045,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_14","server":"bp.pupuup.tools","port":80,"type":"vmess","uuid":"c55e1543-0608-3b57-8239-da48a17a6a17","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/videos","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"🇨🇳_中国_ChenX-220304_15","server":"cscu.wecanfly.top","port":40003,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇨🇳_中国_ChenX-220304_16","server":"cscu.wecanfly.top","port":51131,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇨🇳_中国_ChenX-220304_17","server":"cscu.wecanfly.top","port":51210,"type":"trojan","password":"58975106-dc46-4942-b79e-336da67f1bbd"}
+  - {"name":"🇨🇳_中国_ChenX-220304_18","server":"cscu.wecanfly.top","port":51227,"type":"trojan","password":"58975106-dc46-4942-b79e-336da67f1bbd"}
+  - {"name":"🇨🇳_中国_ChenX-220304_19","server":"fsyd.wecanfly.top","port":52000,"type":"trojan","password":"58975106-dc46-4942-b79e-336da67f1bbd"}
+  - {"name":"🇨🇳_中国_ChenX-220304_20","server":"gzcm.v2hub.top","port":19221,"type":"trojan","password":"da8f4c57-d022-3ccc-ae2a-a70256d68c32"}
+  - {"name":"🇨🇳_中国_ChenX-220304_21","server":"gzcm.v2hub.top","port":19321,"type":"trojan","password":"da8f4c57-d022-3ccc-ae2a-a70256d68c32"}
+  - {"name":"🇨🇳_中国_ChenX-220304_22","server":"hk-hkg-sh-hk-02-tr.cdn.savoy.click","port":21089,"type":"trojan","password":"SfobRIcergHchqBFzzua"}
+  - {"name":"🇨🇳_中国_ChenX-220304_23","server":"hk-hkg-shhk-001-tr.cdn.savoy.click","port":20089,"type":"trojan","password":"SfobRIcergHchqBFzzua"}
+  - {"name":"🇨🇳_中国_ChenX-220304_24","server":"hygz.doggogogo.top","port":50102,"type":"trojan","password":"58975106-dc46-4942-b79e-336da67f1bbd"}
+  - {"name":"🇨🇳_中国_ChenX-220304_25","server":"hygz.doggogogo.top","port":53021,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇨🇳_中国_ChenX-220304_26","server":"music.desperadoj.com","port":30003,"type":"ss","cipher":"aes-128-gcm","password":"desperadoj.com_free_proxy_d39m"}
+  - {"name":"🇨🇳_中国_ChenX-220304_27","server":"s1.upyun.online","port":12340,"type":"trojan","password":"4809af3e-b8f2-4f07-9cfb-79d0a7bb1219"}
+  - {"name":"🇨🇳_中国_ChenX-220304_28","server":"s3.upyun.online","port":12340,"type":"trojan","password":"4809af3e-b8f2-4f07-9cfb-79d0a7bb1219"}
+  - {"name":"🇨🇳_中国_ChenX-220304_29","server":"zj1.doggogogo.top","port":51132,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇨🇳_中国_ChenX-220304_30","server":"gz2.52168.xyz","port":2103,"type":"ssr","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth","protocol-param":"149:y711wfz6uln","obfs-param":"30a2a149.baidu.com"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_31","server":"134.195.196.81","port":8118,"type":"ss","cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_32","server":"134.195.196.187","port":8008,"type":"ss","cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"name":"🇨🇦_加拿大_ChenX-220304_33","server":"ca-trojan.bonds.id","port":443,"type":"trojan","password":"36ebefac5a3ef0-b4ab-11eb-b65e-1239d0255272"}
+  - {"name":"🇨🇳_中国_ChenX-220304_34","server":"117.28.243.154","port":6145,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_35","server":"117.28.243.154","port":6188,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_36","server":"117.28.243.164","port":8366,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_37","server":"cscu.wecanfly.top","port":51132,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇨🇳_中国_ChenX-220304_38","server":"fsyd.wecanfly.top","port":51133,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇹🇼_台湾_ChenX-220304_39","server":"tw.tcpbbr.net","port":443,"type":"trojan","password":"b155c2a4-ee79-11eb-a8bf-f23c91cfbbc9"}
+  - {"name":"🇹🇼_台湾_ChenX-220304_40","server":"2.58.242.43","port":443,"type":"trojan","password":"7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT"}
+  - {"name":"🇨🇳_中国_ChenX-220304_41","server":"117.28.243.220","port":8186,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_42","server":"117.28.243.220","port":8223,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_43","server":"gz2.52168.xyz","port":2101,"type":"ssr","password":"epChJS35fV","cipher":"aes-256-cfb","protocol":"auth_aes128_sha1","obfs":"tls1.2_ticket_auth","protocol-param":"149:y711wfz6uln","obfs-param":"30a2a149.baidu.com"}
+  - {"name":"🇨🇳_中国_ChenX-220304_44","server":"117.28.243.220","port":8076,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_45","server":"cn2.wecanfly.top","port":51134,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇨🇳_中国_ChenX-220304_46","server":"fsyd.wecanfly.top","port":51219,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇸🇬_新加坡_ChenX-220304_47","server":"sg1-trojan.bonds.id","port":443,"type":"trojan","password":"5c5ceb40-902b-11eb-945a-1239d0255272"}
+  - {"name":"🇸🇬_新加坡_ChenX-220304_48","server":"sg3-trojan.bonds.id","port":443,"type":"trojan","password":"4c7985e0-79e8-11eb-b8d3-1239d0255272"}
+  - {"name":"🇨🇳_中国_ChenX-220304_49","server":"fsyd.wecanfly.top","port":51221,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇨🇳_中国_ChenX-220304_50","server":"hygz.doggogogo.top","port":53030,"type":"trojan","password":"5eaea1b9-b977-3391-b7cb-370addb40ce2"}
+  - {"name":"🇯🇵_日本_ChenX-220304_51","server":"jp-am48-9.eqnode.net","port":8081,"type":"ssr","password":"3H2aN5Gnm","cipher":"aes-256-cfb","protocol":"origin","obfs":"tls1.2_ticket_auth"}
+  - {"name":"🇯🇵_日本_ChenX-220304_52","server":"share.softbank.mjj-home.com","port":443,"type":"trojan","password":"share.mjj-home.com"}
+  - {"name":"🇯🇵_日本_ChenX-220304_53","server":"106.180.225.69","port":1443,"type":"trojan","password":"7x42LetRa0"}
+  - {"name":"🇯🇵_日本_ChenX-220304_54","server":"172.105.222.98","port":80,"type":"vmess","uuid":"4e1d0b12-25f0-363f-8659-9c6a3ca1fcda","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"172.105.222.98"}}}
+  - {"name":"🇯🇵_日本_ChenX-220304_55","server":"lijp.scsevers.cf","port":443,"type":"trojan","password":"sharecentre"}
+  - {"name":"🇯🇵_日本_ChenX-220304_56","server":"tky3.ssgnode.ga","port":443,"type":"trojan","password":"82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272"}
+  - {"name":"🇫🇷_法国_ChenX-220304_57","server":"fr-am1-1.eqsunshine.com","port":8181,"type":"ssr","password":"gVWc0WaJn","cipher":"aes-256-cfb","protocol":"origin","obfs":"tls1.2_ticket_auth"}
+  - {"name":"🇫🇷_法国_ChenX-220304_58","server":"51.255.66.185","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇫🇷_法国_ChenX-220304_59","server":"51.255.66.185","port":7001,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇫🇷_法国_ChenX-220304_60","server":"51.255.66.185","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇫🇷_法国_ChenX-220304_61","server":"51.255.66.185","port":7307,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"🇫🇷_法国_ChenX-220304_62","server":"51.255.66.185","port":8080,"type":"ss","cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"name":"🇫🇷_法国_ChenX-220304_63","server":"fr-trojan.bonds.id","port":443,"type":"trojan","password":"7c9b7560-b0f7-11eb-a397-1239d0255272"}
+  - {"name":"🇲🇰_前南马其顿_ChenX-220304_64","server":"46.183.185.15","port":989,"type":"ss","cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"name":"🇷🇴_罗马尼亚_ChenX-220304_65","server":"62.216.91.229","port":9080,"type":"ss","cipher":"aes-256-cfb","password":"VP8ZPxQpJtZRCjfZ"}
+  - {"name":"🇨🇳_中国_ChenX-220304_66","server":"117.28.243.165","port":8050,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_67","server":"117.28.243.165","port":8051,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_68","server":"117.28.243.173","port":2173,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇨🇳_中国_ChenX-220304_69","server":"117.28.243.173","port":4173,"type":"ss","cipher":"rc4-md5","password":"passinfo123"}
+  - {"name":"🇺🇸_美国_ChenX-220304_70","server":"api.mjj-home.com","port":443,"type":"trojan","password":"share.mjj-home.com"}
+  - {"name":"🇨🇳_中国_ChenX-220304_71","server":"gzyd-01.yyuuii.cyou","port":23033,"type":"ssr","password":"hGkQ6915tD","cipher":"aes-256-cfb","protocol":"auth_aes128_md5","obfs":"tls1.2_ticket_auth","protocol-param":"32381:C2pHyiQfgm","obfs-param":"ajax.microsoft.com"}
+  - {"name":"🇨🇳_中国_ChenX-220304_72","server":"s2.upyun.online","port":12340,"type":"trojan","password":"4809af3e-b8f2-4f07-9cfb-79d0a7bb1219"}
+  - {"name":"🇺🇸_美国_ChenX-220304_73","server":"45.32.94.166","port":31676,"type":"vmess","uuid":"6f3ec45c-5283-40e8-aea9-7749f4c75753","alterId":0,"cipher":"auto","tls":false,"network":"http","ws-opts":{"path":"/","headers":{"host":"45.32.94.166"}}}
+  - {"name":"🇺🇸_美国_ChenX-220304_74","server":"104.160.43.43","port":443,"type":"vmess","uuid":"a307a6f7-b697-400e-bc7e-e6356de877c2","alterId":0,"cipher":"auto","tls":true,"network":"ws","ws-opts":{"path":"/asdfaszzsdfa","headers":{"host":"104.160.43.43"}}}
+  - {"name":"🇩🇪_德国_ChenX-220304_75","server":"152.70.188.10","port":443,"type":"vmess","uuid":"6ae16454-de6a-4113-c64e-0549be488f15","alterId":0,"cipher":"auto","tls":true,"network":"tcp","ws-opts":{"path":"/asdfaszzsdfa","headers":{"host":"104.160.43.43"}}}
+  - {"name":"🇬🇧_英国_ChenX-220304_76","server":"172.99.190.92","port":443,"type":"ss","cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"name":"🇬🇧_英国_ChenX-220304_77","server":"172.99.190.92","port":7002,"type":"ss","cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"name":"🇬🇧_英国_ChenX-220304_78","server":"172.99.190.92","port":7306,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"🇬🇧_英国_ChenX-220304_79","server":"172.99.190.92","port":7307,"type":"ss","cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"name":"🇺🇸_美国_ChenX-220304_80","server":"56789.gq","port":443,"type":"trojan","password":"dc1453e4-e5c4-4b30-bee3-6ed2adce9ee3"}
+  - {"name":"🇭🇰_香港_ChenX-220304_81","server":"azhk.relay.qchwnd.moe","port":443,"type":"trojan","password":"52face98-c4cb-4299-aa38-9546085b0619"}
+  - {"name":"🇺🇸_美国_ChenX-220304_82","server":"us01.straycloud.icu","port":442,"type":"trojan","password":"0ac65136-5962-49d6-91f0-138957f6dec9"}
+  - {"name":"🇺🇸_美国_ChenX-220304_83","server":"us-trojan.bonds.id","port":443,"type":"trojan","password":"38239dd0-902b-11eb-afc1-1239d0255272"}
+  - {"name":"🇺🇸_美国_ChenX-220304_84","server":"v.9051246.xyz","port":443,"type":"trojan","password":18825786}
+  - {"name":"🇺🇸_美国_ChenX-220304_85","server":"www.gomacau.gq","port":443,"type":"trojan","password":"b5fc9fa9-796d-4185-a316-395ecac04a85"}
+  - {"name":"🇺🇸_美国_ChenX-220304_86","server":"xioix.gq","port":443,"type":"trojan","password":"9b7195ba-f029-4d7d-a728-ece6e0fdc363"}
+  - {"name":"🇬🇧_英国_ChenX-220304_87","server":"109.74.194.189","port":1443,"type":"trojan","password":"7x42LetRa0"}
+  - {"name":"🇬🇧_英国_ChenX-220304_88","server":"145.239.7.164","port":2376,"type":"ss","cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"name":"🇭🇰_香港_ChenX-220304_89","server":"ssl.tcpbbr.net","port":443,"type":"trojan","password":"5c7b33c6-6d83-11eb-b77b-f23c913c8d2b"}
+  - {"name":"🇭🇰_香港_ChenX-220304_90","server":"api.tcpbbr.net","port":443,"type":"trojan","password":"5c7b33c6-6d83-11eb-b77b-f23c913c8d2b"}
+  - {"name":"🇸🇬_新加坡_ChenX-220304_91","server":"hk31.ssgnode.ga","port":443,"type":"trojan","password":"41742_920c8caa"}
+  - {"name":"🇭🇰_香港_ChenX-220304_92","server":"www.zx07.top","port":443,"type":"trojan","password":"L1qNeGrY58ApwrRA"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_中国_ChenX-220311_1
-      - 🇨🇳_中国_ChenX-220311_2
-      - 🇨🇳_中国_ChenX-220311_3
-      - 🇨🇳_中国_ChenX-220311_4
-      - 🇨🇳_中国_ChenX-220311_5
-      - 🇮🇳_印度_ChenX-220311_6
-      - 🇮🇳_印度_ChenX-220311_7
-      - 🇨🇳_中国_ChenX-220311_8
-      - 🇨🇳_中国_ChenX-220311_9
-      - 🇨🇳_中国_ChenX-220311_10
-      - 🇨🇳_中国_ChenX-220311_11
-      - 🇨🇳_中国_ChenX-220311_12
-      - 🇨🇳_中国_ChenX-220311_13
-      - 🇨🇳_中国_ChenX-220311_14
-      - 🇨🇳_中国_ChenX-220311_15
-      - 🇨🇳_中国_ChenX-220311_16
-      - 🇨🇳_中国_ChenX-220311_17
-      - 🇸🇬_新加坡_ChenX-220311_18
-      - 🇺🇸_美国_ChenX-220311_19
-      - 🇺🇸_美国_ChenX-220311_20
-      - 🇺🇸_美国_ChenX-220311_21
-      - 🇫🇷_法国_ChenX-220311_22
-      - 🇫🇷_法国_ChenX-220311_23
-      - 🇫🇷_法国_ChenX-220311_24
-      - 🇫🇷_法国_ChenX-220311_25
-      - 🇦🇺_澳大利亚_ChenX-220311_26
-      - 🇨🇳_中国_ChenX-220311_27
-      - 🇨🇳_中国_ChenX-220311_28
-      - 🇨🇳_中国_ChenX-220311_29
-      - 🇨🇳_中国_ChenX-220311_30
-      - 🇨🇳_中国_ChenX-220311_31
-      - 🇺🇸_美国_ChenX-220311_32
-      - 🇺🇸_美国_ChenX-220311_33
-      - 🇺🇸_美国_ChenX-220311_34
-      - 🇺🇸_美国_ChenX-220311_35
-      - 🇺🇸_美国_ChenX-220311_36
-      - 🇬🇧_英国_ChenX-220311_37
-      - 🇬🇧_英国_ChenX-220311_38
-      - 🇬🇧_英国_ChenX-220311_39
-      - 🇬🇧_英国_ChenX-220311_40
-      - 🇬🇧_英国_ChenX-220311_41
-      - 🇬🇧_英国_ChenX-220311_42
-      - 🇨🇳_中国_ChenX-220311_43
-      - 🇬🇧_英国_ChenX-220311_44
-      - 🇰🇷_韩国_ChenX-220311_45
-      - 🇰🇷_韩国_ChenX-220311_46
-      - 🇰🇷_韩国_ChenX-220311_47
-      - 🇰🇷_韩国_ChenX-220311_48
-      - 🇨🇳_中国_ChenX-220311_49
-      - 🇭🇰_香港_ChenX-220311_50
-      - 🇨🇳_中国_ChenX-220311_51
-      - 🇭🇰_香港_ChenX-220311_52
-      - 🇭🇰_香港_ChenX-220311_53
-      - 🇭🇰_香港_ChenX-220311_54
-      - 🇭🇰_香港_ChenX-220311_55
-      - 🇭🇰_香港_ChenX-220311_56
-      - 🇭🇰_香港_ChenX-220311_57
+      - 🇦🇺_澳大利亚_ChenX-220304_1
+      - 🇨🇦_加拿大_ChenX-220304_2
+      - 🇨🇦_加拿大_ChenX-220304_3
+      - 🇨🇦_加拿大_ChenX-220304_4
+      - 🇨🇦_加拿大_ChenX-220304_5
+      - 🇨🇦_加拿大_ChenX-220304_6
+      - 🇨🇦_加拿大_ChenX-220304_7
+      - 🇨🇦_加拿大_ChenX-220304_8
+      - 🇨🇦_加拿大_ChenX-220304_9
+      - 🇨🇦_加拿大_ChenX-220304_10
+      - 🇨🇳_中国_ChenX-220304_11
+      - 🇨🇳_中国_ChenX-220304_12
+      - 🇨🇳_中国_ChenX-220304_13
+      - 🇨🇳_中国_ChenX-220304_14
+      - 🇨🇳_中国_ChenX-220304_15
+      - 🇨🇳_中国_ChenX-220304_16
+      - 🇨🇳_中国_ChenX-220304_17
+      - 🇨🇳_中国_ChenX-220304_18
+      - 🇨🇳_中国_ChenX-220304_19
+      - 🇨🇳_中国_ChenX-220304_20
+      - 🇨🇳_中国_ChenX-220304_21
+      - 🇨🇳_中国_ChenX-220304_22
+      - 🇨🇳_中国_ChenX-220304_23
+      - 🇨🇳_中国_ChenX-220304_24
+      - 🇨🇳_中国_ChenX-220304_25
+      - 🇨🇳_中国_ChenX-220304_26
+      - 🇨🇳_中国_ChenX-220304_27
+      - 🇨🇳_中国_ChenX-220304_28
+      - 🇨🇳_中国_ChenX-220304_29
+      - 🇨🇳_中国_ChenX-220304_30
+      - 🇨🇦_加拿大_ChenX-220304_31
+      - 🇨🇦_加拿大_ChenX-220304_32
+      - 🇨🇦_加拿大_ChenX-220304_33
+      - 🇨🇳_中国_ChenX-220304_34
+      - 🇨🇳_中国_ChenX-220304_35
+      - 🇨🇳_中国_ChenX-220304_36
+      - 🇨🇳_中国_ChenX-220304_37
+      - 🇨🇳_中国_ChenX-220304_38
+      - 🇹🇼_台湾_ChenX-220304_39
+      - 🇹🇼_台湾_ChenX-220304_40
+      - 🇨🇳_中国_ChenX-220304_41
+      - 🇨🇳_中国_ChenX-220304_42
+      - 🇨🇳_中国_ChenX-220304_43
+      - 🇨🇳_中国_ChenX-220304_44
+      - 🇨🇳_中国_ChenX-220304_45
+      - 🇨🇳_中国_ChenX-220304_46
+      - 🇸🇬_新加坡_ChenX-220304_47
+      - 🇸🇬_新加坡_ChenX-220304_48
+      - 🇨🇳_中国_ChenX-220304_49
+      - 🇨🇳_中国_ChenX-220304_50
+      - 🇯🇵_日本_ChenX-220304_51
+      - 🇯🇵_日本_ChenX-220304_52
+      - 🇯🇵_日本_ChenX-220304_53
+      - 🇯🇵_日本_ChenX-220304_54
+      - 🇯🇵_日本_ChenX-220304_55
+      - 🇯🇵_日本_ChenX-220304_56
+      - 🇫🇷_法国_ChenX-220304_57
+      - 🇫🇷_法国_ChenX-220304_58
+      - 🇫🇷_法国_ChenX-220304_59
+      - 🇫🇷_法国_ChenX-220304_60
+      - 🇫🇷_法国_ChenX-220304_61
+      - 🇫🇷_法国_ChenX-220304_62
+      - 🇫🇷_法国_ChenX-220304_63
+      - 🇲🇰_前南马其顿_ChenX-220304_64
+      - 🇷🇴_罗马尼亚_ChenX-220304_65
+      - 🇨🇳_中国_ChenX-220304_66
+      - 🇨🇳_中国_ChenX-220304_67
+      - 🇨🇳_中国_ChenX-220304_68
+      - 🇨🇳_中国_ChenX-220304_69
+      - 🇺🇸_美国_ChenX-220304_70
+      - 🇨🇳_中国_ChenX-220304_71
+      - 🇨🇳_中国_ChenX-220304_72
+      - 🇺🇸_美国_ChenX-220304_73
+      - 🇺🇸_美国_ChenX-220304_74
+      - 🇩🇪_德国_ChenX-220304_75
+      - 🇬🇧_英国_ChenX-220304_76
+      - 🇬🇧_英国_ChenX-220304_77
+      - 🇬🇧_英国_ChenX-220304_78
+      - 🇬🇧_英国_ChenX-220304_79
+      - 🇺🇸_美国_ChenX-220304_80
+      - 🇭🇰_香港_ChenX-220304_81
+      - 🇺🇸_美国_ChenX-220304_82
+      - 🇺🇸_美国_ChenX-220304_83
+      - 🇺🇸_美国_ChenX-220304_84
+      - 🇺🇸_美国_ChenX-220304_85
+      - 🇺🇸_美国_ChenX-220304_86
+      - 🇬🇧_英国_ChenX-220304_87
+      - 🇬🇧_英国_ChenX-220304_88
+      - 🇭🇰_香港_ChenX-220304_89
+      - 🇭🇰_香港_ChenX-220304_90
+      - 🇸🇬_新加坡_ChenX-220304_91
+      - 🇭🇰_香港_ChenX-220304_92
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_中国_ChenX-220311_1
-      - 🇨🇳_中国_ChenX-220311_2
-      - 🇨🇳_中国_ChenX-220311_3
-      - 🇨🇳_中国_ChenX-220311_4
-      - 🇨🇳_中国_ChenX-220311_5
-      - 🇮🇳_印度_ChenX-220311_6
-      - 🇮🇳_印度_ChenX-220311_7
-      - 🇨🇳_中国_ChenX-220311_8
-      - 🇨🇳_中国_ChenX-220311_9
-      - 🇨🇳_中国_ChenX-220311_10
-      - 🇨🇳_中国_ChenX-220311_11
-      - 🇨🇳_中国_ChenX-220311_12
-      - 🇨🇳_中国_ChenX-220311_13
-      - 🇨🇳_中国_ChenX-220311_14
-      - 🇨🇳_中国_ChenX-220311_15
-      - 🇨🇳_中国_ChenX-220311_16
-      - 🇨🇳_中国_ChenX-220311_17
-      - 🇸🇬_新加坡_ChenX-220311_18
-      - 🇺🇸_美国_ChenX-220311_19
-      - 🇺🇸_美国_ChenX-220311_20
-      - 🇺🇸_美国_ChenX-220311_21
-      - 🇫🇷_法国_ChenX-220311_22
-      - 🇫🇷_法国_ChenX-220311_23
-      - 🇫🇷_法国_ChenX-220311_24
-      - 🇫🇷_法国_ChenX-220311_25
-      - 🇦🇺_澳大利亚_ChenX-220311_26
-      - 🇨🇳_中国_ChenX-220311_27
-      - 🇨🇳_中国_ChenX-220311_28
-      - 🇨🇳_中国_ChenX-220311_29
-      - 🇨🇳_中国_ChenX-220311_30
-      - 🇨🇳_中国_ChenX-220311_31
-      - 🇺🇸_美国_ChenX-220311_32
-      - 🇺🇸_美国_ChenX-220311_33
-      - 🇺🇸_美国_ChenX-220311_34
-      - 🇺🇸_美国_ChenX-220311_35
-      - 🇺🇸_美国_ChenX-220311_36
-      - 🇬🇧_英国_ChenX-220311_37
-      - 🇬🇧_英国_ChenX-220311_38
-      - 🇬🇧_英国_ChenX-220311_39
-      - 🇬🇧_英国_ChenX-220311_40
-      - 🇬🇧_英国_ChenX-220311_41
-      - 🇬🇧_英国_ChenX-220311_42
-      - 🇨🇳_中国_ChenX-220311_43
-      - 🇬🇧_英国_ChenX-220311_44
-      - 🇰🇷_韩国_ChenX-220311_45
-      - 🇰🇷_韩国_ChenX-220311_46
-      - 🇰🇷_韩国_ChenX-220311_47
-      - 🇰🇷_韩国_ChenX-220311_48
-      - 🇨🇳_中国_ChenX-220311_49
-      - 🇭🇰_香港_ChenX-220311_50
-      - 🇨🇳_中国_ChenX-220311_51
-      - 🇭🇰_香港_ChenX-220311_52
-      - 🇭🇰_香港_ChenX-220311_53
-      - 🇭🇰_香港_ChenX-220311_54
-      - 🇭🇰_香港_ChenX-220311_55
-      - 🇭🇰_香港_ChenX-220311_56
-      - 🇭🇰_香港_ChenX-220311_57
+      - 🇦🇺_澳大利亚_ChenX-220304_1
+      - 🇨🇦_加拿大_ChenX-220304_2
+      - 🇨🇦_加拿大_ChenX-220304_3
+      - 🇨🇦_加拿大_ChenX-220304_4
+      - 🇨🇦_加拿大_ChenX-220304_5
+      - 🇨🇦_加拿大_ChenX-220304_6
+      - 🇨🇦_加拿大_ChenX-220304_7
+      - 🇨🇦_加拿大_ChenX-220304_8
+      - 🇨🇦_加拿大_ChenX-220304_9
+      - 🇨🇦_加拿大_ChenX-220304_10
+      - 🇨🇳_中国_ChenX-220304_11
+      - 🇨🇳_中国_ChenX-220304_12
+      - 🇨🇳_中国_ChenX-220304_13
+      - 🇨🇳_中国_ChenX-220304_14
+      - 🇨🇳_中国_ChenX-220304_15
+      - 🇨🇳_中国_ChenX-220304_16
+      - 🇨🇳_中国_ChenX-220304_17
+      - 🇨🇳_中国_ChenX-220304_18
+      - 🇨🇳_中国_ChenX-220304_19
+      - 🇨🇳_中国_ChenX-220304_20
+      - 🇨🇳_中国_ChenX-220304_21
+      - 🇨🇳_中国_ChenX-220304_22
+      - 🇨🇳_中国_ChenX-220304_23
+      - 🇨🇳_中国_ChenX-220304_24
+      - 🇨🇳_中国_ChenX-220304_25
+      - 🇨🇳_中国_ChenX-220304_26
+      - 🇨🇳_中国_ChenX-220304_27
+      - 🇨🇳_中国_ChenX-220304_28
+      - 🇨🇳_中国_ChenX-220304_29
+      - 🇨🇳_中国_ChenX-220304_30
+      - 🇨🇦_加拿大_ChenX-220304_31
+      - 🇨🇦_加拿大_ChenX-220304_32
+      - 🇨🇦_加拿大_ChenX-220304_33
+      - 🇨🇳_中国_ChenX-220304_34
+      - 🇨🇳_中国_ChenX-220304_35
+      - 🇨🇳_中国_ChenX-220304_36
+      - 🇨🇳_中国_ChenX-220304_37
+      - 🇨🇳_中国_ChenX-220304_38
+      - 🇹🇼_台湾_ChenX-220304_39
+      - 🇹🇼_台湾_ChenX-220304_40
+      - 🇨🇳_中国_ChenX-220304_41
+      - 🇨🇳_中国_ChenX-220304_42
+      - 🇨🇳_中国_ChenX-220304_43
+      - 🇨🇳_中国_ChenX-220304_44
+      - 🇨🇳_中国_ChenX-220304_45
+      - 🇨🇳_中国_ChenX-220304_46
+      - 🇸🇬_新加坡_ChenX-220304_47
+      - 🇸🇬_新加坡_ChenX-220304_48
+      - 🇨🇳_中国_ChenX-220304_49
+      - 🇨🇳_中国_ChenX-220304_50
+      - 🇯🇵_日本_ChenX-220304_51
+      - 🇯🇵_日本_ChenX-220304_52
+      - 🇯🇵_日本_ChenX-220304_53
+      - 🇯🇵_日本_ChenX-220304_54
+      - 🇯🇵_日本_ChenX-220304_55
+      - 🇯🇵_日本_ChenX-220304_56
+      - 🇫🇷_法国_ChenX-220304_57
+      - 🇫🇷_法国_ChenX-220304_58
+      - 🇫🇷_法国_ChenX-220304_59
+      - 🇫🇷_法国_ChenX-220304_60
+      - 🇫🇷_法国_ChenX-220304_61
+      - 🇫🇷_法国_ChenX-220304_62
+      - 🇫🇷_法国_ChenX-220304_63
+      - 🇲🇰_前南马其顿_ChenX-220304_64
+      - 🇷🇴_罗马尼亚_ChenX-220304_65
+      - 🇨🇳_中国_ChenX-220304_66
+      - 🇨🇳_中国_ChenX-220304_67
+      - 🇨🇳_中国_ChenX-220304_68
+      - 🇨🇳_中国_ChenX-220304_69
+      - 🇺🇸_美国_ChenX-220304_70
+      - 🇨🇳_中国_ChenX-220304_71
+      - 🇨🇳_中国_ChenX-220304_72
+      - 🇺🇸_美国_ChenX-220304_73
+      - 🇺🇸_美国_ChenX-220304_74
+      - 🇩🇪_德国_ChenX-220304_75
+      - 🇬🇧_英国_ChenX-220304_76
+      - 🇬🇧_英国_ChenX-220304_77
+      - 🇬🇧_英国_ChenX-220304_78
+      - 🇬🇧_英国_ChenX-220304_79
+      - 🇺🇸_美国_ChenX-220304_80
+      - 🇭🇰_香港_ChenX-220304_81
+      - 🇺🇸_美国_ChenX-220304_82
+      - 🇺🇸_美国_ChenX-220304_83
+      - 🇺🇸_美国_ChenX-220304_84
+      - 🇺🇸_美国_ChenX-220304_85
+      - 🇺🇸_美国_ChenX-220304_86
+      - 🇬🇧_英国_ChenX-220304_87
+      - 🇬🇧_英国_ChenX-220304_88
+      - 🇭🇰_香港_ChenX-220304_89
+      - 🇭🇰_香港_ChenX-220304_90
+      - 🇸🇬_新加坡_ChenX-220304_91
+      - 🇭🇰_香港_ChenX-220304_92
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_中国_ChenX-220311_1
-      - 🇨🇳_中国_ChenX-220311_2
-      - 🇨🇳_中国_ChenX-220311_3
-      - 🇨🇳_中国_ChenX-220311_4
-      - 🇨🇳_中国_ChenX-220311_5
-      - 🇮🇳_印度_ChenX-220311_6
-      - 🇮🇳_印度_ChenX-220311_7
-      - 🇨🇳_中国_ChenX-220311_8
-      - 🇨🇳_中国_ChenX-220311_9
-      - 🇨🇳_中国_ChenX-220311_10
-      - 🇨🇳_中国_ChenX-220311_11
-      - 🇨🇳_中国_ChenX-220311_12
-      - 🇨🇳_中国_ChenX-220311_13
-      - 🇨🇳_中国_ChenX-220311_14
-      - 🇨🇳_中国_ChenX-220311_15
-      - 🇨🇳_中国_ChenX-220311_16
-      - 🇨🇳_中国_ChenX-220311_17
-      - 🇸🇬_新加坡_ChenX-220311_18
-      - 🇺🇸_美国_ChenX-220311_19
-      - 🇺🇸_美国_ChenX-220311_20
-      - 🇺🇸_美国_ChenX-220311_21
-      - 🇫🇷_法国_ChenX-220311_22
-      - 🇫🇷_法国_ChenX-220311_23
-      - 🇫🇷_法国_ChenX-220311_24
-      - 🇫🇷_法国_ChenX-220311_25
-      - 🇦🇺_澳大利亚_ChenX-220311_26
-      - 🇨🇳_中国_ChenX-220311_27
-      - 🇨🇳_中国_ChenX-220311_28
-      - 🇨🇳_中国_ChenX-220311_29
-      - 🇨🇳_中国_ChenX-220311_30
-      - 🇨🇳_中国_ChenX-220311_31
-      - 🇺🇸_美国_ChenX-220311_32
-      - 🇺🇸_美国_ChenX-220311_33
-      - 🇺🇸_美国_ChenX-220311_34
-      - 🇺🇸_美国_ChenX-220311_35
-      - 🇺🇸_美国_ChenX-220311_36
-      - 🇬🇧_英国_ChenX-220311_37
-      - 🇬🇧_英国_ChenX-220311_38
-      - 🇬🇧_英国_ChenX-220311_39
-      - 🇬🇧_英国_ChenX-220311_40
-      - 🇬🇧_英国_ChenX-220311_41
-      - 🇬🇧_英国_ChenX-220311_42
-      - 🇨🇳_中国_ChenX-220311_43
-      - 🇬🇧_英国_ChenX-220311_44
-      - 🇰🇷_韩国_ChenX-220311_45
-      - 🇰🇷_韩国_ChenX-220311_46
-      - 🇰🇷_韩国_ChenX-220311_47
-      - 🇰🇷_韩国_ChenX-220311_48
-      - 🇨🇳_中国_ChenX-220311_49
-      - 🇭🇰_香港_ChenX-220311_50
-      - 🇨🇳_中国_ChenX-220311_51
-      - 🇭🇰_香港_ChenX-220311_52
-      - 🇭🇰_香港_ChenX-220311_53
-      - 🇭🇰_香港_ChenX-220311_54
-      - 🇭🇰_香港_ChenX-220311_55
-      - 🇭🇰_香港_ChenX-220311_56
-      - 🇭🇰_香港_ChenX-220311_57
+      - 🇦🇺_澳大利亚_ChenX-220304_1
+      - 🇨🇦_加拿大_ChenX-220304_2
+      - 🇨🇦_加拿大_ChenX-220304_3
+      - 🇨🇦_加拿大_ChenX-220304_4
+      - 🇨🇦_加拿大_ChenX-220304_5
+      - 🇨🇦_加拿大_ChenX-220304_6
+      - 🇨🇦_加拿大_ChenX-220304_7
+      - 🇨🇦_加拿大_ChenX-220304_8
+      - 🇨🇦_加拿大_ChenX-220304_9
+      - 🇨🇦_加拿大_ChenX-220304_10
+      - 🇨🇳_中国_ChenX-220304_11
+      - 🇨🇳_中国_ChenX-220304_12
+      - 🇨🇳_中国_ChenX-220304_13
+      - 🇨🇳_中国_ChenX-220304_14
+      - 🇨🇳_中国_ChenX-220304_15
+      - 🇨🇳_中国_ChenX-220304_16
+      - 🇨🇳_中国_ChenX-220304_17
+      - 🇨🇳_中国_ChenX-220304_18
+      - 🇨🇳_中国_ChenX-220304_19
+      - 🇨🇳_中国_ChenX-220304_20
+      - 🇨🇳_中国_ChenX-220304_21
+      - 🇨🇳_中国_ChenX-220304_22
+      - 🇨🇳_中国_ChenX-220304_23
+      - 🇨🇳_中国_ChenX-220304_24
+      - 🇨🇳_中国_ChenX-220304_25
+      - 🇨🇳_中国_ChenX-220304_26
+      - 🇨🇳_中国_ChenX-220304_27
+      - 🇨🇳_中国_ChenX-220304_28
+      - 🇨🇳_中国_ChenX-220304_29
+      - 🇨🇳_中国_ChenX-220304_30
+      - 🇨🇦_加拿大_ChenX-220304_31
+      - 🇨🇦_加拿大_ChenX-220304_32
+      - 🇨🇦_加拿大_ChenX-220304_33
+      - 🇨🇳_中国_ChenX-220304_34
+      - 🇨🇳_中国_ChenX-220304_35
+      - 🇨🇳_中国_ChenX-220304_36
+      - 🇨🇳_中国_ChenX-220304_37
+      - 🇨🇳_中国_ChenX-220304_38
+      - 🇹🇼_台湾_ChenX-220304_39
+      - 🇹🇼_台湾_ChenX-220304_40
+      - 🇨🇳_中国_ChenX-220304_41
+      - 🇨🇳_中国_ChenX-220304_42
+      - 🇨🇳_中国_ChenX-220304_43
+      - 🇨🇳_中国_ChenX-220304_44
+      - 🇨🇳_中国_ChenX-220304_45
+      - 🇨🇳_中国_ChenX-220304_46
+      - 🇸🇬_新加坡_ChenX-220304_47
+      - 🇸🇬_新加坡_ChenX-220304_48
+      - 🇨🇳_中国_ChenX-220304_49
+      - 🇨🇳_中国_ChenX-220304_50
+      - 🇯🇵_日本_ChenX-220304_51
+      - 🇯🇵_日本_ChenX-220304_52
+      - 🇯🇵_日本_ChenX-220304_53
+      - 🇯🇵_日本_ChenX-220304_54
+      - 🇯🇵_日本_ChenX-220304_55
+      - 🇯🇵_日本_ChenX-220304_56
+      - 🇫🇷_法国_ChenX-220304_57
+      - 🇫🇷_法国_ChenX-220304_58
+      - 🇫🇷_法国_ChenX-220304_59
+      - 🇫🇷_法国_ChenX-220304_60
+      - 🇫🇷_法国_ChenX-220304_61
+      - 🇫🇷_法国_ChenX-220304_62
+      - 🇫🇷_法国_ChenX-220304_63
+      - 🇲🇰_前南马其顿_ChenX-220304_64
+      - 🇷🇴_罗马尼亚_ChenX-220304_65
+      - 🇨🇳_中国_ChenX-220304_66
+      - 🇨🇳_中国_ChenX-220304_67
+      - 🇨🇳_中国_ChenX-220304_68
+      - 🇨🇳_中国_ChenX-220304_69
+      - 🇺🇸_美国_ChenX-220304_70
+      - 🇨🇳_中国_ChenX-220304_71
+      - 🇨🇳_中国_ChenX-220304_72
+      - 🇺🇸_美国_ChenX-220304_73
+      - 🇺🇸_美国_ChenX-220304_74
+      - 🇩🇪_德国_ChenX-220304_75
+      - 🇬🇧_英国_ChenX-220304_76
+      - 🇬🇧_英国_ChenX-220304_77
+      - 🇬🇧_英国_ChenX-220304_78
+      - 🇬🇧_英国_ChenX-220304_79
+      - 🇺🇸_美国_ChenX-220304_80
+      - 🇭🇰_香港_ChenX-220304_81
+      - 🇺🇸_美国_ChenX-220304_82
+      - 🇺🇸_美国_ChenX-220304_83
+      - 🇺🇸_美国_ChenX-220304_84
+      - 🇺🇸_美国_ChenX-220304_85
+      - 🇺🇸_美国_ChenX-220304_86
+      - 🇬🇧_英国_ChenX-220304_87
+      - 🇬🇧_英国_ChenX-220304_88
+      - 🇭🇰_香港_ChenX-220304_89
+      - 🇭🇰_香港_ChenX-220304_90
+      - 🇸🇬_新加坡_ChenX-220304_91
+      - 🇭🇰_香港_ChenX-220304_92
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_中国_ChenX-220311_1
-      - 🇨🇳_中国_ChenX-220311_2
-      - 🇨🇳_中国_ChenX-220311_3
-      - 🇨🇳_中国_ChenX-220311_4
-      - 🇨🇳_中国_ChenX-220311_5
-      - 🇮🇳_印度_ChenX-220311_6
-      - 🇮🇳_印度_ChenX-220311_7
-      - 🇨🇳_中国_ChenX-220311_8
-      - 🇨🇳_中国_ChenX-220311_9
-      - 🇨🇳_中国_ChenX-220311_10
-      - 🇨🇳_中国_ChenX-220311_11
-      - 🇨🇳_中国_ChenX-220311_12
-      - 🇨🇳_中国_ChenX-220311_13
-      - 🇨🇳_中国_ChenX-220311_14
-      - 🇨🇳_中国_ChenX-220311_15
-      - 🇨🇳_中国_ChenX-220311_16
-      - 🇨🇳_中国_ChenX-220311_17
-      - 🇸🇬_新加坡_ChenX-220311_18
-      - 🇺🇸_美国_ChenX-220311_19
-      - 🇺🇸_美国_ChenX-220311_20
-      - 🇺🇸_美国_ChenX-220311_21
-      - 🇫🇷_法国_ChenX-220311_22
-      - 🇫🇷_法国_ChenX-220311_23
-      - 🇫🇷_法国_ChenX-220311_24
-      - 🇫🇷_法国_ChenX-220311_25
-      - 🇦🇺_澳大利亚_ChenX-220311_26
-      - 🇨🇳_中国_ChenX-220311_27
-      - 🇨🇳_中国_ChenX-220311_28
-      - 🇨🇳_中国_ChenX-220311_29
-      - 🇨🇳_中国_ChenX-220311_30
-      - 🇨🇳_中国_ChenX-220311_31
-      - 🇺🇸_美国_ChenX-220311_32
-      - 🇺🇸_美国_ChenX-220311_33
-      - 🇺🇸_美国_ChenX-220311_34
-      - 🇺🇸_美国_ChenX-220311_35
-      - 🇺🇸_美国_ChenX-220311_36
-      - 🇬🇧_英国_ChenX-220311_37
-      - 🇬🇧_英国_ChenX-220311_38
-      - 🇬🇧_英国_ChenX-220311_39
-      - 🇬🇧_英国_ChenX-220311_40
-      - 🇬🇧_英国_ChenX-220311_41
-      - 🇬🇧_英国_ChenX-220311_42
-      - 🇨🇳_中国_ChenX-220311_43
-      - 🇬🇧_英国_ChenX-220311_44
-      - 🇰🇷_韩国_ChenX-220311_45
-      - 🇰🇷_韩国_ChenX-220311_46
-      - 🇰🇷_韩国_ChenX-220311_47
-      - 🇰🇷_韩国_ChenX-220311_48
-      - 🇨🇳_中国_ChenX-220311_49
-      - 🇭🇰_香港_ChenX-220311_50
-      - 🇨🇳_中国_ChenX-220311_51
-      - 🇭🇰_香港_ChenX-220311_52
-      - 🇭🇰_香港_ChenX-220311_53
-      - 🇭🇰_香港_ChenX-220311_54
-      - 🇭🇰_香港_ChenX-220311_55
-      - 🇭🇰_香港_ChenX-220311_56
-      - 🇭🇰_香港_ChenX-220311_57
+      - 🇦🇺_澳大利亚_ChenX-220304_1
+      - 🇨🇦_加拿大_ChenX-220304_2
+      - 🇨🇦_加拿大_ChenX-220304_3
+      - 🇨🇦_加拿大_ChenX-220304_4
+      - 🇨🇦_加拿大_ChenX-220304_5
+      - 🇨🇦_加拿大_ChenX-220304_6
+      - 🇨🇦_加拿大_ChenX-220304_7
+      - 🇨🇦_加拿大_ChenX-220304_8
+      - 🇨🇦_加拿大_ChenX-220304_9
+      - 🇨🇦_加拿大_ChenX-220304_10
+      - 🇨🇳_中国_ChenX-220304_11
+      - 🇨🇳_中国_ChenX-220304_12
+      - 🇨🇳_中国_ChenX-220304_13
+      - 🇨🇳_中国_ChenX-220304_14
+      - 🇨🇳_中国_ChenX-220304_15
+      - 🇨🇳_中国_ChenX-220304_16
+      - 🇨🇳_中国_ChenX-220304_17
+      - 🇨🇳_中国_ChenX-220304_18
+      - 🇨🇳_中国_ChenX-220304_19
+      - 🇨🇳_中国_ChenX-220304_20
+      - 🇨🇳_中国_ChenX-220304_21
+      - 🇨🇳_中国_ChenX-220304_22
+      - 🇨🇳_中国_ChenX-220304_23
+      - 🇨🇳_中国_ChenX-220304_24
+      - 🇨🇳_中国_ChenX-220304_25
+      - 🇨🇳_中国_ChenX-220304_26
+      - 🇨🇳_中国_ChenX-220304_27
+      - 🇨🇳_中国_ChenX-220304_28
+      - 🇨🇳_中国_ChenX-220304_29
+      - 🇨🇳_中国_ChenX-220304_30
+      - 🇨🇦_加拿大_ChenX-220304_31
+      - 🇨🇦_加拿大_ChenX-220304_32
+      - 🇨🇦_加拿大_ChenX-220304_33
+      - 🇨🇳_中国_ChenX-220304_34
+      - 🇨🇳_中国_ChenX-220304_35
+      - 🇨🇳_中国_ChenX-220304_36
+      - 🇨🇳_中国_ChenX-220304_37
+      - 🇨🇳_中国_ChenX-220304_38
+      - 🇹🇼_台湾_ChenX-220304_39
+      - 🇹🇼_台湾_ChenX-220304_40
+      - 🇨🇳_中国_ChenX-220304_41
+      - 🇨🇳_中国_ChenX-220304_42
+      - 🇨🇳_中国_ChenX-220304_43
+      - 🇨🇳_中国_ChenX-220304_44
+      - 🇨🇳_中国_ChenX-220304_45
+      - 🇨🇳_中国_ChenX-220304_46
+      - 🇸🇬_新加坡_ChenX-220304_47
+      - 🇸🇬_新加坡_ChenX-220304_48
+      - 🇨🇳_中国_ChenX-220304_49
+      - 🇨🇳_中国_ChenX-220304_50
+      - 🇯🇵_日本_ChenX-220304_51
+      - 🇯🇵_日本_ChenX-220304_52
+      - 🇯🇵_日本_ChenX-220304_53
+      - 🇯🇵_日本_ChenX-220304_54
+      - 🇯🇵_日本_ChenX-220304_55
+      - 🇯🇵_日本_ChenX-220304_56
+      - 🇫🇷_法国_ChenX-220304_57
+      - 🇫🇷_法国_ChenX-220304_58
+      - 🇫🇷_法国_ChenX-220304_59
+      - 🇫🇷_法国_ChenX-220304_60
+      - 🇫🇷_法国_ChenX-220304_61
+      - 🇫🇷_法国_ChenX-220304_62
+      - 🇫🇷_法国_ChenX-220304_63
+      - 🇲🇰_前南马其顿_ChenX-220304_64
+      - 🇷🇴_罗马尼亚_ChenX-220304_65
+      - 🇨🇳_中国_ChenX-220304_66
+      - 🇨🇳_中国_ChenX-220304_67
+      - 🇨🇳_中国_ChenX-220304_68
+      - 🇨🇳_中国_ChenX-220304_69
+      - 🇺🇸_美国_ChenX-220304_70
+      - 🇨🇳_中国_ChenX-220304_71
+      - 🇨🇳_中国_ChenX-220304_72
+      - 🇺🇸_美国_ChenX-220304_73
+      - 🇺🇸_美国_ChenX-220304_74
+      - 🇩🇪_德国_ChenX-220304_75
+      - 🇬🇧_英国_ChenX-220304_76
+      - 🇬🇧_英国_ChenX-220304_77
+      - 🇬🇧_英国_ChenX-220304_78
+      - 🇬🇧_英国_ChenX-220304_79
+      - 🇺🇸_美国_ChenX-220304_80
+      - 🇭🇰_香港_ChenX-220304_81
+      - 🇺🇸_美国_ChenX-220304_82
+      - 🇺🇸_美国_ChenX-220304_83
+      - 🇺🇸_美国_ChenX-220304_84
+      - 🇺🇸_美国_ChenX-220304_85
+      - 🇺🇸_美国_ChenX-220304_86
+      - 🇬🇧_英国_ChenX-220304_87
+      - 🇬🇧_英国_ChenX-220304_88
+      - 🇭🇰_香港_ChenX-220304_89
+      - 🇭🇰_香港_ChenX-220304_90
+      - 🇸🇬_新加坡_ChenX-220304_91
+      - 🇭🇰_香港_ChenX-220304_92
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_中国_ChenX-220311_1
-      - 🇨🇳_中国_ChenX-220311_2
-      - 🇨🇳_中国_ChenX-220311_3
-      - 🇨🇳_中国_ChenX-220311_4
-      - 🇨🇳_中国_ChenX-220311_5
-      - 🇮🇳_印度_ChenX-220311_6
-      - 🇮🇳_印度_ChenX-220311_7
-      - 🇨🇳_中国_ChenX-220311_8
-      - 🇨🇳_中国_ChenX-220311_9
-      - 🇨🇳_中国_ChenX-220311_10
-      - 🇨🇳_中国_ChenX-220311_11
-      - 🇨🇳_中国_ChenX-220311_12
-      - 🇨🇳_中国_ChenX-220311_13
-      - 🇨🇳_中国_ChenX-220311_14
-      - 🇨🇳_中国_ChenX-220311_15
-      - 🇨🇳_中国_ChenX-220311_16
-      - 🇨🇳_中国_ChenX-220311_17
-      - 🇸🇬_新加坡_ChenX-220311_18
-      - 🇺🇸_美国_ChenX-220311_19
-      - 🇺🇸_美国_ChenX-220311_20
-      - 🇺🇸_美国_ChenX-220311_21
-      - 🇫🇷_法国_ChenX-220311_22
-      - 🇫🇷_法国_ChenX-220311_23
-      - 🇫🇷_法国_ChenX-220311_24
-      - 🇫🇷_法国_ChenX-220311_25
-      - 🇦🇺_澳大利亚_ChenX-220311_26
-      - 🇨🇳_中国_ChenX-220311_27
-      - 🇨🇳_中国_ChenX-220311_28
-      - 🇨🇳_中国_ChenX-220311_29
-      - 🇨🇳_中国_ChenX-220311_30
-      - 🇨🇳_中国_ChenX-220311_31
-      - 🇺🇸_美国_ChenX-220311_32
-      - 🇺🇸_美国_ChenX-220311_33
-      - 🇺🇸_美国_ChenX-220311_34
-      - 🇺🇸_美国_ChenX-220311_35
-      - 🇺🇸_美国_ChenX-220311_36
-      - 🇬🇧_英国_ChenX-220311_37
-      - 🇬🇧_英国_ChenX-220311_38
-      - 🇬🇧_英国_ChenX-220311_39
-      - 🇬🇧_英国_ChenX-220311_40
-      - 🇬🇧_英国_ChenX-220311_41
-      - 🇬🇧_英国_ChenX-220311_42
-      - 🇨🇳_中国_ChenX-220311_43
-      - 🇬🇧_英国_ChenX-220311_44
-      - 🇰🇷_韩国_ChenX-220311_45
-      - 🇰🇷_韩国_ChenX-220311_46
-      - 🇰🇷_韩国_ChenX-220311_47
-      - 🇰🇷_韩国_ChenX-220311_48
-      - 🇨🇳_中国_ChenX-220311_49
-      - 🇭🇰_香港_ChenX-220311_50
-      - 🇨🇳_中国_ChenX-220311_51
-      - 🇭🇰_香港_ChenX-220311_52
-      - 🇭🇰_香港_ChenX-220311_53
-      - 🇭🇰_香港_ChenX-220311_54
-      - 🇭🇰_香港_ChenX-220311_55
-      - 🇭🇰_香港_ChenX-220311_56
-      - 🇭🇰_香港_ChenX-220311_57
+      - 🇦🇺_澳大利亚_ChenX-220304_1
+      - 🇨🇦_加拿大_ChenX-220304_2
+      - 🇨🇦_加拿大_ChenX-220304_3
+      - 🇨🇦_加拿大_ChenX-220304_4
+      - 🇨🇦_加拿大_ChenX-220304_5
+      - 🇨🇦_加拿大_ChenX-220304_6
+      - 🇨🇦_加拿大_ChenX-220304_7
+      - 🇨🇦_加拿大_ChenX-220304_8
+      - 🇨🇦_加拿大_ChenX-220304_9
+      - 🇨🇦_加拿大_ChenX-220304_10
+      - 🇨🇳_中国_ChenX-220304_11
+      - 🇨🇳_中国_ChenX-220304_12
+      - 🇨🇳_中国_ChenX-220304_13
+      - 🇨🇳_中国_ChenX-220304_14
+      - 🇨🇳_中国_ChenX-220304_15
+      - 🇨🇳_中国_ChenX-220304_16
+      - 🇨🇳_中国_ChenX-220304_17
+      - 🇨🇳_中国_ChenX-220304_18
+      - 🇨🇳_中国_ChenX-220304_19
+      - 🇨🇳_中国_ChenX-220304_20
+      - 🇨🇳_中国_ChenX-220304_21
+      - 🇨🇳_中国_ChenX-220304_22
+      - 🇨🇳_中国_ChenX-220304_23
+      - 🇨🇳_中国_ChenX-220304_24
+      - 🇨🇳_中国_ChenX-220304_25
+      - 🇨🇳_中国_ChenX-220304_26
+      - 🇨🇳_中国_ChenX-220304_27
+      - 🇨🇳_中国_ChenX-220304_28
+      - 🇨🇳_中国_ChenX-220304_29
+      - 🇨🇳_中国_ChenX-220304_30
+      - 🇨🇦_加拿大_ChenX-220304_31
+      - 🇨🇦_加拿大_ChenX-220304_32
+      - 🇨🇦_加拿大_ChenX-220304_33
+      - 🇨🇳_中国_ChenX-220304_34
+      - 🇨🇳_中国_ChenX-220304_35
+      - 🇨🇳_中国_ChenX-220304_36
+      - 🇨🇳_中国_ChenX-220304_37
+      - 🇨🇳_中国_ChenX-220304_38
+      - 🇹🇼_台湾_ChenX-220304_39
+      - 🇹🇼_台湾_ChenX-220304_40
+      - 🇨🇳_中国_ChenX-220304_41
+      - 🇨🇳_中国_ChenX-220304_42
+      - 🇨🇳_中国_ChenX-220304_43
+      - 🇨🇳_中国_ChenX-220304_44
+      - 🇨🇳_中国_ChenX-220304_45
+      - 🇨🇳_中国_ChenX-220304_46
+      - 🇸🇬_新加坡_ChenX-220304_47
+      - 🇸🇬_新加坡_ChenX-220304_48
+      - 🇨🇳_中国_ChenX-220304_49
+      - 🇨🇳_中国_ChenX-220304_50
+      - 🇯🇵_日本_ChenX-220304_51
+      - 🇯🇵_日本_ChenX-220304_52
+      - 🇯🇵_日本_ChenX-220304_53
+      - 🇯🇵_日本_ChenX-220304_54
+      - 🇯🇵_日本_ChenX-220304_55
+      - 🇯🇵_日本_ChenX-220304_56
+      - 🇫🇷_法国_ChenX-220304_57
+      - 🇫🇷_法国_ChenX-220304_58
+      - 🇫🇷_法国_ChenX-220304_59
+      - 🇫🇷_法国_ChenX-220304_60
+      - 🇫🇷_法国_ChenX-220304_61
+      - 🇫🇷_法国_ChenX-220304_62
+      - 🇫🇷_法国_ChenX-220304_63
+      - 🇲🇰_前南马其顿_ChenX-220304_64
+      - 🇷🇴_罗马尼亚_ChenX-220304_65
+      - 🇨🇳_中国_ChenX-220304_66
+      - 🇨🇳_中国_ChenX-220304_67
+      - 🇨🇳_中国_ChenX-220304_68
+      - 🇨🇳_中国_ChenX-220304_69
+      - 🇺🇸_美国_ChenX-220304_70
+      - 🇨🇳_中国_ChenX-220304_71
+      - 🇨🇳_中国_ChenX-220304_72
+      - 🇺🇸_美国_ChenX-220304_73
+      - 🇺🇸_美国_ChenX-220304_74
+      - 🇩🇪_德国_ChenX-220304_75
+      - 🇬🇧_英国_ChenX-220304_76
+      - 🇬🇧_英国_ChenX-220304_77
+      - 🇬🇧_英国_ChenX-220304_78
+      - 🇬🇧_英国_ChenX-220304_79
+      - 🇺🇸_美国_ChenX-220304_80
+      - 🇭🇰_香港_ChenX-220304_81
+      - 🇺🇸_美国_ChenX-220304_82
+      - 🇺🇸_美国_ChenX-220304_83
+      - 🇺🇸_美国_ChenX-220304_84
+      - 🇺🇸_美国_ChenX-220304_85
+      - 🇺🇸_美国_ChenX-220304_86
+      - 🇬🇧_英国_ChenX-220304_87
+      - 🇬🇧_英国_ChenX-220304_88
+      - 🇭🇰_香港_ChenX-220304_89
+      - 🇭🇰_香港_ChenX-220304_90
+      - 🇸🇬_新加坡_ChenX-220304_91
+      - 🇭🇰_香港_ChenX-220304_92
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_中国_ChenX-220311_1
-      - 🇨🇳_中国_ChenX-220311_2
-      - 🇨🇳_中国_ChenX-220311_3
-      - 🇨🇳_中国_ChenX-220311_4
-      - 🇨🇳_中国_ChenX-220311_5
-      - 🇮🇳_印度_ChenX-220311_6
-      - 🇮🇳_印度_ChenX-220311_7
-      - 🇨🇳_中国_ChenX-220311_8
-      - 🇨🇳_中国_ChenX-220311_9
-      - 🇨🇳_中国_ChenX-220311_10
-      - 🇨🇳_中国_ChenX-220311_11
-      - 🇨🇳_中国_ChenX-220311_12
-      - 🇨🇳_中国_ChenX-220311_13
-      - 🇨🇳_中国_ChenX-220311_14
-      - 🇨🇳_中国_ChenX-220311_15
-      - 🇨🇳_中国_ChenX-220311_16
-      - 🇨🇳_中国_ChenX-220311_17
-      - 🇸🇬_新加坡_ChenX-220311_18
-      - 🇺🇸_美国_ChenX-220311_19
-      - 🇺🇸_美国_ChenX-220311_20
-      - 🇺🇸_美国_ChenX-220311_21
-      - 🇫🇷_法国_ChenX-220311_22
-      - 🇫🇷_法国_ChenX-220311_23
-      - 🇫🇷_法国_ChenX-220311_24
-      - 🇫🇷_法国_ChenX-220311_25
-      - 🇦🇺_澳大利亚_ChenX-220311_26
-      - 🇨🇳_中国_ChenX-220311_27
-      - 🇨🇳_中国_ChenX-220311_28
-      - 🇨🇳_中国_ChenX-220311_29
-      - 🇨🇳_中国_ChenX-220311_30
-      - 🇨🇳_中国_ChenX-220311_31
-      - 🇺🇸_美国_ChenX-220311_32
-      - 🇺🇸_美国_ChenX-220311_33
-      - 🇺🇸_美国_ChenX-220311_34
-      - 🇺🇸_美国_ChenX-220311_35
-      - 🇺🇸_美国_ChenX-220311_36
-      - 🇬🇧_英国_ChenX-220311_37
-      - 🇬🇧_英国_ChenX-220311_38
-      - 🇬🇧_英国_ChenX-220311_39
-      - 🇬🇧_英国_ChenX-220311_40
-      - 🇬🇧_英国_ChenX-220311_41
-      - 🇬🇧_英国_ChenX-220311_42
-      - 🇨🇳_中国_ChenX-220311_43
-      - 🇬🇧_英国_ChenX-220311_44
-      - 🇰🇷_韩国_ChenX-220311_45
-      - 🇰🇷_韩国_ChenX-220311_46
-      - 🇰🇷_韩国_ChenX-220311_47
-      - 🇰🇷_韩国_ChenX-220311_48
-      - 🇨🇳_中国_ChenX-220311_49
-      - 🇭🇰_香港_ChenX-220311_50
-      - 🇨🇳_中国_ChenX-220311_51
-      - 🇭🇰_香港_ChenX-220311_52
-      - 🇭🇰_香港_ChenX-220311_53
-      - 🇭🇰_香港_ChenX-220311_54
-      - 🇭🇰_香港_ChenX-220311_55
-      - 🇭🇰_香港_ChenX-220311_56
-      - 🇭🇰_香港_ChenX-220311_57
+      - 🇦🇺_澳大利亚_ChenX-220304_1
+      - 🇨🇦_加拿大_ChenX-220304_2
+      - 🇨🇦_加拿大_ChenX-220304_3
+      - 🇨🇦_加拿大_ChenX-220304_4
+      - 🇨🇦_加拿大_ChenX-220304_5
+      - 🇨🇦_加拿大_ChenX-220304_6
+      - 🇨🇦_加拿大_ChenX-220304_7
+      - 🇨🇦_加拿大_ChenX-220304_8
+      - 🇨🇦_加拿大_ChenX-220304_9
+      - 🇨🇦_加拿大_ChenX-220304_10
+      - 🇨🇳_中国_ChenX-220304_11
+      - 🇨🇳_中国_ChenX-220304_12
+      - 🇨🇳_中国_ChenX-220304_13
+      - 🇨🇳_中国_ChenX-220304_14
+      - 🇨🇳_中国_ChenX-220304_15
+      - 🇨🇳_中国_ChenX-220304_16
+      - 🇨🇳_中国_ChenX-220304_17
+      - 🇨🇳_中国_ChenX-220304_18
+      - 🇨🇳_中国_ChenX-220304_19
+      - 🇨🇳_中国_ChenX-220304_20
+      - 🇨🇳_中国_ChenX-220304_21
+      - 🇨🇳_中国_ChenX-220304_22
+      - 🇨🇳_中国_ChenX-220304_23
+      - 🇨🇳_中国_ChenX-220304_24
+      - 🇨🇳_中国_ChenX-220304_25
+      - 🇨🇳_中国_ChenX-220304_26
+      - 🇨🇳_中国_ChenX-220304_27
+      - 🇨🇳_中国_ChenX-220304_28
+      - 🇨🇳_中国_ChenX-220304_29
+      - 🇨🇳_中国_ChenX-220304_30
+      - 🇨🇦_加拿大_ChenX-220304_31
+      - 🇨🇦_加拿大_ChenX-220304_32
+      - 🇨🇦_加拿大_ChenX-220304_33
+      - 🇨🇳_中国_ChenX-220304_34
+      - 🇨🇳_中国_ChenX-220304_35
+      - 🇨🇳_中国_ChenX-220304_36
+      - 🇨🇳_中国_ChenX-220304_37
+      - 🇨🇳_中国_ChenX-220304_38
+      - 🇹🇼_台湾_ChenX-220304_39
+      - 🇹🇼_台湾_ChenX-220304_40
+      - 🇨🇳_中国_ChenX-220304_41
+      - 🇨🇳_中国_ChenX-220304_42
+      - 🇨🇳_中国_ChenX-220304_43
+      - 🇨🇳_中国_ChenX-220304_44
+      - 🇨🇳_中国_ChenX-220304_45
+      - 🇨🇳_中国_ChenX-220304_46
+      - 🇸🇬_新加坡_ChenX-220304_47
+      - 🇸🇬_新加坡_ChenX-220304_48
+      - 🇨🇳_中国_ChenX-220304_49
+      - 🇨🇳_中国_ChenX-220304_50
+      - 🇯🇵_日本_ChenX-220304_51
+      - 🇯🇵_日本_ChenX-220304_52
+      - 🇯🇵_日本_ChenX-220304_53
+      - 🇯🇵_日本_ChenX-220304_54
+      - 🇯🇵_日本_ChenX-220304_55
+      - 🇯🇵_日本_ChenX-220304_56
+      - 🇫🇷_法国_ChenX-220304_57
+      - 🇫🇷_法国_ChenX-220304_58
+      - 🇫🇷_法国_ChenX-220304_59
+      - 🇫🇷_法国_ChenX-220304_60
+      - 🇫🇷_法国_ChenX-220304_61
+      - 🇫🇷_法国_ChenX-220304_62
+      - 🇫🇷_法国_ChenX-220304_63
+      - 🇲🇰_前南马其顿_ChenX-220304_64
+      - 🇷🇴_罗马尼亚_ChenX-220304_65
+      - 🇨🇳_中国_ChenX-220304_66
+      - 🇨🇳_中国_ChenX-220304_67
+      - 🇨🇳_中国_ChenX-220304_68
+      - 🇨🇳_中国_ChenX-220304_69
+      - 🇺🇸_美国_ChenX-220304_70
+      - 🇨🇳_中国_ChenX-220304_71
+      - 🇨🇳_中国_ChenX-220304_72
+      - 🇺🇸_美国_ChenX-220304_73
+      - 🇺🇸_美国_ChenX-220304_74
+      - 🇩🇪_德国_ChenX-220304_75
+      - 🇬🇧_英国_ChenX-220304_76
+      - 🇬🇧_英国_ChenX-220304_77
+      - 🇬🇧_英国_ChenX-220304_78
+      - 🇬🇧_英国_ChenX-220304_79
+      - 🇺🇸_美国_ChenX-220304_80
+      - 🇭🇰_香港_ChenX-220304_81
+      - 🇺🇸_美国_ChenX-220304_82
+      - 🇺🇸_美国_ChenX-220304_83
+      - 🇺🇸_美国_ChenX-220304_84
+      - 🇺🇸_美国_ChenX-220304_85
+      - 🇺🇸_美国_ChenX-220304_86
+      - 🇬🇧_英国_ChenX-220304_87
+      - 🇬🇧_英国_ChenX-220304_88
+      - 🇭🇰_香港_ChenX-220304_89
+      - 🇭🇰_香港_ChenX-220304_90
+      - 🇸🇬_新加坡_ChenX-220304_91
+      - 🇭🇰_香港_ChenX-220304_92
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -459,63 +704,98 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_中国_ChenX-220311_1
-      - 🇨🇳_中国_ChenX-220311_2
-      - 🇨🇳_中国_ChenX-220311_3
-      - 🇨🇳_中国_ChenX-220311_4
-      - 🇨🇳_中国_ChenX-220311_5
-      - 🇮🇳_印度_ChenX-220311_6
-      - 🇮🇳_印度_ChenX-220311_7
-      - 🇨🇳_中国_ChenX-220311_8
-      - 🇨🇳_中国_ChenX-220311_9
-      - 🇨🇳_中国_ChenX-220311_10
-      - 🇨🇳_中国_ChenX-220311_11
-      - 🇨🇳_中国_ChenX-220311_12
-      - 🇨🇳_中国_ChenX-220311_13
-      - 🇨🇳_中国_ChenX-220311_14
-      - 🇨🇳_中国_ChenX-220311_15
-      - 🇨🇳_中国_ChenX-220311_16
-      - 🇨🇳_中国_ChenX-220311_17
-      - 🇸🇬_新加坡_ChenX-220311_18
-      - 🇺🇸_美国_ChenX-220311_19
-      - 🇺🇸_美国_ChenX-220311_20
-      - 🇺🇸_美国_ChenX-220311_21
-      - 🇫🇷_法国_ChenX-220311_22
-      - 🇫🇷_法国_ChenX-220311_23
-      - 🇫🇷_法国_ChenX-220311_24
-      - 🇫🇷_法国_ChenX-220311_25
-      - 🇦🇺_澳大利亚_ChenX-220311_26
-      - 🇨🇳_中国_ChenX-220311_27
-      - 🇨🇳_中国_ChenX-220311_28
-      - 🇨🇳_中国_ChenX-220311_29
-      - 🇨🇳_中国_ChenX-220311_30
-      - 🇨🇳_中国_ChenX-220311_31
-      - 🇺🇸_美国_ChenX-220311_32
-      - 🇺🇸_美国_ChenX-220311_33
-      - 🇺🇸_美国_ChenX-220311_34
-      - 🇺🇸_美国_ChenX-220311_35
-      - 🇺🇸_美国_ChenX-220311_36
-      - 🇬🇧_英国_ChenX-220311_37
-      - 🇬🇧_英国_ChenX-220311_38
-      - 🇬🇧_英国_ChenX-220311_39
-      - 🇬🇧_英国_ChenX-220311_40
-      - 🇬🇧_英国_ChenX-220311_41
-      - 🇬🇧_英国_ChenX-220311_42
-      - 🇨🇳_中国_ChenX-220311_43
-      - 🇬🇧_英国_ChenX-220311_44
-      - 🇰🇷_韩国_ChenX-220311_45
-      - 🇰🇷_韩国_ChenX-220311_46
-      - 🇰🇷_韩国_ChenX-220311_47
-      - 🇰🇷_韩国_ChenX-220311_48
-      - 🇨🇳_中国_ChenX-220311_49
-      - 🇭🇰_香港_ChenX-220311_50
-      - 🇨🇳_中国_ChenX-220311_51
-      - 🇭🇰_香港_ChenX-220311_52
-      - 🇭🇰_香港_ChenX-220311_53
-      - 🇭🇰_香港_ChenX-220311_54
-      - 🇭🇰_香港_ChenX-220311_55
-      - 🇭🇰_香港_ChenX-220311_56
-      - 🇭🇰_香港_ChenX-220311_57
+      - 🇦🇺_澳大利亚_ChenX-220304_1
+      - 🇨🇦_加拿大_ChenX-220304_2
+      - 🇨🇦_加拿大_ChenX-220304_3
+      - 🇨🇦_加拿大_ChenX-220304_4
+      - 🇨🇦_加拿大_ChenX-220304_5
+      - 🇨🇦_加拿大_ChenX-220304_6
+      - 🇨🇦_加拿大_ChenX-220304_7
+      - 🇨🇦_加拿大_ChenX-220304_8
+      - 🇨🇦_加拿大_ChenX-220304_9
+      - 🇨🇦_加拿大_ChenX-220304_10
+      - 🇨🇳_中国_ChenX-220304_11
+      - 🇨🇳_中国_ChenX-220304_12
+      - 🇨🇳_中国_ChenX-220304_13
+      - 🇨🇳_中国_ChenX-220304_14
+      - 🇨🇳_中国_ChenX-220304_15
+      - 🇨🇳_中国_ChenX-220304_16
+      - 🇨🇳_中国_ChenX-220304_17
+      - 🇨🇳_中国_ChenX-220304_18
+      - 🇨🇳_中国_ChenX-220304_19
+      - 🇨🇳_中国_ChenX-220304_20
+      - 🇨🇳_中国_ChenX-220304_21
+      - 🇨🇳_中国_ChenX-220304_22
+      - 🇨🇳_中国_ChenX-220304_23
+      - 🇨🇳_中国_ChenX-220304_24
+      - 🇨🇳_中国_ChenX-220304_25
+      - 🇨🇳_中国_ChenX-220304_26
+      - 🇨🇳_中国_ChenX-220304_27
+      - 🇨🇳_中国_ChenX-220304_28
+      - 🇨🇳_中国_ChenX-220304_29
+      - 🇨🇳_中国_ChenX-220304_30
+      - 🇨🇦_加拿大_ChenX-220304_31
+      - 🇨🇦_加拿大_ChenX-220304_32
+      - 🇨🇦_加拿大_ChenX-220304_33
+      - 🇨🇳_中国_ChenX-220304_34
+      - 🇨🇳_中国_ChenX-220304_35
+      - 🇨🇳_中国_ChenX-220304_36
+      - 🇨🇳_中国_ChenX-220304_37
+      - 🇨🇳_中国_ChenX-220304_38
+      - 🇹🇼_台湾_ChenX-220304_39
+      - 🇹🇼_台湾_ChenX-220304_40
+      - 🇨🇳_中国_ChenX-220304_41
+      - 🇨🇳_中国_ChenX-220304_42
+      - 🇨🇳_中国_ChenX-220304_43
+      - 🇨🇳_中国_ChenX-220304_44
+      - 🇨🇳_中国_ChenX-220304_45
+      - 🇨🇳_中国_ChenX-220304_46
+      - 🇸🇬_新加坡_ChenX-220304_47
+      - 🇸🇬_新加坡_ChenX-220304_48
+      - 🇨🇳_中国_ChenX-220304_49
+      - 🇨🇳_中国_ChenX-220304_50
+      - 🇯🇵_日本_ChenX-220304_51
+      - 🇯🇵_日本_ChenX-220304_52
+      - 🇯🇵_日本_ChenX-220304_53
+      - 🇯🇵_日本_ChenX-220304_54
+      - 🇯🇵_日本_ChenX-220304_55
+      - 🇯🇵_日本_ChenX-220304_56
+      - 🇫🇷_法国_ChenX-220304_57
+      - 🇫🇷_法国_ChenX-220304_58
+      - 🇫🇷_法国_ChenX-220304_59
+      - 🇫🇷_法国_ChenX-220304_60
+      - 🇫🇷_法国_ChenX-220304_61
+      - 🇫🇷_法国_ChenX-220304_62
+      - 🇫🇷_法国_ChenX-220304_63
+      - 🇲🇰_前南马其顿_ChenX-220304_64
+      - 🇷🇴_罗马尼亚_ChenX-220304_65
+      - 🇨🇳_中国_ChenX-220304_66
+      - 🇨🇳_中国_ChenX-220304_67
+      - 🇨🇳_中国_ChenX-220304_68
+      - 🇨🇳_中国_ChenX-220304_69
+      - 🇺🇸_美国_ChenX-220304_70
+      - 🇨🇳_中国_ChenX-220304_71
+      - 🇨🇳_中国_ChenX-220304_72
+      - 🇺🇸_美国_ChenX-220304_73
+      - 🇺🇸_美国_ChenX-220304_74
+      - 🇩🇪_德国_ChenX-220304_75
+      - 🇬🇧_英国_ChenX-220304_76
+      - 🇬🇧_英国_ChenX-220304_77
+      - 🇬🇧_英国_ChenX-220304_78
+      - 🇬🇧_英国_ChenX-220304_79
+      - 🇺🇸_美国_ChenX-220304_80
+      - 🇭🇰_香港_ChenX-220304_81
+      - 🇺🇸_美国_ChenX-220304_82
+      - 🇺🇸_美国_ChenX-220304_83
+      - 🇺🇸_美国_ChenX-220304_84
+      - 🇺🇸_美国_ChenX-220304_85
+      - 🇺🇸_美国_ChenX-220304_86
+      - 🇬🇧_英国_ChenX-220304_87
+      - 🇬🇧_英国_ChenX-220304_88
+      - 🇭🇰_香港_ChenX-220304_89
+      - 🇭🇰_香港_ChenX-220304_90
+      - 🇸🇬_新加坡_ChenX-220304_91
+      - 🇭🇰_香港_ChenX-220304_92
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
