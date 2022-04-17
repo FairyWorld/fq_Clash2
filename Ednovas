@@ -4,315 +4,201 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
+# https://proxies.bihai.cf/clash/proxies?nc=CN,TW,HK,JP,US,CA,SG,GB,FR,KR,CY,ZZ
+# https://ednovas.design/clash/proxies?nc=CN,TW,HK,JP,US,CA,SG,GB,FR,KR,CY,ZZ
+# https://raw.githubusercontent.com/lcx12901/v2ray-/master/sspool.herokuapp.com/bihai.yaml
+# https://raw.githubusercontent.com/lcx12901/v2ray-/master/sspool.herokuapp.com/
+proxy-providers:
+  bihai:
+    type: http
+    url: "https://raw.githubusercontent.com/lcx12901/v2ray-/master/sspool.herokuapp.com/bihai.yaml"
+    path: sspool.herokuapp.com/bihai.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  ednovas:
+    type: http
+    url: "https://raw.githubusercontent.com/lcx12901/v2ray-/master/sspool.herokuapp.com/ednovas.yaml"
+    path: sspool.herokuapp.com/bihai.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
 proxies:
-  - {name: CZ5_v2cross, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, sni: cz5.v2ce.com, skip-cert-verify: false, udp: true}
-  - {name: GB_841, server: 152.89.210.84, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: NL_1304, server: 213.183.59.218, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: NL_1305, server: 213.183.59.218, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: NL_1307, server: 213.183.59.218, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: NL_1310, server: 213.183.59.185, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: NL_1318, server: 213.183.59.185, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: NL_1322, server: 213.183.59.218, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: NL_1321, server: 213.183.59.185, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: NL_1306, server: 213.183.59.185, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: NL_1315, server: 213.183.59.218, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: NL_1329, server: 213.183.59.185, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: NL_1330, server: 213.183.59.185, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: RO_1390, server: 62.216.91.232, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: RO_1373, server: 185.126.116.117, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: RO_1403, server: 185.126.116.117, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: RO_1382, server: 185.126.116.117, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: RO_1407, server: 185.126.116.117, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: RO_1389, server: 185.126.116.117, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: RO_1381, server: 185.126.116.117, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: RO_1394, server: 185.126.116.117, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: RO_1395, server: 185.126.116.117, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: RO_1374, server: 185.126.116.117, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: RO_1401, server: 185.126.116.117, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: RO_1400, server: 185.126.116.117, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: RO_1396, server: 185.126.116.117, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: RO_1375, server: 185.126.116.117, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: RO_1405, server: 185.126.116.117, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: RO_1408, server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: RO_1393, server: 185.126.116.117, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: RO_1417, server: 185.126.116.117, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: RO_1388, server: 185.126.116.124, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: RO_1378, server: 185.126.116.124, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: RO_1410, server: 185.126.116.124, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: RO_1418, server: 185.126.116.124, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: RO_1397, server: 185.126.116.124, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 🇷🇺 RU_1476, server: 217.30.10.63, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 🇷🇺 RU_1496, server: 217.30.10.63, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 🇷🇺 RU_1490, server: 217.30.10.63, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 🇷🇺 RU_1499, server: 217.30.10.63, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: 🇷🇺 RU_1495, server: 217.30.10.63, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: 🇷🇺 RU_1467, server: 217.30.10.63, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: 🇷🇺 RU_1504, server: 217.30.10.63, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 🇷🇺 RU_1486, server: 217.30.10.63, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: 🇷🇺 RU_1502, server: 217.30.10.63, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 🇷🇺 RU_1503, server: 217.30.10.63, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 🇷🇺 RU_1489, server: 217.30.10.63, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 🇷🇺 RU_1497, server: 217.30.10.63, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: 🇷🇺 RU_1466, server: 217.30.10.63, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: 🇷🇺 RU_1468, server: 217.30.10.63, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 🇷🇺 RU_1501, server: 217.30.10.63, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: 🇷🇺 RU_1507, server: 217.30.10.63, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 🇷🇺 RU_1508, server: 217.30.10.63, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: RO_1377, server: 185.126.116.117, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: 🇷🇺 RU_1510, server: 217.30.10.63, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: 🇷🇺 RU_1509, server: 217.30.10.63, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: RO_1414, server: 185.126.116.117, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: 🇷🇺 RU_1511, server: 217.30.10.63, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 🇷🇺 RU_1505, server: 217.30.10.63, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: RO_1391, server: 185.126.116.124, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: RO_1402, server: 185.126.116.124, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 🇷🇺 RU_1492, server: 217.30.10.63, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 🇷🇺 RU_1473, server: 217.30.10.63, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: RO_1386, server: 185.126.116.117, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: 🇷🇺 RU_1464, server: 217.30.10.63, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: RO_1409, server: 185.126.116.117, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: RO_1416, server: 185.126.116.117, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: 🇷🇺 RU_1481, server: 217.30.10.63, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 🇷🇺 RU_1484, server: 217.30.10.63, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: 🇷🇺 RU_1469, server: 217.30.10.63, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 🇷🇺 RU_1472, server: 217.30.10.63, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 🇷🇺 RU_1483, server: 217.30.10.63, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 🇷🇺 RU_1480, server: 217.30.10.63, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 🇷🇺 RU_1482, server: 217.30.10.63, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 🇷🇺 RU_1471, server: 217.30.10.63, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: 🇷🇺 RU_1485, server: 217.30.10.63, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 🇷🇺 RU_1470, server: 217.30.10.63, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 🇷🇺 RU_1479, server: 217.30.10.63, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: 🇷🇺 RU_1512, server: 217.30.10.63, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: RO_1413, server: 185.126.116.124, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 🇷🇺 RU_1506, server: 217.30.10.63, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: ZZ_4035, server: 103.172.116.7, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: ZZ_4422, server: 103.172.116.8, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: ZZ_4448, server: 103.172.116.8, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: ZZ_4471, server: 103.172.116.7, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: ZZ_4318, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_4543, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_4541, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_4612, server: 103.172.116.8, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: ZZ_4646, server: 103.172.116.8, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: ZZ_4671, server: 103.172.116.7, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: ZZ_4632, server: 103.172.116.7, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: ZZ_4615, server: 134.195.198.252, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 169.197.142.99:8090, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 169.197.142.99:6679, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 169.197.142.99:443, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 169.197.142.99:7002, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 169.197.142.99:6697, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: AU_33 | 4.87Mb, server: 185.167.116.38, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: AU_98 | 0.38Mb, server: 185.167.116.38, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: AU_105 | 4.90Mb, server: 185.167.116.38, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: AU_97 | 3.79Mb, server: 185.167.116.38, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: AU_100 | 3.86Mb, server: 185.167.116.38, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: AU_104 | 7.20Mb, server: 185.167.116.38, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: 169.197.142.99:8118, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: GB_703 |45.53Mb, server: 152.89.210.105, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: GB_702 |81.79Mb, server: 152.89.210.105, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 🇩🇪 DE_567 |10.11Mb, server: 5.183.179.166, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: GB_701 |25.07Mb, server: 152.89.210.105, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 🇩🇪 DE_530 |26.95Mb, server: 5.183.179.145, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 🇩🇪 DE_555 |39.13Mb, server: 5.183.179.141, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: RO_1135 | 5.71Mb, server: 185.126.116.117, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: RO_1142 | 8.26Mb, server: 185.126.116.117, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: RO_1145 | 3.55Mb, server: 185.126.116.117, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: 🇩🇪 DE_586 |47.05Mb, server: 5.183.179.146, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: 🇩🇪 DE_600 |63.44Mb, server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 🇩🇪 DE_591 |13.98Mb, server: 5.183.179.170, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: RO_1169 | 4.43Mb, server: 185.126.116.117, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 🇩🇪 DE_598 |57.11Mb, server: 5.183.179.170, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 🇷🇺 RU_1232 |18.27Mb, server: 217.30.10.63, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 🇷🇺 RU_1226 | 6.79Mb, server: 217.30.10.63, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 🇷🇺 RU_1251 |15.43Mb, server: 217.30.10.63, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: RO_1128 |12.07Mb, server: 185.126.116.117, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: NL_1083 |40.03Mb, server: 213.183.59.218, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 🇷🇺 RU_1230 | 8.26Mb, server: 217.30.10.63, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 🇩🇪 DE_541 |42.65Mb, server: 5.183.179.145, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: RO_1164 |14.55Mb, server: 185.126.116.124, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: 🇩🇪 DE_524 |31.22Mb, server: 5.183.179.145, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: ZZ_2847 | 6.46Mb, server: 103.172.116.8, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: ZZ_2866 | 8.08Mb, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ_3403 | 1.68Mb, server: 103.172.116.7, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: ZZ_3415 | 9.04Mb, server: 103.172.116.8, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: ZZ_3404 |13.49Mb, server: 103.172.116.8, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 🇸🇬 SG_1320 | 6.87Mb, server: sg1.31vpn.com, port: 80, type: vmess, uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /fastssh/bddasdf/624e71635ed8e/, ws-headers: {Host: sg1.31vpn.com}, udp: true}
-  - {name: 🇸🇬 SG_1321 |12.22Mb, server: sg1.31vpn.com, port: 443, type: vmess, uuid: dce4c472-6f3f-4c45-80e5-cbfe5ecad7ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /fastssh/bddasdf/624e71635ed8e/, ws-headers: {Host: sg1.31vpn.com}, udp: true}
-  - {name: ZZ_3529 | 0.08Mb, server: 103.164.81.46, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 0320hk567.fans8.xyz}, udp: true}
-  - {name: AU_10, server: 185.167.116.38, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: AU_28, server: 185.167.116.38, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: 🇩🇪 DE_102, server: 5.183.179.166, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: NL_401, server: 213.183.59.185, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 🇷🇺 RU_486, server: 217.30.10.63, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: ZZ_544, server: 103.172.116.8, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 🇨🇦 CA_35, server: 0319hzm01.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /nmsl, ws-headers: {Host: 0319hzm01.fans8.xyz}, udp: true}
-  - {name: _204, server: 169.197.142.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _201, server: 169.197.142.99, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _202, server: 169.197.142.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇸🇬 SG_511, server: 1.ezydfdd.com, port: 443, type: vmess, uuid: 0e5b46b6-699d-4aca-8fb3-a8e7b4270ed9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /qwe, ws-headers: {Host: 1.ezydfdd.com}, udp: true}
-  - {name: _199, server: 169.197.142.99, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_796, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _06, server: 154.23.190.162, port: 443, type: vmess, uuid: b9984674-f771-4e67-a198-c7e60720ba2c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 154.23.190.162}, udp: true}
-  - {name: ZZ_60, server: 103.172.116.7, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: v2cross.com, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, sni: ce.rutracker-cn.com, skip-cert-verify: false, udp: true}
+  - {name: v2cross.com 2, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, sni: cd.rutracker-cn.com, skip-cert-verify: false, udp: true}
+  - {name: v2cross.com 3, server: twodays.rutracker-cn.com, port: 443, type: trojan, password: IPcvYBswKx8I7JwU, sni: twodays.rutracker-cn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com, server: in02.dns2333.xyz, port: 63087, type: vmess, uuid: 982227b6-fb48-3c17-b44f-b41daa88afab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
+  - {name: v2cross.com 4, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com, server: 142.4.127.67, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.47727450.xyz}, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 2, server: jm-yd-3421.cloudapicloudapi.top, port: 1008, type: ss, cipher: aes-256-gcm, password: 615CC959-8002-9CB4-1F8F-6B38C4166368, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 2, server: 149.28.66.87, port: 22135, type: vmess, uuid: 92cf0366-bcca-11ec-8cef-560003f2ffbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /i7qcJo6E/, ws-headers: {Host: 149.28.66.87}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 3, server: 149.28.66.87, port: 22135, type: vmess, uuid: 92cf0366-bcca-11ec-8cef-560003f2ffbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /i7qcJo6E/, ws-headers: {Host: 149.28.66.87}, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 3, server: jm-yd-3421.cloudapicloudapi.top, port: 1010, type: ss, cipher: aes-256-gcm, password: 615CC959-8002-9CB4-1F8F-6B38C4166368, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 4, server: 412sgsg.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 412sgsg.fans8.xyz}, udp: true}
+  - {name: v2cross.com 5, server: hax.hax01.tk, port: 443, type: vmess, uuid: e2e073ce-c1d4-43ed-89f5-ca978507548a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hax.hax01.tk}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 4, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: v6d1.moonfree.top}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 5, server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: oz.moonfree.top}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 6, server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: oz.moonfree.top}, udp: true}
+  - {name: v2cross.com 6, server: hax.hax01.tk, port: 443, type: vmess, uuid: e2e073ce-c1d4-43ed-89f5-ca978507548a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hax.hax01.tk}, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 5, server: in01.dns2333.xyz, port: 63028, type: vmess, uuid: 982227b6-fb48-3c17-b44f-b41daa88afab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: mugua-tr01.covid19.rip}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 7, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, sni: cd.rutracker-cn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 8, server: hax2.hax01.ml, port: 443, type: vmess, uuid: 25af03c3-27ff-4c14-c142-ad7694ec42f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hax2.hax01.ml}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 9, server: hk4.fdns.unino.tech, port: 443, type: vmess, uuid: ae5e3f3a-b392-409c-a768-ce63bfe453c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hk4.fdns.unino.tech}, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 6, server: 120.240.48.19, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 10, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: ahdaeph8.com}, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 7, server: 120.240.48.19, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
+  - {name: v2cross.com 7, server: niaop.tk, port: 443, type: vmess, uuid: a0b0df87-bda2-440e-830f-347da6cc7760, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /wsssdr1, ws-headers: {Host: niaop.tk}, udp: true}
+  - {name: NL-v2cross.com, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 11, server: rbmf.speedcncnforward3.tk, port: 10004, type: trojan, password: 04d83e9e-d6ff-49ca-9c32-082b9b9c9c54, sni: rbmf.speedcncnforward3.tk, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 8, server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-v1.sdgdn.com}, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 9, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
+  - {name: 🇸🇬 SG-v2cross.com, server: sg1.31vpn.com, port: 80, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /fastssh/ccvcxds/6252624d4fda3/, ws-headers: {Host: sg1.31vpn.com}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 12, server: rbmf.speedcncnforward3.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: rbmf.speedcncnforward3.tk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 SG-v2cross.com 2, server: sg1.31vpn.com, port: 80, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /fastssh/ccvcxds/6252624d4fda3/, ws-headers: {Host: sg1.31vpn.com}, udp: true}
+  - {name: 🇺🇸 US-v2cross.com 13, server: xjpmf.speedcncnforward2.tk, port: 10001, type: trojan, password: 32f3466c-2483-4de6-83b8-f4008c750102, sni: xjpmf.speedcncnforward2.tk, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN-v2cross.com 10, server: in-v1.sdgdn.com, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-v1.sdgdn.com}, udp: true}
+  - {name: 🇸🇬 SG_@v2cross.com01, server: tj-node-3.gfwairport.net, port: 50001, type: trojan, password: 94663697-512d-47fe-ad13-14984e1ebffa, sni: tj-node-3.gfwairport.net, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP_@v2cross.com01, server: V2-NODE-1.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: 94663697-512d-47fe-ad13-14984e1ebffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: V2-NODE-1.GFWAIRPORT.NET}, udp: true}
+  - {name: 🇭🇰 HK_@v2cross.com01, server: hk21.holiganfan.com, port: 10088, type: trojan, password: 4e9dac0d-ae86-45e8-af61-668ce5825d61, sni: hk21.holiganfan.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HK_@v2cross.com01 2, server: tj-node-4.gfwairport.net, port: 50001, type: trojan, password: 94663697-512d-47fe-ad13-14984e1ebffa, sni: tj-node-4.gfwairport.net, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HK_@v2cross.com01 3, server: V2-NODE-4.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: 94663697-512d-47fe-ad13-14984e1ebffa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: V2-NODE-4.GFWAIRPORT.NET}, udp: true}
+  - {name: 🇺🇸 US_@v2cross.com01, server: tj-node-5.gfwairport.net, port: 50001, type: trojan, password: 94663697-512d-47fe-ad13-14984e1ebffa, sni: tj-node-5.gfwairport.net, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US_@v2cross.com01 2, server: ss-node-2.gfwairport.net, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 94663697-512d-47fe-ad13-14984e1ebffa, udp: true}
+  - {name: 🇭🇰 HK_@v2cross.com01 4, server: hk20.holiganfan.com, port: 10088, type: trojan, password: 4e9dac0d-ae86-45e8-af61-668ce5825d61, sni: hk20.holiganfan.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP_@v2cross.com01 2, server: tj-node-1.gfwairport.net, port: 50001, type: trojan, password: 94663697-512d-47fe-ad13-14984e1ebffa, sni: tj-node-1.gfwairport.net, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP_@v2cross.com01 3, server: ss-node-1.gfwairport.net, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 94663697-512d-47fe-ad13-14984e1ebffa, udp: true}
+  - {name: 🇭🇰 v2cross.com - 香港Microsoft数据中心 1, server: hknf2.qingyun123.xyz, port: 10070, type: trojan, password: 32ba9f2a-0a02-42aa-9e1c-040bc9813f12, sni: hknf2.qingyun123.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国Microsoft数据中心 2, server: pro.tls.hongkongaz.dnsfree.top, port: 55091, type: trojan, password: a37a5947-0493-4a59-ba4c-5d36dd16063b, sni: pro.tls.hongkongaz.dnsfree.top, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国Microsoft数据中心 3, server: superjapan1111.dnsfree.top, port: 12389, type: trojan, password: a37a5947-0493-4a59-ba4c-5d36dd16063b, sni: superjapan1111.dnsfree.top, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国Microsoft数据中心 4, server: superjapan1111.dnsfree.top, port: 12392, type: trojan, password: 8d23f8a8-64b8-42c4-9c31-304f7c86669c, sni: superjapan1111.dnsfree.top, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 v2cross.com - 香港特别行政区 5, server: baidu.hongkong.dnsfree.top, port: 55094, type: trojan, password: 8d23f8a8-64b8-42c4-9c31-304f7c86669c, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 v2cross.com - 香港特别行政区 6, server: baidu.hongkong.dnsfree.top, port: 55093, type: trojan, password: 8d23f8a8-64b8-42c4-9c31-304f7c86669c, sni: baidu.hongkong.dnsfree.top, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国Microsoft公司 7, server: nfjp1.qingyun123.xyz, port: 10000, type: trojan, password: 32ba9f2a-0a02-42aa-9e1c-040bc9813f12, sni: nfjp1.qingyun123.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国Microsoft数据中心 8, server: aead.tls.sksupersususu.dnsfree.top, port: 12346, type: trojan, password: 8d23f8a8-64b8-42c4-9c31-304f7c86669c, sni: aead.tls.sksupersususu.dnsfree.top, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国加利福尼亚州洛杉矶Choopa数据中心 9, server: 45.77.126.179, port: 57745, type: vmess, uuid: e8b99f3e-bc07-11ec-bc51-560003f2ac4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /SfqyKoZu/, ws-headers: {Host: 45.77.126.179}, udp: true}
+  - {name: v2cross.com - 欧盟  10, server: 45.66.159.74, port: 58055, type: vmess, uuid: e5dfca9a-b6cb-11ec-9c2f-00163cbed88a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /xEzyADCa/, ws-headers: {Host: 45.66.159.74}, udp: true}
+  - {name: 🇷🇺 v2cross.com - 俄罗斯莫斯科Melbicom数据中心 11, server: 213.183.53.200, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 🇸🇬 v2cross.com - 美国新泽西州皮斯卡特维Vultr数据中心 12, server: 207.246.94.28, port: 42383, type: vmess, uuid: 4773dfdc-9c85-4873-8720-ce8cf5f74f7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 v2cross.com - 新加坡DigitalOcean数据中心 13, server: sg1.31vpn.com, port: 80, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /fastssh/ccvcxds/6252624d4fda3/, ws-headers: {Host: sg1.31vpn.com}, udp: true}
+  - {name: 🇺🇸 v2cross.com - 北美地区  14, server: tls.us01.dnsfree.top, port: 12345, type: trojan, password: 8d23f8a8-64b8-42c4-9c31-304f7c86669c, sni: tls.us01.dnsfree.top, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国加利福尼亚州洛杉矶Choopa数据中心 15, server: 140.82.22.122, port: 37572, type: vmess, uuid: 81e3f426-bc02-11ec-b4df-560003f2aa40, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /qgbdnHwN/, ws-headers: {Host: 140.82.22.122}, udp: true}
+  - {name: 🇨🇦 v2cross.com - 加拿大  16, server: 165.154.225.176, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 0326hk01.fans8.xyz}, udp: true}
+  - {name: 🇨🇳 v2cross.com - 上海市电信 17, server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国CloudFlare节点 18, server: cloudflare.xrenblog.com, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /sakura/, ws-headers: {Host: v4.xrenblog.com}, udp: true}
+  - {name: 🇨🇦 v2cross.com - 加拿大  19, server: 165.154.225.231, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 330hk02.fans8.xyz}, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国CloudFlare公司CDN节点 20, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxus.fovi.tk}, udp: true}
+  - {name: 🇨🇦 v2cross.com - 加拿大  21, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 330tw.fans8.xyz}, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国CloudFlare节点 22, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /happy, ws-headers: {Host: v2ray.788644.xyz}, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国CloudFlare公司CDN节点 23, server: hax.hax01.tk, port: 443, type: vmess, uuid: e2e073ce-c1d4-43ed-89f5-ca978507548a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: hax.hax01.tk}, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国CloudFlare节点 24, server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: oz.moonfree.top}, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国CloudFlare节点 25, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: 🇫🇷 v2cross.com - 法国  26, server: 0316ro.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /nl, ws-headers: {Host: 0316ro.fans8.xyz}, udp: true}
+  - {name: 🇫🇷 v2cross.com - 法国  27, server: 92.243.24.236, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: LE6Ee6PELhVu, udp: true}
+  - {name: 🇭🇰 v2cross.com - 香港电讯盈科有限公司 28, server: hkt2.node.qchwnd.moe, port: 44614, type: trojan, password: 1925c4ba-616a-416f-a494-392f2ba9eb77, sni: hkt2.node.qchwnd.moe, skip-cert-verify: false, udp: true}
+  - {name: 🇿🇦 v2cross.com - 南非豪登省约翰内斯堡Cloudinnovation数据中心 29, server: us1.lolvps.xyz, port: 60060, type: vmess, uuid: 95886c76-9207-48bd-9e64-d1422e75ad89, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /AY920UMR, ws-headers: {Host: us1.lolvps.xyz}, udp: true}
+  - {name: 🇺🇸 v2cross.com - 北美地区  30, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: ahdaeph8.com}, udp: true}
+  - {name: 🇺🇸 v2cross.com - 美国3COM公司企业网 31, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 v2cross.com - 荷兰  32, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: false, udp: true}
 proxy-groups:
-  - name: ♻️ 自动选择
-    type: url-test
+  - name: 😜 碧海
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - bihai
+  - name: 💯 ednovas
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - ednovas
+  - name: ♻️ 手动选择
+    type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CZ5_v2cross
-      - GB_841
-      - NL_1304
-      - NL_1305
-      - NL_1307
-      - NL_1310
-      - NL_1318
-      - NL_1322
-      - NL_1321
-      - NL_1306
-      - NL_1315
-      - NL_1329
-      - NL_1330
-      - RO_1390
-      - RO_1373
-      - RO_1403
-      - RO_1382
-      - RO_1407
-      - RO_1389
-      - RO_1381
-      - RO_1394
-      - RO_1395
-      - RO_1374
-      - RO_1401
-      - RO_1400
-      - RO_1396
-      - RO_1375
-      - RO_1405
-      - RO_1408
-      - RO_1393
-      - RO_1417
-      - RO_1388
-      - RO_1378
-      - RO_1410
-      - RO_1418
-      - RO_1397
-      - 🇷🇺 RU_1476
-      - 🇷🇺 RU_1496
-      - 🇷🇺 RU_1490
-      - 🇷🇺 RU_1499
-      - 🇷🇺 RU_1495
-      - 🇷🇺 RU_1467
-      - 🇷🇺 RU_1504
-      - 🇷🇺 RU_1486
-      - 🇷🇺 RU_1502
-      - 🇷🇺 RU_1503
-      - 🇷🇺 RU_1489
-      - 🇷🇺 RU_1497
-      - 🇷🇺 RU_1466
-      - 🇷🇺 RU_1468
-      - 🇷🇺 RU_1501
-      - 🇷🇺 RU_1507
-      - 🇷🇺 RU_1508
-      - RO_1377
-      - 🇷🇺 RU_1510
-      - 🇷🇺 RU_1509
-      - RO_1414
-      - 🇷🇺 RU_1511
-      - 🇷🇺 RU_1505
-      - RO_1391
-      - RO_1402
-      - 🇷🇺 RU_1492
-      - 🇷🇺 RU_1473
-      - RO_1386
-      - 🇷🇺 RU_1464
-      - RO_1409
-      - RO_1416
-      - 🇷🇺 RU_1481
-      - 🇷🇺 RU_1484
-      - 🇷🇺 RU_1469
-      - 🇷🇺 RU_1472
-      - 🇷🇺 RU_1483
-      - 🇷🇺 RU_1480
-      - 🇷🇺 RU_1482
-      - 🇷🇺 RU_1471
-      - 🇷🇺 RU_1485
-      - 🇷🇺 RU_1470
-      - 🇷🇺 RU_1479
-      - 🇷🇺 RU_1512
-      - RO_1413
-      - 🇷🇺 RU_1506
-      - ZZ_4035
-      - ZZ_4422
-      - ZZ_4448
-      - ZZ_4471
-      - ZZ_4318
-      - ZZ_4543
-      - ZZ_4541
-      - ZZ_4612
-      - ZZ_4646
-      - ZZ_4671
-      - ZZ_4632
-      - ZZ_4615
-      - 169.197.142.99:8090
-      - 169.197.142.99:6679
-      - 169.197.142.99:443
-      - 169.197.142.99:7002
-      - 169.197.142.99:6697
-      - AU_33 | 4.87Mb
-      - AU_98 | 0.38Mb
-      - AU_105 | 4.90Mb
-      - AU_97 | 3.79Mb
-      - AU_100 | 3.86Mb
-      - AU_104 | 7.20Mb
-      - 169.197.142.99:8118
-      - GB_703 |45.53Mb
-      - GB_702 |81.79Mb
-      - 🇩🇪 DE_567 |10.11Mb
-      - GB_701 |25.07Mb
-      - 🇩🇪 DE_530 |26.95Mb
-      - 🇩🇪 DE_555 |39.13Mb
-      - RO_1135 | 5.71Mb
-      - RO_1142 | 8.26Mb
-      - RO_1145 | 3.55Mb
-      - 🇩🇪 DE_586 |47.05Mb
-      - 🇩🇪 DE_600 |63.44Mb
-      - 🇩🇪 DE_591 |13.98Mb
-      - RO_1169 | 4.43Mb
-      - 🇩🇪 DE_598 |57.11Mb
-      - 🇷🇺 RU_1232 |18.27Mb
-      - 🇷🇺 RU_1226 | 6.79Mb
-      - 🇷🇺 RU_1251 |15.43Mb
-      - RO_1128 |12.07Mb
-      - NL_1083 |40.03Mb
-      - 🇷🇺 RU_1230 | 8.26Mb
-      - 🇩🇪 DE_541 |42.65Mb
-      - RO_1164 |14.55Mb
-      - 🇩🇪 DE_524 |31.22Mb
-      - ZZ_2847 | 6.46Mb
-      - ZZ_2866 | 8.08Mb
-      - ZZ_3403 | 1.68Mb
-      - ZZ_3415 | 9.04Mb
-      - ZZ_3404 |13.49Mb
-      - 🇸🇬 SG_1320 | 6.87Mb
-      - 🇸🇬 SG_1321 |12.22Mb
-      - ZZ_3529 | 0.08Mb
-      - AU_10
-      - AU_28
-      - NL_401
-      - 🇷🇺 RU_486
-      - ZZ_544
-      - 🇨🇦 CA_35
-      - _204
-      - _201
-      - _202
-      - 🇸🇬 SG_511
-      - _199
-      - ZZ_796
-      - _06
-      - ZZ_60
+      - 😜 碧海
+      - 💯 ednovas
+      - v2cross.com
+      - v2cross.com 2
+      - v2cross.com 3
+      - 🇨🇳 CN-v2cross.com
+      - v2cross.com 4
+      - 🇺🇸 US-v2cross.com
+      - 🇨🇳 CN-v2cross.com 2
+      - 🇺🇸 US-v2cross.com 2
+      - 🇺🇸 US-v2cross.com 3
+      - 🇨🇳 CN-v2cross.com 3
+      - 🇨🇳 CN-v2cross.com 4
+      - v2cross.com 5
+      - 🇺🇸 US-v2cross.com 4
+      - 🇺🇸 US-v2cross.com 5
+      - 🇺🇸 US-v2cross.com 6
+      - v2cross.com 6
+      - 🇨🇳 CN-v2cross.com 5
+      - 🇺🇸 US-v2cross.com 7
+      - 🇺🇸 US-v2cross.com 8
+      - 🇺🇸 US-v2cross.com 9
+      - 🇨🇳 CN-v2cross.com 6
+      - 🇺🇸 US-v2cross.com 10
+      - 🇨🇳 CN-v2cross.com 7
+      - v2cross.com 7
+      - NL-v2cross.com
+      - 🇺🇸 US-v2cross.com 11
+      - 🇨🇳 CN-v2cross.com 8
+      - 🇨🇳 CN-v2cross.com 9
+      - 🇸🇬 SG-v2cross.com
+      - 🇺🇸 US-v2cross.com 12
+      - 🇸🇬 SG-v2cross.com 2
+      - 🇺🇸 US-v2cross.com 13
+      - 🇨🇳 CN-v2cross.com 10
+      - 🇸🇬 SG_@v2cross.com01
+      - 🇯🇵 JP_@v2cross.com01
+      - 🇭🇰 HK_@v2cross.com01
+      - 🇭🇰 HK_@v2cross.com01 2
+      - 🇭🇰 HK_@v2cross.com01 3
+      - 🇺🇸 US_@v2cross.com01
+      - 🇺🇸 US_@v2cross.com01 2
+      - 🇭🇰 HK_@v2cross.com01 4
+      - 🇯🇵 JP_@v2cross.com01 2
+      - 🇯🇵 JP_@v2cross.com01 3
+      - 🇭🇰 v2cross.com - 香港Microsoft数据中心 1
+      - 🇺🇸 v2cross.com - 美国Microsoft数据中心 2
+      - 🇺🇸 v2cross.com - 美国Microsoft数据中心 3
+      - 🇺🇸 v2cross.com - 美国Microsoft数据中心 4
+      - 🇭🇰 v2cross.com - 香港特别行政区 5
+      - 🇭🇰 v2cross.com - 香港特别行政区 6
+      - 🇺🇸 v2cross.com - 美国Microsoft公司 7
+      - 🇺🇸 v2cross.com - 美国Microsoft数据中心 8
+      - 🇺🇸 v2cross.com - 美国加利福尼亚州洛杉矶Choopa数据中心 9
+      - v2cross.com - 欧盟  10
+      - 🇷🇺 v2cross.com - 俄罗斯莫斯科Melbicom数据中心 11
+      - 🇸🇬 v2cross.com - 美国新泽西州皮斯卡特维Vultr数据中心 12
+      - 🇸🇬 v2cross.com - 新加坡DigitalOcean数据中心 13
+      - 🇺🇸 v2cross.com - 北美地区  14
+      - 🇺🇸 v2cross.com - 美国加利福尼亚州洛杉矶Choopa数据中心 15
+      - 🇨🇦 v2cross.com - 加拿大  16
+      - 🇨🇳 v2cross.com - 上海市电信 17
+      - 🇺🇸 v2cross.com - 美国CloudFlare节点 18
+      - 🇨🇦 v2cross.com - 加拿大  19
+      - 🇺🇸 v2cross.com - 美国CloudFlare公司CDN节点 20
+      - 🇨🇦 v2cross.com - 加拿大  21
+      - 🇺🇸 v2cross.com - 美国CloudFlare节点 22
+      - 🇺🇸 v2cross.com - 美国CloudFlare公司CDN节点 23
+      - 🇺🇸 v2cross.com - 美国CloudFlare节点 24
+      - 🇺🇸 v2cross.com - 美国CloudFlare节点 25
+      - 🇫🇷 v2cross.com - 法国  26
+      - 🇫🇷 v2cross.com - 法国  27
+      - 🇭🇰 v2cross.com - 香港电讯盈科有限公司 28
+      - 🇿🇦 v2cross.com - 南非豪登省约翰内斯堡Cloudinnovation数据中心 29
+      - 🇺🇸 v2cross.com - 北美地区  30
+      - 🇺🇸 v2cross.com - 美国3COM公司企业网 31
+      - 🇳🇱 v2cross.com - 荷兰  32
 rule-providers:
   # github host文件：https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts
   reject:
@@ -332,7 +218,7 @@ rule-providers:
   mydirect:
     type: http
     behavior: domain
-    url: "https://gitee.com/lcx12901/clash-profile/raw/master/ruleset/mydirect.yaml"
+    url: "https://raw.githubusercontent.com/lcx12901/v2ray-/master/ruleset/mydirect.yaml"
     path: ./ruleset/mydirect.yaml
     interval: 86400
 
@@ -353,19 +239,19 @@ rule-providers:
   proxyme:
     type: http
     behavior: classical
-    url: "https://gitee.com/lcx12901/clash-profile/raw/master/ruleset/proxyme.yaml"
+    url: "https://raw.githubusercontent.com/lcx12901/v2ray-/master/ruleset/proxyme.yaml"
     path: ./ruleset/proxyme.yaml
     interval: 86400
   GTAR2:
     type: http
     behavior: classical
-    url: "https://gitee.com/lcx12901/clash-profile/raw/master/ruleset/GTA-R.yaml"
+    url: "https://raw.githubusercontent.com/lcx12901/v2ray-/master/ruleset/GTA-R.yaml"
     path: ./ruleset/GTA-R.yaml
     interval: 86400
   baha:
     type: http
     behavior: classical
-    url: "https://gitee.com/lcx12901/clash-profile/raw/master/ruleset/baha.yaml"
+    url: "https://raw.githubusercontent.com/lcx12901/v2ray-/master/ruleset/baha.yaml"
     path: ./ruleset/baha.yaml
     interval: 86400
   Hijacking:
@@ -425,14 +311,14 @@ rules:
   - PROCESS-NAME,transmission-qt.exe,DIRECT
   - PROCESS-NAME,uTorrent.exe,DIRECT
   - PROCESS-NAME,WebTorrent.exe,DIRECT
-  - PROCESS-NAME,Clash for Windows,♻️ 自动选择
+  - PROCESS-NAME,Clash for Windows,♻️ 手动选择
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,mydirect,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,Hijacking,REJECT
   - RULE-SET,Privacy,REJECT
-  - RULE-SET,proxyme,♻️ 自动选择
-  - RULE-SET,proxy,♻️ 自动选择
+  - RULE-SET,proxyme,♻️ 手动选择
+  - RULE-SET,proxy,♻️ 手动选择
   - GEOIP,CN,DIRECT
   - MATCH,DIRECT
