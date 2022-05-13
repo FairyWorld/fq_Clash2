@@ -380,6 +380,7 @@ proxies:
      type: http
      username: "yaojiayu246@gmail.com"
      password: "73a4ff1c-85c8-11ea-82ef-f23c9164ca5d"
+     tls: true
   - name: 🚀 节点选择
     type: select
     proxies:
