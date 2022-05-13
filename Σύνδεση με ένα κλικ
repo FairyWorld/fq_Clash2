@@ -35,6 +35,7 @@ proxies:
   - {name: 🇸🇬 广移>>新103.157.250.27 4, server: 183.240.9.31, port: 29988, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true}
   - {name: 🇸🇬 深移>>新103.157.251.20, server: 120.232.251.206, port: 29979, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true}
   - {name: 🇭🇰 深移>>港103.157.251.19, server: 120.232.251.206, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true, skip-cert-verify: true}
+  - {name: 🇹🇼 台湾, server: h3816tw.droplet.today, port: 20443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -71,6 +72,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -106,6 +108,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -142,6 +145,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -190,6 +194,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -226,6 +231,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
   - name: 📲 电报信息
     type: select
     proxies:
@@ -261,6 +267,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -296,6 +303,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -331,6 +339,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -383,6 +392,7 @@ proxy-groups:
       - 🇸🇬 广移>>新103.157.250.27 4
       - 🇸🇬 深移>>新103.157.251.20
       - 🇭🇰 深移>>港103.157.251.19
+      - 🇹🇼 台湾
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
