@@ -437,7 +437,7 @@ proxies:
       - 🇩🇪 HTTPS｜德国04
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.google.com/gen_204
     interval: 300
     proxies:
       -  🇹🇼 HTTPS｜台湾
