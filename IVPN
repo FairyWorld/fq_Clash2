@@ -5,75 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: A0 上海1号-香港HKBGP | V2RAY隧道 |, server: ingress-i1.onebox6.org, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: A0 广州1号-香港HKBGP | V2RAY隧道 |, server: ingress-i2.onebox6.org, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: A1 上海1号-香港HKBN | V2RAY 隧道 |, server: ingress-i1.onebox6.org, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: A1 广州1号-香港HKBN | V2RAY 隧道 |, server: ingress-i2.onebox6.org, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: A2 上海1号-香港WTT商宽 | V2RAY 隧道 |, server: ingress-i1.onebox6.org, port: 38104, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: A2 广州1号-香港WTT商宽 | V2RAY 隧道 |, server: ingress-i2.onebox6.org, port: 38104, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: B0 上海1号-香港HKT打机线 | V2RAY隧道 |, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: B0 广州1号-香港HKT打机线 | V2RAY隧道 |, server: ingress-i2.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: B8 上海1号-台湾HINET | V2RAY隧道 |, server: in-tw-1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: B8 广州1号-台湾HINET | V2RAY隧道 |, server: in-tw-2.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: C1 日本AWS | 三网用户 | V2RAY 隧道 |, server: in-jp-1.onebox6.org, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: D1 美国AWS | 三网用户 | V2RAY 隧道 |, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: G1 新加坡 | 解锁Tiktok | V2RAY隧道 |, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: BGP1, server: data-hk-v2.heisey.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: BGP2, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: BGP3, server: data-hk-v2.shwjfkw.cn, port: 50206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: BGP4, server: data-hk-v1.heisey.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: BGP5, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: BGP6, server: data-tw-v1.shwjfkw.cn, port: 50221, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: BGP7, server: data-jp-v1.heisey.cn, port: 50301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: BGP8, server: data-us-v1.shwjfkw.cn, port: 50401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: BGP9, server: data-sg-v1.shwjfkw.cn, port: 50701, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
-      - C1 日本AWS | 三网用户 | V2RAY 隧道 |
-      - D1 美国AWS | 三网用户 | V2RAY 隧道 |
-      - G1 新加坡 | 解锁Tiktok | V2RAY隧道 |
+      - BGP1
+      - BGP2
+      - BGP3
+      - BGP4
+      - BGP5
+      - BGP6
+      - BGP7
+      - BGP8
+      - BGP9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
-      - C1 日本AWS | 三网用户 | V2RAY 隧道 |
-      - D1 美国AWS | 三网用户 | V2RAY 隧道 |
-      - G1 新加坡 | 解锁Tiktok | V2RAY隧道 |
+      - BGP1
+      - BGP2
+      - BGP3
+      - BGP4
+      - BGP5
+      - BGP6
+      - BGP7
+      - BGP8
+      - BGP9
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
-      - C1 日本AWS | 三网用户 | V2RAY 隧道 |
-      - D1 美国AWS | 三网用户 | V2RAY 隧道 |
-      - G1 新加坡 | 解锁Tiktok | V2RAY隧道 |
+      - BGP1
+      - BGP2
+      - BGP3
+      - BGP4
+      - BGP5
+      - BGP6
+      - BGP7
+      - BGP8
+      - BGP9
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,89 +76,63 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
-      - C1 日本AWS | 三网用户 | V2RAY 隧道 |
-      - D1 美国AWS | 三网用户 | V2RAY 隧道 |
-      - G1 新加坡 | 解锁Tiktok | V2RAY隧道 |
+      - BGP1
+      - BGP2
+      - BGP3
+      - BGP4
+      - BGP5
+      - BGP6
+      - BGP7
+      - BGP8
+      - BGP9
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
-      - C1 日本AWS | 三网用户 | V2RAY 隧道 |
-      - D1 美国AWS | 三网用户 | V2RAY 隧道 |
-      - G1 新加坡 | 解锁Tiktok | V2RAY隧道 |
+      - BGP1
+      - BGP2
+      - BGP3
+      - BGP4
+      - BGP5
+      - BGP6
+      - BGP7
+      - BGP8
+      - BGP9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
-      - C1 日本AWS | 三网用户 | V2RAY 隧道 |
-      - D1 美国AWS | 三网用户 | V2RAY 隧道 |
-      - G1 新加坡 | 解锁Tiktok | V2RAY隧道 |
+      - BGP1
+      - BGP2
+      - BGP3
+      - BGP4
+      - BGP5
+      - BGP6
+      - BGP7
+      - BGP8
+      - BGP9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
-      - C1 日本AWS | 三网用户 | V2RAY 隧道 |
-      - D1 美国AWS | 三网用户 | V2RAY 隧道 |
-      - G1 新加坡 | 解锁Tiktok | V2RAY隧道 |
+      - BGP1
+      - BGP2
+      - BGP3
+      - BGP4
+      - BGP5
+      - BGP6
+      - BGP7
+      - BGP8
+      - BGP9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -190,19 +148,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - A0 上海1号-香港HKBGP | V2RAY隧道 |
-      - A0 广州1号-香港HKBGP | V2RAY隧道 |
-      - A1 上海1号-香港HKBN | V2RAY 隧道 |
-      - A1 广州1号-香港HKBN | V2RAY 隧道 |
-      - A2 上海1号-香港WTT商宽 | V2RAY 隧道 |
-      - A2 广州1号-香港WTT商宽 | V2RAY 隧道 |
-      - B0 上海1号-香港HKT打机线 | V2RAY隧道 |
-      - B0 广州1号-香港HKT打机线 | V2RAY隧道 |
-      - B8 上海1号-台湾HINET | V2RAY隧道 |
-      - B8 广州1号-台湾HINET | V2RAY隧道 |
-      - C1 日本AWS | 三网用户 | V2RAY 隧道 |
-      - D1 美国AWS | 三网用户 | V2RAY 隧道 |
-      - G1 新加坡 | 解锁Tiktok | V2RAY隧道 |
+      - BGP1
+      - BGP2
+      - BGP3
+      - BGP4
+      - BGP5
+      - BGP6
+      - BGP7
+      - BGP8
+      - BGP9
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
